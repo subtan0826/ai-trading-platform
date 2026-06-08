@@ -2,7 +2,7 @@
 type: stock
 order: 70
 name: Arthur Gallagher
-code: AJG
+code: "AJG"
 category: 特种保险
 technical_analysis: ""
 news_info: ""

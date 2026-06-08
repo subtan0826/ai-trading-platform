@@ -2,7 +2,7 @@
 type: stock
 order: 12
 name: 亚马逊
-code: AMZN
+code: "AMZN"
 category: 互联网零售龙头
 technical_analysis: ""
 news_info: ""

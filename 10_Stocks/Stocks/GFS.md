@@ -2,7 +2,7 @@
 type: stock
 order: 141
 name: 格芯
-code: GFS
+code: "GFS"
 category: Pure-play Foundry 代工厂
 technical_analysis: ""
 news_info: ""

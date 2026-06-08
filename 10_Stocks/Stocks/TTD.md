@@ -2,7 +2,7 @@
 type: stock
 order: 262
 name: Trade Desk
-code: TTD
+code: "TTD"
 category: 营销 / 内容 AI
 technical_analysis: ""
 news_info: ""

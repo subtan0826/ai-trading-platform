@@ -2,7 +2,7 @@
 type: stock
 order: 159
 name: Itron
-code: ITRI
+code: "ITRI"
 category: 智能电网 / 表计
 technical_analysis: ""
 news_info: ""

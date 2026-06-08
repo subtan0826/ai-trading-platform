@@ -2,7 +2,7 @@
 type: stock
 order: 227
 name: Roku
-code: ROKU
+code: "ROKU"
 category: 智能家居 / 助手
 technical_analysis: ""
 news_info: ""

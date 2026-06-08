@@ -2,7 +2,7 @@
 type: stock
 order: 193
 name: nVent
-code: NVT
+code: "NVT"
 category: 液冷 / 冷却
 technical_analysis: ""
 news_info: ""

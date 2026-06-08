@@ -2,7 +2,7 @@
 type: stock
 order: 4
 name: 比特币
-code: BTC
+code: "BTC"
 category: 加密货币
 technical_analysis: ""
 news_info: ""

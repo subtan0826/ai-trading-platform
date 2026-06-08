@@ -2,7 +2,7 @@
 type: stock
 order: 230
 name: SailPoint
-code: SAIL
+code: "SAIL"
 category: 身份 / 反 deepfake
 technical_analysis: ""
 news_info: ""

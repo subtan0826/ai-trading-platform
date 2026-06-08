@@ -2,7 +2,7 @@
 type: stock
 order: 188
 name: Cloudflare
-code: NET
+code: "NET"
 category: 下一代网络安全
 technical_analysis: ""
 news_info: ""

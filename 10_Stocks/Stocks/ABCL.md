@@ -2,7 +2,7 @@
 type: stock
 order: 63
 name: AbCellera
-code: ABCL
+code: "ABCL"
 category: 药物发现 AI
 technical_analysis: ""
 news_info: ""

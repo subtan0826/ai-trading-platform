@@ -2,7 +2,7 @@
 type: stock
 order: 23
 name: Booking
-code: BKNG
+code: "BKNG"
 category: 在线旅游龙头
 technical_analysis: ""
 news_info: ""

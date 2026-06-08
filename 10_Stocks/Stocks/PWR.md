@@ -2,7 +2,7 @@
 type: stock
 order: 217
 name: Quanta Services
-code: PWR
+code: "PWR"
 category: 数据中心建设 / 工程
 technical_analysis: ""
 news_info: ""

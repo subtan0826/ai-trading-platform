@@ -2,7 +2,7 @@
 type: stock
 order: 28
 name: 美光科技
-code: MU
+code: "MU"
 category: AI-存储龙头
 technical_analysis: ""
 news_info: ""

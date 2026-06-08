@@ -2,7 +2,7 @@
 type: stock
 order: 212
 name: 小马智行
-code: PONY
+code: "PONY"
 category: 自动驾驶全栈
 technical_analysis: ""
 news_info: ""

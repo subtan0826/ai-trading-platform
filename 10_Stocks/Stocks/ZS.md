@@ -2,7 +2,7 @@
 type: stock
 order: 284
 name: Zscaler
-code: ZS
+code: "ZS"
 category: 下一代网络安全
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 112
 name: 戴尔
-code: DELL
+code: "DELL"
 category: 服务器制造商 / ODM / EMS
 technical_analysis: ""
 news_info: ""

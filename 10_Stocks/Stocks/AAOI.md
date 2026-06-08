@@ -2,7 +2,7 @@
 type: stock
 order: 61
 name: Applied Opto
-code: AAOI
+code: "AAOI"
 category: 光通信 / 光模块
 technical_analysis: ""
 news_info: ""

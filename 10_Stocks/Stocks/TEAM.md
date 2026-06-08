@@ -2,7 +2,7 @@
 type: stock
 order: 250
 name: Atlassian
-code: TEAM
+code: "TEAM"
 category: 开发者工具 / 代码生成
 technical_analysis: ""
 news_info: ""

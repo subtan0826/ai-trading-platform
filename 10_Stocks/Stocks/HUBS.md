@@ -2,7 +2,7 @@
 type: stock
 order: 149
 name: HubSpot
-code: HUBS
+code: "HUBS"
 category: AI Agent 平台
 technical_analysis: ""
 news_info: ""

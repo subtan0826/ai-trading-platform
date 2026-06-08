@@ -2,7 +2,7 @@
 type: stock
 order: 201
 name: Onto Innovation
-code: ONTO
+code: "ONTO"
 category: Advanced Packaging 先进封装
 technical_analysis: ""
 news_info: ""

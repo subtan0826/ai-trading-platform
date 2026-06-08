@@ -2,7 +2,7 @@
 type: stock
 order: 84
 name: 日月光
-code: ASX
+code: "ASX"
 category: OSAT 封装测试外包
 technical_analysis: ""
 news_info: ""

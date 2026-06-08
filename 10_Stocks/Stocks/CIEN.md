@@ -2,7 +2,7 @@
 type: stock
 order: 103
 name: Ciena
-code: CIEN
+code: "CIEN"
 category: 光通信 / 光模块
 technical_analysis: ""
 news_info: ""

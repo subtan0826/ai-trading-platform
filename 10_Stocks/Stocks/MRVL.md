@@ -2,7 +2,7 @@
 type: stock
 order: 184
 name: 迈威尔
-code: MRVL
+code: "MRVL"
 category: 自研 AI ASIC
 technical_analysis: ""
 news_info: ""

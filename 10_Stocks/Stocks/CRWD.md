@@ -2,7 +2,7 @@
 type: stock
 order: 107
 name: CrowdStrike
-code: CRWD
+code: "CRWD"
 category: 下一代网络安全
 technical_analysis: ""
 news_info: ""

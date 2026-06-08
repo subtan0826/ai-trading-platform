@@ -2,7 +2,7 @@
 type: stock
 order: 211
 name: POET Tech
-code: POET
+code: "POET"
 category: Co-Packaged Optics
 technical_analysis: ""
 news_info: ""

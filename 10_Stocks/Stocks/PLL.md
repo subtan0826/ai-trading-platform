@@ -2,7 +2,7 @@
 type: stock
 order: 208
 name: Piedmont
-code: PLL
+code: "PLL"
 category: 锂
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 221
 name: Quantum-Si
-code: QSI
+code: "QSI"
 category: 量子计算
 technical_analysis: ""
 news_info: ""

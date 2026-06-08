@@ -2,7 +2,7 @@
 type: stock
 order: 98
 name: Cameco
-code: CCJ
+code: "CCJ"
 category: 铀矿 & 燃料
 technical_analysis: ""
 news_info: ""

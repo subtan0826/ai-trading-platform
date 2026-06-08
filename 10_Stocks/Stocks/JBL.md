@@ -2,7 +2,7 @@
 type: stock
 order: 161
 name: Jabil
-code: JBL
+code: "JBL"
 category: 服务器制造商 / ODM / EMS
 technical_analysis: ""
 news_info: ""

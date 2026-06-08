@@ -2,7 +2,7 @@
 type: stock
 order: 166
 name: Lithium Americas
-code: LAC
+code: "LAC"
 category: 锂
 technical_analysis: ""
 news_info: ""

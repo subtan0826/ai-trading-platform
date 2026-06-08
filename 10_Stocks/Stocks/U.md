@@ -2,7 +2,7 @@
 type: stock
 order: 266
 name: Unity
-code: U
+code: "U"
 category: AR / VR / 空间计算
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 173
 name: Cheniere
-code: LNG
+code: "LNG"
 category: 天然气 / LNG / 管道
 technical_analysis: ""
 news_info: ""

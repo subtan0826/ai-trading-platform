@@ -2,7 +2,7 @@
 type: stock
 order: 279
 name: 威廉斯
-code: WMB
+code: "WMB"
 category: 天然气 / LNG / 管道
 technical_analysis: ""
 news_info: ""

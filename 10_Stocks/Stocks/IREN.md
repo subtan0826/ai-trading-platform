@@ -2,7 +2,7 @@
 type: stock
 order: 39
 name: IREN Ltd
-code: IREN
+code: "IREN"
 category: AI-电力算力运营商
 technical_analysis: ""
 news_info: ""

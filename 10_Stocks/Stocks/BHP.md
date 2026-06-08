@@ -2,7 +2,7 @@
 type: stock
 order: 90
 name: 必和必拓
-code: BHP
+code: "BHP"
 category: 铜
 technical_analysis: ""
 news_info: ""

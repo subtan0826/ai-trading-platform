@@ -2,7 +2,7 @@
 type: stock
 order: 11
 name: 微软
-code: MSFT
+code: "MSFT"
 category: 软件基础设施龙头
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 114
 name: 迪士尼
-code: DIS
+code: "DIS"
 category: 生成式 AI 内容工具
 technical_analysis: ""
 news_info: ""

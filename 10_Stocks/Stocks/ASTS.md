@@ -2,7 +2,7 @@
 type: stock
 order: 51
 name: AST Space
-code: ASTS
+code: "ASTS"
 category: 卫星直连手机龙头
 technical_analysis: ""
 news_info: ""

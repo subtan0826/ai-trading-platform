@@ -2,7 +2,7 @@
 type: stock
 order: 157
 name: IonQ
-code: IONQ
+code: "IONQ"
 category: 量子计算
 technical_analysis: ""
 news_info: ""

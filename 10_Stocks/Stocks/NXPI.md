@@ -2,7 +2,7 @@
 type: stock
 order: 195
 name: 恩智浦
-code: NXPI
+code: "NXPI"
 category: IDM 设计+制造一体
 technical_analysis: ""
 news_info: ""

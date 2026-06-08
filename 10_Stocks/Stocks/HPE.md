@@ -2,7 +2,7 @@
 type: stock
 order: 145
 name: 慧与
-code: HPE
+code: "HPE"
 category: 数据中心交换机
 technical_analysis: ""
 news_info: ""

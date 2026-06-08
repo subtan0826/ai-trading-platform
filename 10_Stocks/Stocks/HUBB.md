@@ -2,7 +2,7 @@
 type: stock
 order: 148
 name: Hubbell
-code: HUBB
+code: "HUBB"
 category: 配电 / UPS / 电源管理
 technical_analysis: ""
 news_info: ""

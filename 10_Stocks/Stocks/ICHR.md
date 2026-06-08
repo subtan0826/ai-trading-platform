@@ -2,7 +2,7 @@
 type: stock
 order: 152
 name: Ichor
-code: ICHR
+code: "ICHR"
 category: 半导体材料 & 特种气体
 technical_analysis: ""
 news_info: ""

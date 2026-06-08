@@ -2,7 +2,7 @@
 type: stock
 order: 260
 name: Travelers
-code: TRV
+code: "TRV"
 category: 特种保险
 technical_analysis: ""
 news_info: ""

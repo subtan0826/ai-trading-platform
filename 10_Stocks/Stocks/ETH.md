@@ -2,7 +2,7 @@
 type: stock
 order: 5
 name: 以太坊
-code: ETH
+code: "ETH"
 category: 加密货币
 technical_analysis: ""
 news_info: ""

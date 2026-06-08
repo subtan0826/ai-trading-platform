@@ -2,7 +2,7 @@
 type: stock
 order: 272
 name: Veeva
-code: VEEV
+code: "VEEV"
 category: 医疗 AI / 诊断
 technical_analysis: ""
 news_info: ""

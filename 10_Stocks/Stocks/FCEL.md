@@ -2,7 +2,7 @@
 type: stock
 order: 132
 name: FuelCell
-code: FCEL
+code: "FCEL"
 category: 燃料电池 / 氢能 / 分布式发电
 technical_analysis: ""
 news_info: ""

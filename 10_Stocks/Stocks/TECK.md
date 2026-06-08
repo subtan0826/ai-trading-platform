@@ -2,7 +2,7 @@
 type: stock
 order: 251
 name: Teck Resources
-code: TECK
+code: "TECK"
 category: 铜
 technical_analysis: ""
 news_info: ""

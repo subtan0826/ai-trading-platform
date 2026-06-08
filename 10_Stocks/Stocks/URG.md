@@ -2,7 +2,7 @@
 type: stock
 order: 269
 name: Ur-Energy
-code: URG
+code: "URG"
 category: 铀矿 & 燃料
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 156
 name: Innoviz
-code: INVZ
+code: "INVZ"
 category: 机器视觉 / 传感器
 technical_analysis: ""
 news_info: ""

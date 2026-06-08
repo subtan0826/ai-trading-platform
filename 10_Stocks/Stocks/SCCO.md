@@ -2,7 +2,7 @@
 type: stock
 order: 232
 name: Southern Copper
-code: SCCO
+code: "SCCO"
 category: 铜
 technical_analysis: ""
 news_info: ""

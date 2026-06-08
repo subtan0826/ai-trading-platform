@@ -2,7 +2,7 @@
 type: stock
 order: 38
 name: Nebius
-code: NBIS
+code: "NBIS"
 category: AI-GPU算力云龙头
 technical_analysis: ""
 news_info: ""

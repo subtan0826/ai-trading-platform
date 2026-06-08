@@ -2,7 +2,7 @@
 type: stock
 order: 73
 name: 安霸
-code: AMBA
+code: "AMBA"
 category: 车载 AI 芯片
 technical_analysis: ""
 news_info: ""

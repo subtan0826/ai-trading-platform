@@ -2,10 +2,10 @@
 type: stock
 order: 222
 name: Roblox
-code: RBLX
+code: "RBLX"
 category: AR / VR / 空间计算
 technical_analysis: ""
-news_info:
+news_info: ""
 watch: false
 market: US
 ---

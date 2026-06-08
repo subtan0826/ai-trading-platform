@@ -2,7 +2,7 @@
 type: stock
 order: 175
 name: Stride
-code: LRN
+code: "LRN"
 category: 职业教育 / 再培训
 technical_analysis: ""
 news_info: ""

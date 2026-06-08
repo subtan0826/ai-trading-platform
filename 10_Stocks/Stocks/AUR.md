@@ -2,7 +2,7 @@
 type: stock
 order: 86
 name: Aurora
-code: AUR
+code: "AUR"
 category: 自动驾驶全栈
 technical_analysis: ""
 news_info: ""

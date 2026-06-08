@@ -2,7 +2,7 @@
 type: stock
 order: 186
 name: MasTec
-code: MTZ
+code: "MTZ"
 category: 燃气轮机 / 发电设备
 technical_analysis: ""
 news_info: ""

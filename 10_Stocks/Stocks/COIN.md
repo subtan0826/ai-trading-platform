@@ -2,7 +2,7 @@
 type: stock
 order: 47
 name: Coinbase
-code: COIN
+code: "COIN"
 category: 加密交易所
 technical_analysis: ""
 news_info: ""

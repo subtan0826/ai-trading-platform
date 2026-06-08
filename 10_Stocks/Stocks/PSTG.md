@@ -2,7 +2,7 @@
 type: stock
 order: 215
 name: Pure Storage
-code: PSTG
+code: "PSTG"
 category: 企业 SSD / NAND
 technical_analysis: ""
 news_info: ""

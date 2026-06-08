@@ -2,7 +2,7 @@
 type: stock
 order: 32
 name: Lumentum
-code: LITE
+code: "LITE"
 category: AI-光互联核心器件龙头
 technical_analysis: ""
 news_info: ""

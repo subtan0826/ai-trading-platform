@@ -2,7 +2,7 @@
 type: stock
 order: 244
 name: Stem
-code: STEM
+code: "STEM"
 category: 可再生 + 储能
 technical_analysis: ""
 news_info: ""

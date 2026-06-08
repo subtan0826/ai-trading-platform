@@ -2,7 +2,7 @@
 type: stock
 order: 30
 name: 美国超微
-code: AMD
+code: "AMD"
 category: AI-CPU-GPU龙头
 technical_analysis: ""
 news_info: ""

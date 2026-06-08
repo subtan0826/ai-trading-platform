@@ -2,7 +2,7 @@
 type: stock
 order: 242
 name: SoundHound
-code: SOUN
+code: "SOUN"
 category: AI Agent 平台
 technical_analysis: ""
 news_info: ""

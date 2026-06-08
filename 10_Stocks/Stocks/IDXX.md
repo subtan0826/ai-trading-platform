@@ -2,7 +2,7 @@
 type: stock
 order: 153
 name: IDEXX
-code: IDXX
+code: "IDXX"
 category: 医疗 AI / 诊断
 technical_analysis: ""
 news_info: ""

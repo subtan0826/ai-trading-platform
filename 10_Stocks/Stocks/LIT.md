@@ -2,7 +2,7 @@
 type: stock
 order: 172
 name: LIT ETF
-code: LIT
+code: "LIT"
 category: 锂
 technical_analysis: ""
 news_info: ""

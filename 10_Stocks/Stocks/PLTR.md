@@ -2,7 +2,7 @@
 type: stock
 order: 209
 name: Palantir
-code: PLTR
+code: "PLTR"
 category: AI Agent 平台
 technical_analysis: ""
 news_info: ""

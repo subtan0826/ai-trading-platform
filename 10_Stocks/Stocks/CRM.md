@@ -2,7 +2,7 @@
 type: stock
 order: 106
 name: Salesforce
-code: CRM
+code: "CRM"
 category: CRM / 销售 AI
 technical_analysis: ""
 news_info: ""

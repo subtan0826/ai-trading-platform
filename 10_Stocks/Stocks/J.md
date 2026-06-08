@@ -2,7 +2,7 @@
 type: stock
 order: 160
 name: Jacobs
-code: J
+code: "J"
 category: 数据中心建设 / 工程
 technical_analysis: ""
 news_info: ""

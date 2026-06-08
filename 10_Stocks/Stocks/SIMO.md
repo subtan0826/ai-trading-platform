@@ -2,7 +2,7 @@
 type: stock
 order: 236
 name: 慧荣科技
-code: SIMO
+code: "SIMO"
 category: 内存控制器 / SSD 主控
 technical_analysis: ""
 news_info: ""

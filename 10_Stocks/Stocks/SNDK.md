@@ -2,7 +2,7 @@
 type: stock
 order: 31
 name: 闪迪
-code: SNDK
+code: "SNDK"
 category: AI-闪存龙头
 technical_analysis: ""
 news_info: ""

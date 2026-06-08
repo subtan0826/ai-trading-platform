@@ -2,7 +2,7 @@
 type: stock
 order: 202
 name: 甲骨文
-code: ORCL
+code: "ORCL"
 category: 其他云平台
 technical_analysis: ""
 news_info: ""

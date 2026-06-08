@@ -2,7 +2,7 @@
 type: stock
 order: 105
 name: Coursera
-code: COUR
+code: "COUR"
 category: 职业教育 / 再培训
 technical_analysis: ""
 news_info: ""

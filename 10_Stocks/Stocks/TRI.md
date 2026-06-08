@@ -2,7 +2,7 @@
 type: stock
 order: 259
 name: 汤森路透
-code: TRI
+code: "TRI"
 category: 法律 / 合规 AI
 technical_analysis: ""
 news_info: ""

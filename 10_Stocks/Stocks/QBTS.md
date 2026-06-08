@@ -2,7 +2,7 @@
 type: stock
 order: 219
 name: D-Wave
-code: QBTS
+code: "QBTS"
 category: 量子计算
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 134
 name: FICO
-code: FICO
+code: "FICO"
 category: 金融 AI / 风控
 technical_analysis: ""
 news_info: ""

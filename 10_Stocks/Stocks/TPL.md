@@ -2,7 +2,7 @@
 type: stock
 order: 258
 name: Texas Pacific
-code: TPL
+code: "TPL"
 category: 天然气 / LNG / 管道
 technical_analysis: ""
 news_info: ""

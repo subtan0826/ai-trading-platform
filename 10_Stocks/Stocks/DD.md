@@ -2,7 +2,7 @@
 type: stock
 order: 110
 name: 杜邦
-code: DD
+code: "DD"
 category: 材料发现 / 化学 AI
 technical_analysis: ""
 news_info: ""

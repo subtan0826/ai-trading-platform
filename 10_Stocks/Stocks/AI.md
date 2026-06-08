@@ -2,7 +2,7 @@
 type: stock
 order: 69
 name: C3.ai
-code: AI
+code: "AI"
 category: 基础模型公司
 technical_analysis: ""
 news_info: ""

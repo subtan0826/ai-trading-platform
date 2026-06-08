@@ -2,7 +2,7 @@
 type: stock
 order: 26
 name: 好市多
-code: COST
+code: "COST"
 category: 大型折扣店龙头
 technical_analysis: ""
 news_info: ""

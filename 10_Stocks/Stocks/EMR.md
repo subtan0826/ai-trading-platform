@@ -2,7 +2,7 @@
 type: stock
 order: 124
 name: 艾默生
-code: EMR
+code: "EMR"
 category: 工业 / 协作机器人
 technical_analysis: ""
 news_info: ""

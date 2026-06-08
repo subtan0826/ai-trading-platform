@@ -2,7 +2,7 @@
 type: stock
 order: 276
 name: 西部数据
-code: WDC
+code: "WDC"
 category: 企业 SSD / NAND
 technical_analysis: ""
 news_info: ""

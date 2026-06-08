@@ -2,7 +2,7 @@
 type: stock
 order: 194
 name: NexGen
-code: NXE
+code: "NXE"
 category: 铀矿 & 燃料
 technical_analysis: ""
 news_info: ""

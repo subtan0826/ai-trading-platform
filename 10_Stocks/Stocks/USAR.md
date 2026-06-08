@@ -2,7 +2,7 @@
 type: stock
 order: 270
 name: USA Rare Earth
-code: USAR
+code: "USAR"
 category: 稀土 & 永磁材料
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 80
 name: Applied Digital
-code: APLD
+code: "APLD"
 category: AI-Native 云
 technical_analysis: ""
 news_info: ""

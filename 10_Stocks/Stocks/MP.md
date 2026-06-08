@@ -2,7 +2,7 @@
 type: stock
 order: 182
 name: MP Materials
-code: MP
+code: "MP"
 category: 稀土 & 永磁材料
 technical_analysis: ""
 news_info: ""

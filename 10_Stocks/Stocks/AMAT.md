@@ -2,7 +2,7 @@
 type: stock
 order: 72
 name: 应用材料
-code: AMAT
+code: "AMAT"
 category: 半导体资本设备
 technical_analysis: ""
 news_info: ""

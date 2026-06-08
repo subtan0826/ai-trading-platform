@@ -2,7 +2,7 @@
 type: stock
 order: 93
 name: Broadridge
-code: BR
+code: "BR"
 category: 法律 / 合规 AI
 technical_analysis: ""
 news_info: ""

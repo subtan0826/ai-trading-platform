@@ -2,7 +2,7 @@
 type: stock
 order: 53
 name: 美国雅宝
-code: ALB
+code: "ALB"
 category: 锂资源龙头
 technical_analysis: ""
 news_info: ""

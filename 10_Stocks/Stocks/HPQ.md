@@ -2,7 +2,7 @@
 type: stock
 order: 146
 name: 惠普
-code: HPQ
+code: "HPQ"
 category: AI PC
 technical_analysis: ""
 news_info: ""

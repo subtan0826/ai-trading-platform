@@ -2,7 +2,7 @@
 type: stock
 order: 192
 name: NetApp
-code: NTAP
+code: "NTAP"
 category: 企业 SSD / NAND
 technical_analysis: ""
 news_info: ""

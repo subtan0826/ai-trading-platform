@@ -2,7 +2,7 @@
 type: stock
 order: 176
 name: 万事达
-code: MA
+code: "MA"
 category: 金融 AI / 风控
 technical_analysis: ""
 news_info: ""

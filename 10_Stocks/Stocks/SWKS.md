@@ -2,7 +2,7 @@
 type: stock
 order: 248
 name: Skyworks
-code: SWKS
+code: "SWKS"
 category: 智能手机 AI
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 147
 name: 禾赛科技
-code: HSAI
+code: "HSAI"
 category: 机器视觉 / 传感器
 technical_analysis: ""
 news_info: ""

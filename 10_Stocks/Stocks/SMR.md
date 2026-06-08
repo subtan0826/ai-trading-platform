@@ -2,7 +2,7 @@
 type: stock
 order: 238
 name: NuScale
-code: SMR
+code: "SMR"
 category: 小型模块化反应堆
 technical_analysis: ""
 news_info: ""

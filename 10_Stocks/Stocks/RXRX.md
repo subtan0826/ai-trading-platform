@@ -2,7 +2,7 @@
 type: stock
 order: 228
 name: Recursion
-code: RXRX
+code: "RXRX"
 category: 药物发现 AI
 technical_analysis: ""
 news_info: ""

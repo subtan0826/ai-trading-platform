@@ -2,7 +2,7 @@
 type: stock
 order: 48
 name: Robinhood
-code: HOOD
+code: "HOOD"
 category: 加密交易所
 technical_analysis: ""
 news_info: ""

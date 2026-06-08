@@ -2,7 +2,7 @@
 type: stock
 order: 102
 name: Cognex
-code: CGNX
+code: "CGNX"
 category: 机器视觉 / 传感器
 technical_analysis: ""
 news_info: ""

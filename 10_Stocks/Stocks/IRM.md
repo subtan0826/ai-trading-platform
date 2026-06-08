@@ -2,7 +2,7 @@
 type: stock
 order: 158
 name: Iron Mountain
-code: IRM
+code: "IRM"
 category: 数据中心 REIT
 technical_analysis: ""
 news_info: ""

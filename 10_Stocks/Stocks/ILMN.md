@@ -2,7 +2,7 @@
 type: stock
 order: 154
 name: 因美纳
-code: ILMN
+code: "ILMN"
 category: 基因组学 AI
 technical_analysis: ""
 news_info: ""

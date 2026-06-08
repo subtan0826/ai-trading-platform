@@ -2,7 +2,7 @@
 type: stock
 order: 137
 name: Fabrinet
-code: FN
+code: "FN"
 category: 光通信 / 光模块
 technical_analysis: ""
 news_info: ""

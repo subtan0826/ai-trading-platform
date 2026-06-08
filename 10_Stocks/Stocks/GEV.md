@@ -2,7 +2,7 @@
 type: stock
 order: 41
 name: GE Vernov
-code: GEV
+code: "GEV"
 category: 能源与电力基础设施龙头
 technical_analysis: ""
 news_info: ""

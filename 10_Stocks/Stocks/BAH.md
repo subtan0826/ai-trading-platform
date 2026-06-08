@@ -2,7 +2,7 @@
 type: stock
 order: 88
 name: Booz Allen
-code: BAH
+code: "BAH"
 category: 国防 AI / IT 服务
 technical_analysis: ""
 news_info: ""

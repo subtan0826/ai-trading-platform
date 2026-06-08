@@ -2,7 +2,7 @@
 type: stock
 order: 281
 name: 斑马技术
-code: ZBRA
+code: "ZBRA"
 category: 工业 / 协作机器人
 technical_analysis: ""
 news_info: ""

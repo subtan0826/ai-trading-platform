@@ -2,7 +2,7 @@
 type: stock
 order: 52
 name: Rocket Lab
-code: RKLB
+code: "RKLB"
 category: 小型航天发射龙头
 technical_analysis: ""
 news_info: ""

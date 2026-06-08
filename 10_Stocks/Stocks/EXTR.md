@@ -2,7 +2,7 @@
 type: stock
 order: 131
 name: Extreme Networks
-code: EXTR
+code: "EXTR"
 category: 数据中心交换机
 technical_analysis: ""
 news_info: ""

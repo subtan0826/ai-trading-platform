@@ -2,7 +2,7 @@
 type: stock
 order: 263
 name: Twilio
-code: TWLO
+code: "TWLO"
 category: 身份 / 反 deepfake
 technical_analysis: ""
 news_info: ""

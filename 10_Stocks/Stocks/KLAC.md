@@ -2,7 +2,7 @@
 type: stock
 order: 162
 name: 科磊
-code: KLAC
+code: "KLAC"
 category: 半导体资本设备
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 197
 name: Old Dominion
-code: ODFL
+code: "ODFL"
 category: 货运 / 长途 AV
 technical_analysis: ""
 news_info: ""

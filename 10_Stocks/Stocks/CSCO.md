@@ -2,7 +2,7 @@
 type: stock
 order: 108
 name: 思科
-code: CSCO
+code: "CSCO"
 category: 数据中心交换机
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 126
 name: Equinix
-code: EQIX
+code: "EQIX"
 category: 数据中心 REIT
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 101
 name: Confluent
-code: CFLT
+code: "CFLT"
 category: 数据 / 数据库 / 流处理
 technical_analysis: ""
 news_info: ""

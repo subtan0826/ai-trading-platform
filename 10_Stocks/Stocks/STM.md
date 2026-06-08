@@ -2,7 +2,7 @@
 type: stock
 order: 245
 name: 意法半导体
-code: STM
+code: "STM"
 category: IDM 设计+制造一体
 technical_analysis: ""
 news_info: ""

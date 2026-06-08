@@ -2,7 +2,7 @@
 type: stock
 order: 171
 name: 林德
-code: LIN
+code: "LIN"
 category: 半导体材料 & 特种气体
 technical_analysis: ""
 news_info: ""

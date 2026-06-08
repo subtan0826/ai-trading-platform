@@ -2,7 +2,7 @@
 type: stock
 order: 253
 name: Tempus AI
-code: TEM
+code: "TEM"
 category: 药物发现 AI
 technical_analysis: ""
 news_info: ""

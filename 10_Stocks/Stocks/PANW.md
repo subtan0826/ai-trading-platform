@@ -2,7 +2,7 @@
 type: stock
 order: 205
 name: Palo Alto
-code: PANW
+code: "PANW"
 category: 下一代网络安全
 technical_analysis: ""
 news_info: ""

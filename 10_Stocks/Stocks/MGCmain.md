@@ -2,7 +2,7 @@
 type: stock
 order: 6
 name: 黄金期货
-code: MGCmain
+code: "MGCmain"
 category: 商品期货
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 121
 name: 杜克能源
-code: DUK
+code: "DUK"
 category: 核电运营商
 technical_analysis: ""
 news_info: ""

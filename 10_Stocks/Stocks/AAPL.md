@@ -2,7 +2,7 @@
 type: stock
 order: 9
 name: 苹果
-code: AAPL
+code: "AAPL"
 category: 消费电子龙头
 technical_analysis: ""
 news_info: ""

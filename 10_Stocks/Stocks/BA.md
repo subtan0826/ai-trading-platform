@@ -2,7 +2,7 @@
 type: stock
 order: 43
 name: 波音
-code: BA
+code: "BA"
 category: 军用战机-商用飞机龙头
 technical_analysis: ""
 news_info: ""

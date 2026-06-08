@@ -2,7 +2,7 @@
 type: stock
 order: 278
 name: Workiva
-code: WK
+code: "WK"
 category: 法律 / 合规 AI
 technical_analysis: ""
 news_info: ""

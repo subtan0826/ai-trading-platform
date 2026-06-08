@@ -2,7 +2,7 @@
 type: stock
 order: 42
 name: 洛克希德·马丁
-code: LMT
+code: "LMT"
 category: 军用战机-防空拦截龙头
 technical_analysis: ""
 news_info: ""

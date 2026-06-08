@@ -2,7 +2,7 @@
 type: stock
 order: 118
 name: Dover
-code: DOV
+code: "DOV"
 category: 通用工业自动化
 technical_analysis: ""
 news_info: ""

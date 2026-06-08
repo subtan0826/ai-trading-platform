@@ -2,7 +2,7 @@
 type: stock
 order: 113
 name: Quest Diag
-code: DGX
+code: "DGX"
 category: 医疗 AI / 诊断
 technical_analysis: ""
 news_info: ""

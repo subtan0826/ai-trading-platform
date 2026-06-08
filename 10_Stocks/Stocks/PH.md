@@ -2,7 +2,7 @@
 type: stock
 order: 207
 name: Parker Hannifin
-code: PH
+code: "PH"
 category: 执行器 / 减速器 / 电机
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 46
 name: Circle
-code: CRCL
+code: "CRCL"
 category: 稳定币基础设施龙头
 technical_analysis: ""
 news_info: ""

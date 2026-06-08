@@ -2,7 +2,7 @@
 type: stock
 order: 104
 name: Coherent
-code: COHR
+code: "COHR"
 category: 光通信 / 光模块
 technical_analysis: ""
 news_info: ""

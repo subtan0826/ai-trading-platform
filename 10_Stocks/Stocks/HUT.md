@@ -2,7 +2,7 @@
 type: stock
 order: 150
 name: Hut 8
-code: HUT
+code: "HUT"
 category: AI-Native 云
 technical_analysis: ""
 news_info: ""

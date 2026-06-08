@@ -2,7 +2,7 @@
 type: stock
 order: 185
 name: 明晟
-code: MSCI
+code: "MSCI"
 category: 金融 AI / 风控
 technical_analysis: ""
 news_info: ""

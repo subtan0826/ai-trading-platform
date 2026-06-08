@@ -2,7 +2,7 @@
 type: stock
 order: 129
 name: 伊顿
-code: ETN
+code: "ETN"
 category: 配电 / UPS / 电源管理
 technical_analysis: ""
 news_info: ""

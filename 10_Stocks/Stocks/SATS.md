@@ -2,7 +2,7 @@
 type: stock
 order: 50
 name: 回声星通
-code: SATS
+code: "SATS"
 category: SpaceX概念股
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 68
 name: Advanced Energy
-code: AEIS
+code: "AEIS"
 category: AI 电源管理 IC / 模拟电源 / SiC
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 170
 name: AEye
-code: LIDR
+code: "LIDR"
 category: 机器视觉 / 传感器
 technical_analysis: ""
 news_info: ""

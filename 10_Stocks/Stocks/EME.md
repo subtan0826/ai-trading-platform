@@ -2,7 +2,7 @@
 type: stock
 order: 123
 name: EMCOR
-code: EME
+code: "EME"
 category: 数据中心建设 / 工程
 technical_analysis: ""
 news_info: ""

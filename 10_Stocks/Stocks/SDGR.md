@@ -2,7 +2,7 @@
 type: stock
 order: 233
 name: Schrödinger
-code: SDGR
+code: "SDGR"
 category: 药物发现 AI
 technical_analysis: ""
 news_info: ""

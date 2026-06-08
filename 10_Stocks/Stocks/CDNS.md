@@ -2,7 +2,7 @@
 type: stock
 order: 99
 name: Cadence
-code: CDNS
+code: "CDNS"
 category: EDA 软件
 technical_analysis: ""
 news_info: ""

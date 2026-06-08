@@ -2,7 +2,7 @@
 type: stock
 order: 268
 name: 联电
-code: UMC
+code: "UMC"
 category: Pure-play Foundry 代工厂
 technical_analysis: ""
 news_info: ""

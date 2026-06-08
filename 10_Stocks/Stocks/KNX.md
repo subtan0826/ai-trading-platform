@@ -2,7 +2,7 @@
 type: stock
 order: 165
 name: Knight-Swift
-code: KNX
+code: "KNX"
 category: 货运 / 长途 AV
 technical_analysis: ""
 news_info: ""

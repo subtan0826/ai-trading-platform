@@ -2,7 +2,7 @@
 type: stock
 order: 83
 name: Arqit
-code: ARQQ
+code: "ARQQ"
 category: 量子计算
 technical_analysis: ""
 news_info: ""

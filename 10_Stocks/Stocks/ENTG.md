@@ -2,7 +2,7 @@
 type: stock
 order: 125
 name: 英特格
-code: ENTG
+code: "ENTG"
 category: 半导体材料 & 特种气体
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 87
 name: AeroVironment
-code: AVAV
+code: "AVAV"
 category: 国防 AI / IT 服务
 technical_analysis: ""
 news_info: ""

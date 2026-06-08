@@ -2,7 +2,7 @@
 type: stock
 order: 122
 name: Duolingo
-code: DUOL
+code: "DUOL"
 category: 职业教育 / 再培训
 technical_analysis: ""
 news_info: ""

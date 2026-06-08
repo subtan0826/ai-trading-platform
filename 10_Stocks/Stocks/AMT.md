@@ -2,7 +2,7 @@
 type: stock
 order: 76
 name: 美国电塔
-code: AMT
+code: "AMT"
 category: 数据中心 REIT
 technical_analysis: ""
 news_info: ""

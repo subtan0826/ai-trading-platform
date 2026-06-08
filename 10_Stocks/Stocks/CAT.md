@@ -2,7 +2,7 @@
 type: stock
 order: 40
 name: 卡特彼勒
-code: CAT
+code: "CAT"
 category: 军用重型工程龙头
 technical_analysis: ""
 news_info: ""

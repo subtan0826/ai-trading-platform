@@ -2,7 +2,7 @@
 type: stock
 order: 140
 name: Fortinet
-code: FTNT
+code: "FTNT"
 category: 身份 / 反 deepfake
 technical_analysis: ""
 news_info: ""

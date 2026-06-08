@@ -2,7 +2,7 @@
 type: stock
 order: 25
 name: Figma
-code: FIG
+code: "FIG"
 category: 互联网设计公司龙头
 technical_analysis: ""
 news_info: ""

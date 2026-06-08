@@ -2,7 +2,7 @@
 type: stock
 order: 275
 name: Workday
-code: WDAY
+code: "WDAY"
 category: ERP / 工作流 AI
 technical_analysis: ""
 news_info: ""

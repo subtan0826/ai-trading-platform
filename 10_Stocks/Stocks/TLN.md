@@ -2,7 +2,7 @@
 type: stock
 order: 255
 name: Talen Energy
-code: TLN
+code: "TLN"
 category: 核电运营商
 technical_analysis: ""
 news_info: ""

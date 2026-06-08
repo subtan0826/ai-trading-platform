@@ -2,7 +2,7 @@
 type: stock
 order: 36
 name: Credo Tech
-code: CRDO
+code: "CRDO"
 category: AI-有源铜缆龙头
 technical_analysis: ""
 news_info: ""

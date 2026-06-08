@@ -2,10 +2,10 @@
 type: stock
 order: 24
 name: Shopify
-code: SHOP
+code: "SHOP"
 category: 全球独立电商龙头
 technical_analysis: ""
-news_info:
+news_info: ""
 watch: true
 market: US
 ---

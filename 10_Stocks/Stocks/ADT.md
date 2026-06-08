@@ -2,10 +2,10 @@
 type: stock
 order: 67
 name: ADT
-code: ADT
+code: "ADT"
 category: 智能家居 / 助手
 technical_analysis: ""
-news_info:
+news_info: ""
 watch: false
 market: US
 ---

@@ -2,7 +2,7 @@
 type: stock
 order: 234
 name: Serve Robotics
-code: SERV
+code: "SERV"
 category: 人形机器人平台
 technical_analysis: ""
 news_info: ""

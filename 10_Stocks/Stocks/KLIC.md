@@ -2,7 +2,7 @@
 type: stock
 order: 163
 name: Kulicke
-code: KLIC
+code: "KLIC"
 category: Advanced Packaging 先进封装
 technical_analysis: ""
 news_info: ""

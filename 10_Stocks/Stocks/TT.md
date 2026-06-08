@@ -2,7 +2,7 @@
 type: stock
 order: 261
 name: 特灵科技
-code: TT
+code: "TT"
 category: 液冷 / 冷却
 technical_analysis: ""
 news_info: ""

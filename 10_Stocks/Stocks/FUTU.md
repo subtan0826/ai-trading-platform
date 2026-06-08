@@ -2,7 +2,7 @@
 type: stock
 order: 54
 name: 富途控股
-code: FUTU
+code: "FUTU"
 category: 互联网券商龙头
 technical_analysis: ""
 news_info: ""

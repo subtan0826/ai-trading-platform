@@ -2,7 +2,7 @@
 type: stock
 order: 82
 name: Arm
-code: ARM
+code: "ARM"
 category: IP 核
 technical_analysis: ""
 news_info: ""

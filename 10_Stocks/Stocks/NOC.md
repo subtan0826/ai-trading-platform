@@ -2,7 +2,7 @@
 type: stock
 order: 44
 name: 诺斯洛普
-code: NOC
+code: "NOC"
 category: 军用洲际导弹
 technical_analysis: ""
 news_info: ""

@@ -2,10 +2,10 @@
 type: stock
 order: 14
 name: META
-code: META
+code: "META"
 category: 社交媒体龙头
 technical_analysis: ""
-news_info:
+news_info: ""
 watch: true
 market: US
 ---

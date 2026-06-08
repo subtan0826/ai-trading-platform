@@ -2,7 +2,7 @@
 type: stock
 order: 13
 name: 台积电
-code: TSM
+code: "TSM"
 category: 晶圆制造龙头
 technical_analysis: ""
 news_info: ""

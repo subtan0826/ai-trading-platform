@@ -2,7 +2,7 @@
 type: stock
 order: 96
 name: BWX Tech
-code: BWXT
+code: "BWXT"
 category: 小型模块化反应堆
 technical_analysis: ""
 news_info: ""

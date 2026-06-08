@@ -2,7 +2,7 @@
 type: stock
 order: 18
 name: 安进
-code: AMGN
+code: "AMGN"
 category: 全球抗体制药龙头
 technical_analysis: ""
 news_info: ""

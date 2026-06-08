@@ -2,7 +2,7 @@
 type: stock
 order: 120
 name: Dynatrace
-code: DT
+code: "DT"
 category: 数据 / 数据库 / 流处理
 technical_analysis: ""
 news_info: ""

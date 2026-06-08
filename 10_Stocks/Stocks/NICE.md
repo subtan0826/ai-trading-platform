@@ -2,7 +2,7 @@
 type: stock
 order: 189
 name: NICE Ltd
-code: NICE
+code: "NICE"
 category: 客服 AI
 technical_analysis: ""
 news_info: ""

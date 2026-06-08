@@ -2,7 +2,7 @@
 type: stock
 order: 2
 name: 标普500期货
-code: ESmain
+code: "ESmain"
 category: 指数期货
 technical_analysis: ""
 news_info: ""

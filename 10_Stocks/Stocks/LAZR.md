@@ -2,7 +2,7 @@
 type: stock
 order: 167
 name: Luminar
-code: LAZR
+code: "LAZR"
 category: LIDAR / 激光雷达
 technical_analysis: ""
 news_info: ""

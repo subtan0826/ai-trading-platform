@@ -2,7 +2,7 @@
 type: stock
 order: 187
 name: NextEra
-code: NEE
+code: "NEE"
 category: 可再生 + 储能
 technical_analysis: ""
 news_info: ""

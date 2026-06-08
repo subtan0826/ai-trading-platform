@@ -2,7 +2,7 @@
 type: stock
 order: 223
 name: RELX
-code: RELX
+code: "RELX"
 category: 法律 / 合规 AI
 technical_analysis: ""
 news_info: ""

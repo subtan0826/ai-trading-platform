@@ -2,7 +2,7 @@
 type: stock
 order: 280
 name: Wolfspeed
-code: WOLF
+code: "WOLF"
 category: AI 电源管理 IC / 模拟电源 / SiC
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 271
 name: 维萨
-code: V
+code: "V"
 category: 金融 AI / 风控
 technical_analysis: ""
 news_info: ""

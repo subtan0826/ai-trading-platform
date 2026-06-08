@@ -2,7 +2,7 @@
 type: stock
 order: 74
 name: AMETEK
-code: AME
+code: "AME"
 category: 通用工业自动化
 technical_analysis: ""
 news_info: ""

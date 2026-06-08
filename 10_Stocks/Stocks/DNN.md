@@ -2,7 +2,7 @@
 type: stock
 order: 116
 name: Denison
-code: DNN
+code: "DNN"
 category: 铀矿 & 燃料
 technical_analysis: ""
 news_info: ""

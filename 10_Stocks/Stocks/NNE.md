@@ -2,7 +2,7 @@
 type: stock
 order: 190
 name: Nano Nuclear
-code: NNE
+code: "NNE"
 category: 小型模块化反应堆
 technical_analysis: ""
 news_info: ""

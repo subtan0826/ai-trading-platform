@@ -2,7 +2,7 @@
 type: stock
 order: 168
 name: Leidos
-code: LDOS
+code: "LDOS"
 category: 国防 AI / IT 服务
 technical_analysis: ""
 news_info: ""

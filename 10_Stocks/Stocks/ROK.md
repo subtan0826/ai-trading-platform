@@ -2,7 +2,7 @@
 type: stock
 order: 226
 name: 罗克韦尔
-code: ROK
+code: "ROK"
 category: 工业 / 协作机器人
 technical_analysis: ""
 news_info: ""

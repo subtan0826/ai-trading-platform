@@ -2,7 +2,7 @@
 type: stock
 order: 37
 name: Coreweave
-code: CRWV
+code: "CRWV"
 category: AI-GPU算力云龙头
 technical_analysis: ""
 news_info: ""

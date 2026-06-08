@@ -2,7 +2,7 @@
 type: stock
 order: 115
 name: Digital Realty
-code: DLR
+code: "DLR"
 category: 数据中心 REIT
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 16
 name: 特斯拉
-code: TSLA
+code: "TSLA"
 category: 新能源汽车龙头
 technical_analysis: ""
 news_info: ""

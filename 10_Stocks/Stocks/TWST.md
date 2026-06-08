@@ -2,7 +2,7 @@
 type: stock
 order: 264
 name: Twist Bio
-code: TWST
+code: "TWST"
 category: 基因组学 AI
 technical_analysis: ""
 news_info: ""

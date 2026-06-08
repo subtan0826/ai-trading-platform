@@ -2,7 +2,7 @@
 type: stock
 order: 252
 name: 泰科电子
-code: TEL
+code: "TEL"
 category: 连接器 & 高速线缆
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 10
 name: 谷歌C
-code: GOOG
+code: "GOOG"
 category: AI-TPU-大模型龙头
 technical_analysis: ""
 news_info: ""

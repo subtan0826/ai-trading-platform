@@ -2,7 +2,7 @@
 type: stock
 order: 27
 name: 阿斯麦
-code: ASML
+code: "ASML"
 category: 光刻机制造龙头
 technical_analysis: ""
 news_info: ""

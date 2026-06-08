@@ -2,7 +2,7 @@
 type: stock
 order: 20
 name: 奈飞
-code: NFLX
+code: "NFLX"
 category: 视频流媒体娱乐龙头
 technical_analysis: ""
 news_info: ""

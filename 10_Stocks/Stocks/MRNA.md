@@ -2,7 +2,7 @@
 type: stock
 order: 19
 name: Moderna
-code: MRNA
+code: "MRNA"
 category: mRNA技术平台龙头
 technical_analysis: ""
 news_info: ""

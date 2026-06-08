@@ -2,7 +2,7 @@
 type: stock
 order: 78
 name: 空气化工
-code: APD
+code: "APD"
 category: 半导体材料 & 特种气体
 technical_analysis: ""
 news_info: ""

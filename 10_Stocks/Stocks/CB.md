@@ -2,7 +2,7 @@
 type: stock
 order: 97
 name: Chubb
-code: CB
+code: "CB"
 category: 特种保险
 technical_analysis: ""
 news_info: ""

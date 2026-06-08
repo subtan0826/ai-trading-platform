@@ -2,7 +2,7 @@
 type: stock
 order: 29
 name: 英特尔
-code: INTC
+code: "INTC"
 category: AI-PC-晶圆制造
 technical_analysis: ""
 news_info: ""

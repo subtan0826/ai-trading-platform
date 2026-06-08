@@ -2,7 +2,7 @@
 type: stock
 order: 130
 name: Exelon
-code: EXC
+code: "EXC"
 category: 核电运营商
 technical_analysis: ""
 news_info: ""

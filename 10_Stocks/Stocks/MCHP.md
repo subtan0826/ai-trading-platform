@@ -2,7 +2,7 @@
 type: stock
 order: 178
 name: 微芯科技
-code: MCHP
+code: "MCHP"
 category: IDM 设计+制造一体
 technical_analysis: ""
 news_info: ""

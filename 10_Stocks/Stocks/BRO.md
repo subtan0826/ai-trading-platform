@@ -2,7 +2,7 @@
 type: stock
 order: 94
 name: Brown & Brown
-code: BRO
+code: "BRO"
 category: 特种保险
 technical_analysis: ""
 news_info: ""

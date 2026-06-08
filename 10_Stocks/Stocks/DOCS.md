@@ -2,7 +2,7 @@
 type: stock
 order: 117
 name: Doximity
-code: DOCS
+code: "DOCS"
 category: 医疗 AI / 诊断
 technical_analysis: ""
 news_info: ""

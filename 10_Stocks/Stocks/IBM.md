@@ -2,7 +2,7 @@
 type: stock
 order: 151
 name: IBM
-code: IBM
+code: "IBM"
 category: 智能电网 / 表计
 technical_analysis: ""
 news_info: ""

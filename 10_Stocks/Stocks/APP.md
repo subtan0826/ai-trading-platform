@@ -2,7 +2,7 @@
 type: stock
 order: 22
 name: Applovin
-code: APP
+code: "APP"
 category: 移动广告技术龙头
 technical_analysis: ""
 news_info: ""

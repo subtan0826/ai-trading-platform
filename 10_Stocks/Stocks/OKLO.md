@@ -2,7 +2,7 @@
 type: stock
 order: 198
 name: Oklo
-code: OKLO
+code: "OKLO"
 category: 小型模块化反应堆
 technical_analysis: ""
 news_info: ""

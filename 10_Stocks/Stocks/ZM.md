@@ -2,7 +2,7 @@
 type: stock
 order: 283
 name: Zoom
-code: ZM
+code: "ZM"
 category: 客服 AI
 technical_analysis: ""
 news_info: ""

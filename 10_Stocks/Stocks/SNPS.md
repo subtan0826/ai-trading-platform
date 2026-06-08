@@ -2,7 +2,7 @@
 type: stock
 order: 241
 name: 新思科技
-code: SNPS
+code: "SNPS"
 category: EDA 软件
 technical_analysis: ""
 news_info: ""

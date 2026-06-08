@@ -2,7 +2,7 @@
 type: stock
 order: 191
 name: ServiceNow
-code: NOW
+code: "NOW"
 category: AI Agent 平台
 technical_analysis: ""
 news_info: ""

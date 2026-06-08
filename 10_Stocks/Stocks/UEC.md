@@ -2,7 +2,7 @@
 type: stock
 order: 267
 name: Uranium Energy
-code: UEC
+code: "UEC"
 category: 铀矿 & 燃料
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 77
 name: Arista
-code: ANET
+code: "ANET"
 category: 数据中心交换机
 technical_analysis: ""
 news_info: ""

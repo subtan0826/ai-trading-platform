@@ -2,7 +2,7 @@
 type: stock
 order: 249
 name: Symbotic
-code: SYM
+code: "SYM"
 category: 仓储 / 物流机器人
 technical_analysis: ""
 news_info: ""

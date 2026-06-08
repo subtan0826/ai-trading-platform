@@ -2,7 +2,7 @@
 type: stock
 order: 246
 name: Strategic Edu
-code: STRA
+code: "STRA"
 category: 职业教育 / 再培训
 technical_analysis: ""
 news_info: ""

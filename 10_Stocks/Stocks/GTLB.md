@@ -2,7 +2,7 @@
 type: stock
 order: 143
 name: GitLab
-code: GTLB
+code: "GTLB"
 category: 开发者工具 / 代码生成
 technical_analysis: ""
 news_info: ""

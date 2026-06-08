@@ -2,7 +2,7 @@
 type: stock
 order: 109
 name: DigitalBridge
-code: DBRG
+code: "DBRG"
 category: 数据中心 REIT
 technical_analysis: ""
 news_info: ""

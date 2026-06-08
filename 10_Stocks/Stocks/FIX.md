@@ -2,7 +2,7 @@
 type: stock
 order: 136
 name: Comfort Systems
-code: FIX
+code: "FIX"
 category: 液冷 / 冷却
 technical_analysis: ""
 news_info: ""

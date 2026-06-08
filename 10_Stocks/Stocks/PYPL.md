@@ -2,7 +2,7 @@
 type: stock
 order: 218
 name: PayPal
-code: PYPL
+code: "PYPL"
 category: 金融 AI / 风控
 technical_analysis: ""
 news_info: ""

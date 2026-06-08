@@ -2,7 +2,7 @@
 type: stock
 order: 282
 name: ZoomInfo
-code: ZI
+code: "ZI"
 category: CRM / 销售 AI
 technical_analysis: ""
 news_info: ""

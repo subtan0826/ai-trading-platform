@@ -2,7 +2,7 @@
 type: stock
 order: 274
 name: Vistra
-code: VST
+code: "VST"
 category: 核电运营商
 technical_analysis: ""
 news_info: ""

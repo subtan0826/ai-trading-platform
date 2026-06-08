@@ -2,7 +2,7 @@
 type: stock
 order: 220
 name: 高通
-code: QCOM
+code: "QCOM"
 category: AI 推理 / 边缘芯片
 technical_analysis: ""
 news_info: ""

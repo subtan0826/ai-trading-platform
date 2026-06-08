@@ -2,7 +2,7 @@
 type: stock
 order: 21
 name: Spotify
-code: SPOT
+code: "SPOT"
 category: 音乐流媒体娱乐龙头
 technical_analysis: ""
 news_info: ""

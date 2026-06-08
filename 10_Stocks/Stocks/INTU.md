@@ -2,7 +2,7 @@
 type: stock
 order: 155
 name: Intuit
-code: INTU
+code: "INTU"
 category: ERP / 工作流 AI
 technical_analysis: ""
 news_info: ""

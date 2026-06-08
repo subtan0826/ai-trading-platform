@@ -2,7 +2,7 @@
 type: stock
 order: 45
 name: 克瑞拓斯
-code: KTOS
+code: "KTOS"
 category: 军用无人机龙头
 technical_analysis: ""
 news_info: ""

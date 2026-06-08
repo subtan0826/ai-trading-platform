@@ -2,7 +2,7 @@
 type: stock
 order: 142
 name: 佳明
-code: GRMN
+code: "GRMN"
 category: 可穿戴 / 健康监测
 technical_analysis: ""
 news_info: ""

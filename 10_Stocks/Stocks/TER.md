@@ -2,7 +2,7 @@
 type: stock
 order: 254
 name: 泰瑞达
-code: TER
+code: "TER"
 category: 半导体资本设备
 technical_analysis: ""
 news_info: ""

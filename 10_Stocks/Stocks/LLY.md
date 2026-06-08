@@ -2,7 +2,7 @@
 type: stock
 order: 17
 name: 礼来
-code: LLY
+code: "LLY"
 category: 减肥药-前沿制药龙头
 technical_analysis: ""
 news_info: ""

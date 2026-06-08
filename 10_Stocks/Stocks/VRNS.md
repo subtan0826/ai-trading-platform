@@ -2,7 +2,7 @@
 type: stock
 order: 273
 name: Varonis
-code: VRNS
+code: "VRNS"
 category: 身份 / 反 deepfake
 technical_analysis: ""
 news_info: ""

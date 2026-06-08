@@ -2,7 +2,7 @@
 type: stock
 order: 133
 name: 自由港
-code: FCX
+code: "FCX"
 category: 铜
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 8
 name: 英伟达
-code: NVDA
+code: "NVDA"
 category: AI-GPU龙头
 technical_analysis: ""
 news_info: ""

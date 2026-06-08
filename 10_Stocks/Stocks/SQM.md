@@ -2,7 +2,7 @@
 type: stock
 order: 243
 name: SQM
-code: SQM
+code: "SQM"
 category: 锂
 technical_analysis: ""
 news_info: ""

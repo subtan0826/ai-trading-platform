@@ -2,7 +2,7 @@
 type: stock
 order: 7
 name: 白银期货
-code: SILmain
+code: "SILmain"
 category: 商品期货
 technical_analysis: ""
 news_info: ""

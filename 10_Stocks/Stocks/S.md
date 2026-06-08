@@ -2,7 +2,7 @@
 type: stock
 order: 229
 name: SentinelOne
-code: S
+code: "S"
 category: 下一代网络安全
 technical_analysis: ""
 news_info: ""

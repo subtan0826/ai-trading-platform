@@ -2,7 +2,7 @@
 type: stock
 order: 35
 name: Bloom Ene
-code: BE
+code: "BE"
 category: 分布式SOFC发电系统龙头
 technical_analysis: ""
 news_info: ""

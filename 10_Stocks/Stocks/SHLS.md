@@ -2,7 +2,7 @@
 type: stock
 order: 235
 name: Shoals
-code: SHLS
+code: "SHLS"
 category: 电网设备 / 变压器
 technical_analysis: ""
 news_info: ""

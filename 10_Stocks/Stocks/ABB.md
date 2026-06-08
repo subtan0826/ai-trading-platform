@@ -2,10 +2,10 @@
 type: stock
 order: 62
 name: ABB
-code: ABB
+code: "ABB"
 category: 配电 / UPS / 电源管理
 technical_analysis: ""
-news_info:
+news_info: ""
 watch: false
 market: US
 ---

@@ -2,7 +2,7 @@
 type: stock
 order: 181
 name: Modine
-code: MOD
+code: "MOD"
 category: 液冷 / 冷却
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 111
 name: Datadog
-code: DDOG
+code: "DDOG"
 category: 可观察性 / MLOps
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 66
 name: ADI亚德诺
-code: ADI
+code: "ADI"
 category: IDM 设计+制造一体
 technical_analysis: ""
 news_info: ""

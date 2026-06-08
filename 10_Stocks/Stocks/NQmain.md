@@ -2,10 +2,10 @@
 type: stock
 order: 1
 name: 纳斯达克100期货
-code: NQmain
+code: "NQmain"
 category: 指数期货
 technical_analysis: ""
-news_info:
+news_info: ""
 watch: true
 market: Futures
 ---

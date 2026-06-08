@@ -2,7 +2,7 @@
 type: stock
 order: 177
 name: Mobileye
-code: MBLY
+code: "MBLY"
 category: 车载 AI 芯片
 technical_analysis: ""
 news_info: ""

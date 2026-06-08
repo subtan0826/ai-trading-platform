@@ -2,7 +2,7 @@
 type: stock
 order: 95
 name: Bentley
-code: BSY
+code: "BSY"
 category: ERP / 工作流 AI
 technical_analysis: ""
 news_info: ""

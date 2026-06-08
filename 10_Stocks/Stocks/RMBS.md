@@ -2,7 +2,7 @@
 type: stock
 order: 225
 name: Rambus
-code: RMBS
+code: "RMBS"
 category: IP 核
 technical_analysis: ""
 news_info: ""

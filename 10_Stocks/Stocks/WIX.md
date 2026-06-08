@@ -2,7 +2,7 @@
 type: stock
 order: 277
 name: Wix
-code: WIX
+code: "WIX"
 category: 客服 AI
 technical_analysis: ""
 news_info: ""

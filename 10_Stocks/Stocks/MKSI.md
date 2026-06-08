@@ -2,7 +2,7 @@
 type: stock
 order: 180
 name: MKS仪器
-code: MKSI
+code: "MKSI"
 category: 半导体材料 & 特种气体
 technical_analysis: ""
 news_info: ""

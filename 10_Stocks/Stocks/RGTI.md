@@ -2,7 +2,7 @@
 type: stock
 order: 224
 name: Rigetti
-code: RGTI
+code: "RGTI"
 category: 量子计算
 technical_analysis: ""
 news_info: ""

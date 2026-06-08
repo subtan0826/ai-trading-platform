@@ -2,7 +2,7 @@
 type: stock
 order: 206
 name: PagerDuty
-code: PD
+code: "PD"
 category: 可观察性 / MLOps
 technical_analysis: ""
 news_info: ""

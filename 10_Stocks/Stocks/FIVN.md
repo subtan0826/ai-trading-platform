@@ -2,7 +2,7 @@
 type: stock
 order: 135
 name: Five9
-code: FIVN
+code: "FIVN"
 category: 客服 AI
 technical_analysis: ""
 news_info: ""

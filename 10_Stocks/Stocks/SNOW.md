@@ -2,7 +2,7 @@
 type: stock
 order: 240
 name: Snowflake
-code: SNOW
+code: "SNOW"
 category: 数据 / 数据库 / 流处理
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 256
 name: TMC Metals
-code: TMC
+code: "TMC"
 category: 稀土 & 永磁材料
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 247
 name: 希捷
-code: STX
+code: "STX"
 category: 企业 SSD / NAND
 technical_analysis: ""
 news_info: ""

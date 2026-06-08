@@ -2,7 +2,7 @@
 type: stock
 order: 265
 name: 德州仪器
-code: TXN
+code: "TXN"
 category: IDM 设计+制造一体
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 237
 name: 超微电脑
-code: SMCI
+code: "SMCI"
 category: 服务器制造商 / ODM / EMS
 technical_analysis: ""
 news_info: ""

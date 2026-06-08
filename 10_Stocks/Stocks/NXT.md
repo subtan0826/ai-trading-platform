@@ -2,7 +2,7 @@
 type: stock
 order: 196
 name: Nextracker
-code: NXT
+code: "NXT"
 category: 可再生 + 储能
 technical_analysis: ""
 news_info: ""

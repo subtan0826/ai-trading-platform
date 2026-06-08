@@ -2,7 +2,7 @@
 type: stock
 order: 139
 name: First Solar
-code: FSLR
+code: "FSLR"
 category: 可再生 + 储能
 technical_analysis: ""
 news_info: ""

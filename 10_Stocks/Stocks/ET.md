@@ -2,7 +2,7 @@
 type: stock
 order: 128
 name: Energy Transfer
-code: ET
+code: "ET"
 category: 天然气 / LNG / 管道
 technical_analysis: ""
 news_info: ""

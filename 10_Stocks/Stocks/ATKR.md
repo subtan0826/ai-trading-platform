@@ -2,7 +2,7 @@
 type: stock
 order: 85
 name: Atkore
-code: ATKR
+code: "ATKR"
 category: 电网设备 / 变压器
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 138
 name: Freshworks
-code: FRSH
+code: "FRSH"
 category: CRM / 销售 AI
 technical_analysis: ""
 news_info: ""

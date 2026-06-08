@@ -2,7 +2,7 @@
 type: stock
 order: 119
 name: 陶氏
-code: DOW
+code: "DOW"
 category: 材料发现 / 化学 AI
 technical_analysis: ""
 news_info: ""

@@ -2,7 +2,7 @@
 type: stock
 order: 257
 name: 赛默飞
-code: TMO
+code: "TMO"
 category: 医疗 AI / 诊断
 technical_analysis: ""
 news_info: ""

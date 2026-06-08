@@ -2,7 +2,7 @@
 type: stock
 order: 75
 name: 艾克尔
-code: AMKR
+code: "AMKR"
 category: OSAT 封装测试外包
 technical_analysis: ""
 news_info: ""

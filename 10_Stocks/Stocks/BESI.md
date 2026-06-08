@@ -2,7 +2,7 @@
 type: stock
 order: 89
 name: BE Semi
-code: BESI
+code: "BESI"
 category: Advanced Packaging 先进封装
 technical_analysis: ""
 news_info: ""

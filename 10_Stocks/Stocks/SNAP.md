@@ -2,7 +2,7 @@
 type: stock
 order: 239
 name: Snap
-code: SNAP
+code: "SNAP"
 category: AR / VR / 空间计算
 technical_analysis: ""
 news_info: ""

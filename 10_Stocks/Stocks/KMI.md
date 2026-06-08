@@ -2,7 +2,7 @@
 type: stock
 order: 164
 name: 金德摩根
-code: KMI
+code: "KMI"
 category: 天然气 / LNG / 管道
 technical_analysis: ""
 news_info: ""

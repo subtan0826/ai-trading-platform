@@ -2,7 +2,7 @@
 type: stock
 order: 65
 name: 奥多比
-code: ADBE
+code: "ADBE"
 category: 营销 / 内容 AI
 technical_analysis: ""
 news_info: ""

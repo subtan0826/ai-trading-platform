@@ -2,7 +2,7 @@
 type: stock
 order: 34
 name: 维谛技术
-code: VRT
+code: "VRT"
 category: AI-夜冷技术龙头
 technical_analysis: ""
 news_info: ""

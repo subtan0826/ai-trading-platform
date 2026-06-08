@@ -2,7 +2,7 @@
 type: stock
 order: 100
 name: Constellation
-code: CEG
+code: "CEG"
 category: 核电运营商
 technical_analysis: ""
 news_info: ""

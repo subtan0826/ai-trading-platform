@@ -2,7 +2,7 @@
 type: stock
 order: 49
 name: Strategy
-code: MSTR
+code: "MSTR"
 category: 比特币储备公司
 technical_analysis: ""
 news_info: ""

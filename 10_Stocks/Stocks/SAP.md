@@ -2,7 +2,7 @@
 type: stock
 order: 231
 name: SAP
-code: SAP
+code: "SAP"
 category: ERP / 工作流 AI
 technical_analysis: ""
 news_info: ""
