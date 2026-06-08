@@ -80,21 +80,37 @@ def _parse_frontmatter(text):
     return fm
 
 
-# Per-market FMP symbol suffix: US none; HK = 4-digit code + .HK;
-# Crypto = code + USD (FMP uses USD pairs, e.g. BTC -> BTCUSD).
+# Continuous-suffix markets: the FMP symbol is the vault code + a fixed suffix.
 _MARKET_SUFFIX = {"US": "", "HK": ".HK", "Crypto": "USD"}
+# Futures don't follow a suffix rule (SILmain->SIUSD, MGCmain->GCUSD), so map
+# each explicitly. GCUSD (full gold) tracks the same price as micro MGCUSD.
+_FUTURES_FETCH = {
+    "ESmain": "ESUSD", "NQmain": "NQUSD", "YMmain": "YMUSD",
+    "MGCmain": "GCUSD", "SILmain": "SIUSD",
+}
+SUPPORTED_MARKETS = set(_MARKET_SUFFIX) | {"Futures"}
 
 
-def load_universe(markets=("US", "HK", "Crypto")):
+def _fetch_symbol(code, market):
+    """Vault code + market -> the symbol FMP expects, or None if unmapped."""
+    if market in _MARKET_SUFFIX:
+        return code + _MARKET_SUFFIX[market]
+    if market == "Futures":
+        return _FUTURES_FETCH.get(code)
+    return None
+
+
+def load_universe(markets=("US", "HK", "Crypto", "Futures")):
     """Read the ticker universe from the Stocks.base notes.
 
     Returns (pairs, skipped):
       pairs   = list of (fetch_symbol, db_symbol, market) for the requested
-                markets. fetch != db where a suffix is needed: HK `0700`->
-                `0700.HK`, Crypto `BTC`->`BTCUSD`. The db_symbol stays the
-                bare vault code so DDB and the Base line up.
-      skipped = list of (code, market) excluded — other markets, or futures
-                that need a different FMP endpoint than this script.
+                markets. fetch != db wherever a mapping is needed: HK `0700`->
+                `0700.HK`, Crypto `BTC`->`BTCUSD`, Futures `ESmain`->`ESUSD`.
+                The db_symbol stays the bare vault code so DDB and the Base
+                line up.
+      skipped = list of (code, market) excluded — markets not requested, or
+                codes with no FMP mapping.
     """
     sdir = _find_stocks_dir()
     if sdir is None:
@@ -110,11 +126,12 @@ def load_universe(markets=("US", "HK", "Crypto")):
         mkt = (fm.get("market") or "").strip()
         if not code or code in seen:
             continue
-        if mkt not in want or mkt not in _MARKET_SUFFIX:
+        fetch = _fetch_symbol(code, mkt) if mkt in want else None
+        if fetch is None:
             skipped.append((code, mkt))
             continue
         seen.add(code)
-        pairs.append((code + _MARKET_SUFFIX[mkt], code, mkt))
+        pairs.append((fetch, code, mkt))
     return pairs, skipped
 
 
@@ -293,9 +310,9 @@ def main():
     g.add_argument("--stocks", action="store_true",
                    help="fetch the whole universe from Stocks.base "
                         "(10_Stocks/Stocks/*.md)")
-    p.add_argument("--markets", default="US,HK,Crypto",
+    p.add_argument("--markets", default="US,HK,Crypto,Futures",
                    help="comma-separated markets to include with --stocks "
-                        "(default US,HK,Crypto; futures need other endpoints)")
+                        "(default US,HK,Crypto,Futures)")
     p.add_argument("--years", type=int, default=10)
     p.add_argument("--from-date")
     p.add_argument("--to-date")
@@ -347,6 +364,8 @@ def main():
                 # no shares for crypto; use circulating supply as constant "shares"
                 supply = crypto_supply(fetch_sym, api_key)
                 shares = [{"date": from_date, "numberOfShares": supply}] if supply else []
+            elif market == "Futures":
+                shares = []  # no shares concept -> market_cap stays 0
             else:
                 shares = fetch_shares(fetch_sym, api_key)
             rows = build_staging_rows(db_sym, prices, shares)

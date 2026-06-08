@@ -91,10 +91,13 @@ python verify_after_insert.py
 
 CLI:`--stocks`(从 Stocks.base 读全量股票池)/ `--markets US,HK,Crypto` / `--symbol AAPL` / `--symbols AAPL,MSFT` / `--years N` / `--from-date` / `--to-date` / `--save-ddb` / `--ensure-schema`(表缺失才建)。
 
-**股票池来源 = Stocks.base**(`10_Stocks/Stocks/*.md` 的 `code`+`market`):
-- `US` → 直接抓;`HK` → 抓 `<code>.HK`、存 4 位 `code`;`Crypto` → 抓 `<code>USD`、存裸 `code`(BTC/ETH)。
-- 加密市值用 FMP `cryptocurrency-list` 的 `circulatingSupply`(当前流通量,近似常量)× close。
-- 期货(ESmain 等 5 个)暂未接入,会被跳过并打印清单。
+**股票池来源 = Stocks.base**(`10_Stocks/Stocks/*.md` 的 `code`+`market`),四类市场全部走同一股息复权端点:
+- `US` → 直接抓;`HK` → 抓 `<code>.HK`、存 4 位 `code`。
+- `Crypto` → 抓 `<code>USD`、存裸 `code`(BTC/ETH);市值用 `cryptocurrency-list` 的 `circulatingSupply`(当前流通量,近似常量)× close。
+- `Futures` → 显式映射 `ESmain→ESUSD / NQmain→NQUSD / YMmain→YMUSD / MGCmain→GCUSD / SILmain→SIUSD`,存库里 code;**market_cap=0**(无流通量概念)。
+- 所有非美股的 `db_symbol` 都用库里 code,与 Base 对齐。
+
+> ⚠️ 期货连续合约口径:FMP 的 `ESUSD` 等是连续序列(2007 至今),但是否做了移仓回调(back-adjust)未确认;若未回调,换月处会有跳空,影响跨月均线连续性。
 
 ## 离线调试(不连 DDB)
 
