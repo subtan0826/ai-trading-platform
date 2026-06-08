@@ -34,7 +34,7 @@ except Exception:
     pass
 
 FMP_BASE = "https://financialmodelingprep.com/stable"
-MAG7 = ["AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA"]
+MAG7 = ["LITE"]
 
 
 # ---- .env ----------------------------------------------------------------

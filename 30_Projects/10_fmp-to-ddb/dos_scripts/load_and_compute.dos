@@ -19,12 +19,30 @@
  *   ma20/30/60/120/250 = mavg(close, N)            round 3   (native mavg)
  *   open/high/low/close                            round 3
  *
+ * INCREMENTAL-SAFE moving averages
+ * --------------------------------
+ * pct_change / mavg are time-series ops: row i needs the prior rows. If we
+ * computed them over the uploaded batch ALONE, an incremental run (e.g. just
+ * the last few days) would null-out / under-window the MAs at the batch's
+ * leading edge. So before computing, for each symbol we pull up to WARMUP
+ * (= longest MA window) rows of close history from the DFS table dated BEFORE
+ * this batch, prepend them as a warm-up tail, compute over the combined
+ * series, then keep ONLY the batch rows for writing. The warm-up rows are
+ * never rewritten — they only seed the rolling windows.
+ *
+ * Caveat: warm-up uses the stored (previously dividend-adjusted) close, while
+ * the batch uses freshly-adjusted close. If a dividend/split landed between
+ * fetches the two bases differ slightly, so the MA can be marginally off at
+ * the seam. For routine daily increments this is negligible; to fully
+ * re-baseline, re-fetch the symbol's whole range in one batch.
+ *
  * Idempotent: for every (symbol) in the batch it deletes the overlapping
  * [min(date), max(date)] range first, then appends — safe to re-run.
  */
 
 DB_PATH = "dfs://market_daily"
 TB_NAME = "us_daily_kline"
+WARMUP  = 250        // must be >= longest MA window so ma250 is valid from row 1 of the batch
 
 // ---- 1. Normalize types + sort (sort is required for prev()/mavg ordering) ----
 t = select
@@ -39,28 +57,48 @@ t = select
     from staging
 t = select * from t order by symbol, date
 
-// ---- 2. Time-series indicators, vectorized, per symbol ----
-//   context by symbol keeps each ticker's rows grouped; rows already date-sorted
-update t set pct_change = round((close / prev(close) - 1) * 100, 2) context by symbol
-update t set ma20  = round(mavg(close, 20),  3) context by symbol
-update t set ma30  = round(mavg(close, 30),  3) context by symbol
-update t set ma60  = round(mavg(close, 60),  3) context by symbol
-update t set ma120 = round(mavg(close, 120), 3) context by symbol
-update t set ma250 = round(mavg(close, 250), 3) context by symbol
+pt = loadTable(DB_PATH, TB_NAME)
 
-// ---- 3. Row-wise derived + rounding ----
-update t set open = round(open, 3), high = round(high, 3),
-             low = round(low, 3),  close = round(close, 3)
-update t set turnover   = long(round(close * volume, 0))
-update t set market_cap = long(round(close * shares, 0))
+// ---- 2. Warm-up tail: pull up to WARMUP closes BEFORE each symbol's batch start ----
+warm = table(1:0, `symbol`date`close, [SYMBOL, DATE, DOUBLE])
+for(sm in exec distinct symbol from t){
+    dmin = exec min(date) from t where symbol == sm
+    h = select symbol, date, close from pt
+        where symbol == sm, date < dmin
+        order by date desc limit WARMUP
+    if(size(h) > 0) warm.append!(h)
+}
 
-// ---- 4. Project into the exact 15-column order of the DFS table ----
+// ---- 3. Indicator series = warm-up history + batch (close only), recompute over both ----
+series = select symbol, date, close from t
+series.append!(warm)
+series = select * from series order by symbol, date
+update series set pct_change = round((close / prev(close) - 1) * 100, 2) context by symbol
+update series set ma20  = round(mavg(close, 20),  3) context by symbol
+update series set ma30  = round(mavg(close, 30),  3) context by symbol
+update series set ma60  = round(mavg(close, 60),  3) context by symbol
+update series set ma120 = round(mavg(close, 120), 3) context by symbol
+update series set ma250 = round(mavg(close, 250), 3) context by symbol
+ind = select symbol, date, pct_change, ma20, ma30, ma60, ma120, ma250 from series
+
+// ---- 4. Batch row-wise values (OHLC rounding + turnover/market_cap) ----
+base = select
+        symbol, date,
+        round(open, 3)  as open,
+        round(high, 3)  as high,
+        round(low, 3)   as low,
+        round(close, 3) as close,
+        volume,
+        long(round(close * volume, 0)) as turnover,
+        long(round(close * shares, 0)) as market_cap
+    from t
+
+// ---- 5. Join indicators onto batch rows (ej drops warm-up-only dates) ----
 final = select symbol, date, open, high, low, close, volume, pct_change,
                turnover, market_cap, ma20, ma30, ma60, ma120, ma250
-        from t
+        from ej(base, ind, `symbol`date)
 
-// ---- 5. Idempotent overwrite per symbol within this batch's date span ----
-pt = loadTable(DB_PATH, TB_NAME)
+// ---- 6. Idempotent overwrite per symbol within this batch's date span ----
 syms = exec distinct symbol from final
 for(sm in syms){
     dmin = exec min(date) from final where symbol == sm
@@ -69,6 +107,6 @@ for(sm in syms){
 }
 pt.append!(final)
 
-// ---- 6. Report what landed ----
+// ---- 7. Report what landed ----
 select symbol, count(*) as rows, min(date) as first_date, max(date) as last_date
     from pt group by symbol order by symbol
