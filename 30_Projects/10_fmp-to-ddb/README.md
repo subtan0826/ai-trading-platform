@@ -76,16 +76,25 @@ verify_after_insert.py     读回校验(AAPL 锚点 + MA 覆盖 + 分区方案)
 python inspect_db.py
 
 # 1) 干跑预览(不写库,先看拉下来多少行)
-python fetch_fmp_to_ddb.py --mag7 --years 10
+python fetch_fmp_to_ddb.py --stocks --years 10
 
-# 2) 正式写入 DDB
-python fetch_fmp_to_ddb.py --mag7 --years 10 --save-ddb
+# 2) 正式写入 DDB —— 全量来自 Stocks.base(默认 markets=US,HK,Crypto)
+python fetch_fmp_to_ddb.py --stocks --years 10 --save-ddb
+
+# 单独某市场 / 某标的
+python fetch_fmp_to_ddb.py --stocks --markets Crypto --years 10 --save-ddb
+python fetch_fmp_to_ddb.py --symbol AAPL --years 10 --save-ddb
 
 # 3) 读回校验
 python verify_after_insert.py
 ```
 
-CLI 兼容老 Polygon 脚本:`--symbol AAPL` / `--symbols AAPL,MSFT` / `--mag7` / `--years N` / `--from-date` / `--to-date` / `--save-ddb` / `--ensure-schema`(表缺失才建)。
+CLI:`--stocks`(从 Stocks.base 读全量股票池)/ `--markets US,HK,Crypto` / `--symbol AAPL` / `--symbols AAPL,MSFT` / `--years N` / `--from-date` / `--to-date` / `--save-ddb` / `--ensure-schema`(表缺失才建)。
+
+**股票池来源 = Stocks.base**(`10_Stocks/Stocks/*.md` 的 `code`+`market`):
+- `US` → 直接抓;`HK` → 抓 `<code>.HK`、存 4 位 `code`;`Crypto` → 抓 `<code>USD`、存裸 `code`(BTC/ETH)。
+- 加密市值用 FMP `cryptocurrency-list` 的 `circulatingSupply`(当前流通量,近似常量)× close。
+- 期货(ESmain 等 5 个)暂未接入,会被跳过并打印清单。
 
 ## 离线调试(不连 DDB)
 

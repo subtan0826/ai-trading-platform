@@ -80,19 +80,21 @@ def _parse_frontmatter(text):
     return fm
 
 
-# Per-market FMP symbol suffix (US needs none; HK uses the 4-digit code + .HK).
-_MARKET_SUFFIX = {"US": "", "HK": ".HK"}
+# Per-market FMP symbol suffix: US none; HK = 4-digit code + .HK;
+# Crypto = code + USD (FMP uses USD pairs, e.g. BTC -> BTCUSD).
+_MARKET_SUFFIX = {"US": "", "HK": ".HK", "Crypto": "USD"}
 
 
-def load_universe(markets=("US", "HK")):
+def load_universe(markets=("US", "HK", "Crypto")):
     """Read the ticker universe from the Stocks.base notes.
 
     Returns (pairs, skipped):
-      pairs   = list of (fetch_symbol, db_symbol) for the requested markets.
-                HK fetches as `0700.HK` but is STORED as `0700` (matches the
-                Base note's code so DDB and the vault line up).
-      skipped = list of (code, market) excluded — other markets, or crypto /
-                futures that need a different FMP endpoint than this script.
+      pairs   = list of (fetch_symbol, db_symbol, market) for the requested
+                markets. fetch != db where a suffix is needed: HK `0700`->
+                `0700.HK`, Crypto `BTC`->`BTCUSD`. The db_symbol stays the
+                bare vault code so DDB and the Base line up.
+      skipped = list of (code, market) excluded — other markets, or futures
+                that need a different FMP endpoint than this script.
     """
     sdir = _find_stocks_dir()
     if sdir is None:
@@ -112,7 +114,7 @@ def load_universe(markets=("US", "HK")):
             skipped.append((code, mkt))
             continue
         seen.add(code)
-        pairs.append((code + _MARKET_SUFFIX[mkt], code))
+        pairs.append((code + _MARKET_SUFFIX[mkt], code, mkt))
     return pairs, skipped
 
 
@@ -182,6 +184,26 @@ def fetch_shares(symbol, api_key, limit=45):
     if isinstance(data, dict) and "Error Message" in data:
         raise RuntimeError(f"{symbol} shares: {data['Error Message']}")
     return data or []
+
+
+# Crypto has no enterprise-values/shares. FMP's cryptocurrency-list carries a
+# circulatingSupply per coin — we use it (current, constant) as the "shares"
+# so market_cap = close * circulatingSupply is a real (approx) crypto mcap.
+_CRYPTO_SUPPLY = None
+
+
+def crypto_supply(fetch_symbol, api_key):
+    """Current circulating supply for an FMP crypto symbol (e.g. BTCUSD), or
+    None if unavailable. The full list is fetched once and cached."""
+    global _CRYPTO_SUPPLY
+    if _CRYPTO_SUPPLY is None:
+        try:
+            data = _get_once("cryptocurrency-list", {}, api_key)
+        except Exception:
+            data = []
+        _CRYPTO_SUPPLY = {r["symbol"]: r.get("circulatingSupply")
+                          for r in (data or []) if isinstance(r, dict) and r.get("symbol")}
+    return _CRYPTO_SUPPLY.get(fetch_symbol)
 
 
 # ---- Pure transform (unit-testable, no network / no DDB) -----------------
@@ -271,9 +293,9 @@ def main():
     g.add_argument("--stocks", action="store_true",
                    help="fetch the whole universe from Stocks.base "
                         "(10_Stocks/Stocks/*.md)")
-    p.add_argument("--markets", default="US,HK",
+    p.add_argument("--markets", default="US,HK,Crypto",
                    help="comma-separated markets to include with --stocks "
-                        "(default US,HK; crypto/futures need other endpoints)")
+                        "(default US,HK,Crypto; futures need other endpoints)")
     p.add_argument("--years", type=int, default=10)
     p.add_argument("--from-date")
     p.add_argument("--to-date")
@@ -291,7 +313,8 @@ def main():
         sys.exit("FMP_API_KEY not set (.env). Required unless only dumping a "
                  "previously fetched payload.")
 
-    # pairs: (fetch_symbol, db_symbol). They differ only for HK (`0700.HK` vs `0700`).
+    # pairs: (fetch_symbol, db_symbol, market). fetch != db where a suffix is
+    # needed (HK `0700.HK`->`0700`, Crypto `BTCUSD`->`BTC`).
     if args.stocks:
         mkts = tuple(m.strip() for m in args.markets.split(",") if m.strip())
         pairs, skipped = load_universe(mkts)
@@ -304,9 +327,9 @@ def main():
             print(f"  skipped {len(skipped)} not in markets / unsupported "
                   f"endpoint: {bym}")
     elif args.symbols:
-        pairs = [(x.strip(), x.strip()) for x in args.symbols.split(",") if x.strip()]
+        pairs = [(x.strip(), x.strip(), "") for x in args.symbols.split(",") if x.strip()]
     else:
-        pairs = [(args.symbol, args.symbol)]
+        pairs = [(args.symbol, args.symbol, "")]
 
     to_date = args.to_date or dt.date.today().isoformat()
     if args.from_date:
@@ -316,11 +339,16 @@ def main():
                      dt.timedelta(days=365 * args.years + 10)).isoformat()
 
     all_rows = []
-    for fetch_sym, db_sym in pairs:
+    for fetch_sym, db_sym, market in pairs:
         label = db_sym if fetch_sym == db_sym else f"{db_sym} ({fetch_sym})"
         try:
             prices = fetch_prices(fetch_sym, from_date, to_date, api_key)
-            shares = fetch_shares(fetch_sym, api_key)
+            if market == "Crypto":
+                # no shares for crypto; use circulating supply as constant "shares"
+                supply = crypto_supply(fetch_sym, api_key)
+                shares = [{"date": from_date, "numberOfShares": supply}] if supply else []
+            else:
+                shares = fetch_shares(fetch_sym, api_key)
             rows = build_staging_rows(db_sym, prices, shares)
             all_rows.extend(rows)
             print(f"  {label}: {len(rows):,} rows "
