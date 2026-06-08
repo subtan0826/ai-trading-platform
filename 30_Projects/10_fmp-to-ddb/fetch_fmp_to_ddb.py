@@ -13,16 +13,20 @@ Pipeline per run:
 
 Usage (on the machine where DolphinDB runs):
     cp .env.example .env          # fill FMP_API_KEY + DDB_*
-    python fetch_fmp_to_ddb.py --mag7 --years 10 --save-ddb
+    python fetch_fmp_to_ddb.py --stocks --years 10 --save-ddb   # whole Base
+    python fetch_fmp_to_ddb.py --symbol AAPL --years 10 --save-ddb
 
-CLI mirrors the old Polygon script so muscle memory carries over.
+--stocks reads the ticker universe from Stocks.base (10_Stocks/Stocks/*.md);
+--symbol / --symbols still work for ad-hoc one-offs.
 """
 import argparse
 import datetime as dt
 import json
 import os
+import re
 import sys
 import time
+from collections import Counter
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -34,7 +38,6 @@ except Exception:
     pass
 
 FMP_BASE = "https://financialmodelingprep.com/stable"
-MAG7 = ["LITE"]
 
 
 # ---- .env ----------------------------------------------------------------
@@ -50,6 +53,67 @@ def load_dotenv():
             continue
         k, v = line.split("=", 1)
         os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+
+# ---- Universe from the Obsidian Base (10_Stocks/Stocks/*.md) --------------
+# The "Stocks.base" database is backed by one markdown note per ticker; the
+# `code` + `market` frontmatter is the source of truth for the symbol list.
+def _find_stocks_dir():
+    """Walk up from this script to find the vault's 10_Stocks/Stocks folder."""
+    here = Path(__file__).resolve().parent
+    for d in (here, *here.parents):
+        cand = d / "10_Stocks" / "Stocks"
+        if cand.is_dir():
+            return cand
+    return None
+
+
+def _parse_frontmatter(text):
+    m = re.match(r"^---\s*\n(.*?)\n---", text, re.S)
+    if not m:
+        return {}
+    fm = {}
+    for line in m.group(1).splitlines():
+        if ":" in line and not line[:1].isspace():
+            k, v = line.split(":", 1)
+            fm[k.strip()] = v.strip().strip('"').strip("'")
+    return fm
+
+
+# Per-market FMP symbol suffix (US needs none; HK uses the 4-digit code + .HK).
+_MARKET_SUFFIX = {"US": "", "HK": ".HK"}
+
+
+def load_universe(markets=("US", "HK")):
+    """Read the ticker universe from the Stocks.base notes.
+
+    Returns (pairs, skipped):
+      pairs   = list of (fetch_symbol, db_symbol) for the requested markets.
+                HK fetches as `0700.HK` but is STORED as `0700` (matches the
+                Base note's code so DDB and the vault line up).
+      skipped = list of (code, market) excluded — other markets, or crypto /
+                futures that need a different FMP endpoint than this script.
+    """
+    sdir = _find_stocks_dir()
+    if sdir is None:
+        sys.exit("could not locate 10_Stocks/Stocks (Stocks.base source) above "
+                 "this script")
+    want = set(markets)
+    pairs, skipped, seen = [], [], set()
+    for f in sorted(sdir.glob("*.md")):
+        fm = _parse_frontmatter(f.read_text(encoding="utf-8"))
+        if fm.get("type") != "stock":
+            continue
+        code = (fm.get("code") or "").strip()
+        mkt = (fm.get("market") or "").strip()
+        if not code or code in seen:
+            continue
+        if mkt not in want or mkt not in _MARKET_SUFFIX:
+            skipped.append((code, mkt))
+            continue
+        seen.add(code)
+        pairs.append((code + _MARKET_SUFFIX[mkt], code))
+    return pairs, skipped
 
 
 # ---- FMP REST ------------------------------------------------------------
@@ -204,7 +268,12 @@ def main():
     g = p.add_mutually_exclusive_group(required=True)
     g.add_argument("--symbol")
     g.add_argument("--symbols", help="comma-separated")
-    g.add_argument("--mag7", action="store_true")
+    g.add_argument("--stocks", action="store_true",
+                   help="fetch the whole universe from Stocks.base "
+                        "(10_Stocks/Stocks/*.md)")
+    p.add_argument("--markets", default="US,HK",
+                   help="comma-separated markets to include with --stocks "
+                        "(default US,HK; crypto/futures need other endpoints)")
     p.add_argument("--years", type=int, default=10)
     p.add_argument("--from-date")
     p.add_argument("--to-date")
@@ -222,12 +291,22 @@ def main():
         sys.exit("FMP_API_KEY not set (.env). Required unless only dumping a "
                  "previously fetched payload.")
 
-    if args.mag7:
-        symbols = MAG7
+    # pairs: (fetch_symbol, db_symbol). They differ only for HK (`0700.HK` vs `0700`).
+    if args.stocks:
+        mkts = tuple(m.strip() for m in args.markets.split(",") if m.strip())
+        pairs, skipped = load_universe(mkts)
+        if not pairs:
+            sys.exit(f"no symbols from Stocks.base for markets {args.markets}")
+        print(f"universe from Stocks.base: {len(pairs)} symbols "
+              f"(markets={','.join(mkts)})")
+        if skipped:
+            bym = dict(Counter(m or "(none)" for _, m in skipped))
+            print(f"  skipped {len(skipped)} not in markets / unsupported "
+                  f"endpoint: {bym}")
     elif args.symbols:
-        symbols = [x.strip() for x in args.symbols.split(",") if x.strip()]
+        pairs = [(x.strip(), x.strip()) for x in args.symbols.split(",") if x.strip()]
     else:
-        symbols = [args.symbol]
+        pairs = [(args.symbol, args.symbol)]
 
     to_date = args.to_date or dt.date.today().isoformat()
     if args.from_date:
@@ -237,17 +316,18 @@ def main():
                      dt.timedelta(days=365 * args.years + 10)).isoformat()
 
     all_rows = []
-    for sym in symbols:
+    for fetch_sym, db_sym in pairs:
+        label = db_sym if fetch_sym == db_sym else f"{db_sym} ({fetch_sym})"
         try:
-            prices = fetch_prices(sym, from_date, to_date, api_key)
-            shares = fetch_shares(sym, api_key)
-            rows = build_staging_rows(sym, prices, shares)
+            prices = fetch_prices(fetch_sym, from_date, to_date, api_key)
+            shares = fetch_shares(fetch_sym, api_key)
+            rows = build_staging_rows(db_sym, prices, shares)
             all_rows.extend(rows)
-            print(f"  {sym}: {len(rows):,} rows "
+            print(f"  {label}: {len(rows):,} rows "
                   f"({rows[0]['date']} -> {rows[-1]['date']})" if rows
-                  else f"  {sym}: 0 rows")
+                  else f"  {label}: 0 rows")
         except Exception as e:
-            print(f"  {sym}: FAILED — {e}", file=sys.stderr)
+            print(f"  {label}: FAILED — {e}", file=sys.stderr)
         time.sleep(0.2)
 
     if not all_rows:
