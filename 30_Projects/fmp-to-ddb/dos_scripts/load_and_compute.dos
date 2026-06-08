@@ -1,0 +1,74 @@
+/*
+ * load_and_compute.dos
+ * --------------------------------------------------------------------------
+ * All heavy column work runs HERE in DolphinDB (per CLAUDE.md §🗄️), not in
+ * Python. Python only fetches FMP data and uploads an in-memory table named
+ * `staging`; this script computes everything and writes to the DFS table.
+ *
+ * Expected uploaded variable `staging` (in-memory table) columns:
+ *   symbol  (STRING)         e.g. "AAPL"
+ *   date    (NANOTIMESTAMP)  uploaded from pandas datetime
+ *   open high low close (DOUBLE)   dividend-adjusted (= Yahoo Adj Close)
+ *   volume  (LONG)
+ *   shares  (DOUBLE)         diluted shares, interpolated to each trading day
+ *
+ * Produces, into dfs://market_daily/us_daily_kline (15 cols), per symbol:
+ *   pct_change = (close/prevClose - 1) * 100      round 2   (close-to-close)
+ *   turnover   = close * volume                    round 0 -> LONG
+ *   market_cap = close * shares                    round 0 -> LONG
+ *   ma20/30/60/120/250 = mavg(close, N)            round 3   (native mavg)
+ *   open/high/low/close                            round 3
+ *
+ * Idempotent: for every (symbol) in the batch it deletes the overlapping
+ * [min(date), max(date)] range first, then appends — safe to re-run.
+ */
+
+DB_PATH = "dfs://market_daily"
+TB_NAME = "us_daily_kline"
+
+// ---- 1. Normalize types + sort (sort is required for prev()/mavg ordering) ----
+t = select
+        symbol(symbol)        as symbol,
+        date(date)            as date,
+        double(open)          as open,
+        double(high)          as high,
+        double(low)           as low,
+        double(close)         as close,
+        long(volume)          as volume,
+        double(shares)        as shares
+    from staging
+t = select * from t order by symbol, date
+
+// ---- 2. Time-series indicators, vectorized, per symbol ----
+//   context by symbol keeps each ticker's rows grouped; rows already date-sorted
+update t set pct_change = round((close / prev(close) - 1) * 100, 2) context by symbol
+update t set ma20  = round(mavg(close, 20),  3) context by symbol
+update t set ma30  = round(mavg(close, 30),  3) context by symbol
+update t set ma60  = round(mavg(close, 60),  3) context by symbol
+update t set ma120 = round(mavg(close, 120), 3) context by symbol
+update t set ma250 = round(mavg(close, 250), 3) context by symbol
+
+// ---- 3. Row-wise derived + rounding ----
+update t set open = round(open, 3), high = round(high, 3),
+             low = round(low, 3),  close = round(close, 3)
+update t set turnover   = long(round(close * volume, 0))
+update t set market_cap = long(round(close * shares, 0))
+
+// ---- 4. Project into the exact 15-column order of the DFS table ----
+final = select symbol, date, open, high, low, close, volume, pct_change,
+               turnover, market_cap, ma20, ma30, ma60, ma120, ma250
+        from t
+
+// ---- 5. Idempotent overwrite per symbol within this batch's date span ----
+pt = loadTable(DB_PATH, TB_NAME)
+syms = exec distinct symbol from final
+for(sm in syms){
+    dmin = exec min(date) from final where symbol == sm
+    dmax = exec max(date) from final where symbol == sm
+    delete from pt where symbol == sm, date >= dmin, date <= dmax
+}
+pt.append!(final)
+
+// ---- 6. Report what landed ----
+select symbol, count(*) as rows, min(date) as first_date, max(date) as last_date
+    from pt group by symbol order by symbol

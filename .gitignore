@@ -6,6 +6,15 @@
 # Obsidian trash
 .trash/
 
+# Secrets / env (never commit real credentials; keep .env.example as template)
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+
 # OS files
 .DS_Store
 Thumbs.db

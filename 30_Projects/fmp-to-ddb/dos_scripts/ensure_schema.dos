@@ -1,0 +1,44 @@
+/*
+ * ensure_schema.dos
+ * --------------------------------------------------------------------------
+ * Idempotent: creates dfs://market_daily/us_daily_kline ONLY if missing.
+ * Your existing table already matches this 15-column schema, so on your
+ * cluster this is a no-op (existsTable -> true -> skip).
+ *
+ * Provided for fresh installs / new projects. The partition scheme here is a
+ * HASH on symbol (20 buckets) — a sensible general default for a growing
+ * symbol universe. If you migrate the existing table, keep its original
+ * partition scheme instead (run show_partition.dos to capture it).
+ */
+
+DB_PATH = "dfs://market_daily"
+TB_NAME = "us_daily_kline"
+
+if(existsTable(DB_PATH, TB_NAME)){
+    "Table " + DB_PATH + "/" + TB_NAME + " already exists — no-op."
+} else {
+    if(!existsDatabase(DB_PATH)){
+        db = database(DB_PATH, HASH, [SYMBOL, 20])
+    } else {
+        db = database(DB_PATH)
+    }
+    schema = table(
+        array(SYMBOL, 0)  as symbol,
+        array(DATE, 0)    as date,
+        array(DOUBLE, 0)  as open,
+        array(DOUBLE, 0)  as high,
+        array(DOUBLE, 0)  as low,
+        array(DOUBLE, 0)  as close,
+        array(LONG, 0)    as volume,
+        array(DOUBLE, 0)  as pct_change,
+        array(LONG, 0)    as turnover,
+        array(LONG, 0)    as market_cap,
+        array(DOUBLE, 0)  as ma20,
+        array(DOUBLE, 0)  as ma30,
+        array(DOUBLE, 0)  as ma60,
+        array(DOUBLE, 0)  as ma120,
+        array(DOUBLE, 0)  as ma250
+    )
+    db.createPartitionedTable(schema, TB_NAME, `symbol)
+    "Created " + DB_PATH + "/" + TB_NAME
+}
