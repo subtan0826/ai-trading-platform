@@ -1,0 +1,65 @@
+filters:
+  and:
+    - type == "stock"
+    - file.inFolder("10_Stocks/Stocks")
+properties:
+  order:
+    displayName: 序号
+  name:
+    displayName: Name
+  code:
+    displayName: Code
+  category:
+    displayName: 分类
+  technical_analysis:
+    displayName: 技术分析
+  news_info:
+    displayName: 新闻信息
+  file.link:
+    displayName: 标的
+views:
+  - type: table
+    name: 核心股票
+    order:
+      - order
+      - file.link
+      - name
+      - code
+      - category
+      - technical_analysis
+      - news_info
+    sort:
+      - property: order
+        direction: ASC
+      - property: category
+        direction: DESC
+      - property: news_info
+        direction: ASC
+    columnSize:
+      note.category: 145
+  - type: table
+    name: 加密货币
+    filters:
+      and:
+        - category == "加密货币"
+    order:
+      - order
+      - file.link
+      - name
+      - code
+      - category
+      - technical_analysis
+      - news_info
+  - type: table
+    name: 指数期货
+    filters:
+      and:
+        - category == "指数期货"
+    order:
+      - order
+      - file.link
+      - name
+      - code
+      - category
+      - technical_analysis
+      - news_info
