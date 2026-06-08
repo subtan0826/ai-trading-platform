@@ -1,4 +1,4 @@
-# fmp-to-ddb — DolphinDB connectivity test (step 1)
+# 10_fmp-to-ddb — DolphinDB connectivity test (step 1)
 
 Step 1 of the FMP → DolphinDB pipeline: just prove your machine can talk to your DDB cluster. No FMP yet.
 
