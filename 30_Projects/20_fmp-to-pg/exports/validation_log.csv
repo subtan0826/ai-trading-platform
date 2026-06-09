@@ -1,0 +1,1317 @@
+id,table_name,record_key,check_name,expected_value,observed_value,passed,severity,validated_at,validated_by
+3,earnings_quarter,AAPL/2020/Q3,l2_ni_eq_eps_x_shares,0.6500,0.6460,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+2,earnings_quarter,AAPL/2020/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1,earnings_quarter,AAPL/2020/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+4,earnings_quarter,AAPL/2020/Q3,l3_eps_actual_cross_endpoint,0.65,0.64,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+5,earnings_quarter,AAPL/2020/Q3,l4_calendar_quarter_mapping,Q2 2020,Q2 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+6,earnings_quarter,AAPL/2020/Q3,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+7,earnings_quarter,AAPL/2020/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+10,earnings_quarter,AAPL/2020/Q4,l2_ni_eq_eps_x_shares,0.7300,0.7344,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+9,earnings_quarter,AAPL/2020/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+8,earnings_quarter,AAPL/2020/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+11,earnings_quarter,AAPL/2020/Q4,l3_eps_actual_cross_endpoint,0.73,0.73,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+12,earnings_quarter,AAPL/2020/Q4,l4_calendar_quarter_mapping,Q3 2020,Q3 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+13,earnings_quarter,AAPL/2020/Q4,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+14,earnings_quarter,AAPL/2020/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+17,earnings_quarter,AAPL/2021/Q1,l2_ni_eq_eps_x_shares,1.6800,1.6802,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+16,earnings_quarter,AAPL/2021/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+15,earnings_quarter,AAPL/2021/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+18,earnings_quarter,AAPL/2021/Q1,l3_eps_actual_cross_endpoint,1.68,1.68,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+19,earnings_quarter,AAPL/2021/Q1,l4_calendar_quarter_mapping,Q4 2020,Q4 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+20,earnings_quarter,AAPL/2021/Q1,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+21,earnings_quarter,AAPL/2021/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+24,earnings_quarter,AAPL/2021/Q2,l2_ni_eq_eps_x_shares,1.4000,1.3958,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+23,earnings_quarter,AAPL/2021/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+22,earnings_quarter,AAPL/2021/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+25,earnings_quarter,AAPL/2021/Q2,l3_eps_actual_cross_endpoint,1.4,1.4,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+26,earnings_quarter,AAPL/2021/Q2,l4_calendar_quarter_mapping,Q1 2021,Q1 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+27,earnings_quarter,AAPL/2021/Q2,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+28,earnings_quarter,AAPL/2021/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+31,earnings_quarter,AAPL/2021/Q3,l2_ni_eq_eps_x_shares,1.3000,1.2957,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+30,earnings_quarter,AAPL/2021/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+32,earnings_quarter,AAPL/2021/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+36.44%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+29,earnings_quarter,AAPL/2021/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+33,earnings_quarter,AAPL/2021/Q3,l3_eps_actual_cross_endpoint,1.3,1.3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+34,earnings_quarter,AAPL/2021/Q3,l4_calendar_quarter_mapping,Q2 2021,Q2 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+35,earnings_quarter,AAPL/2021/Q3,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+36,earnings_quarter,AAPL/2021/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+39,earnings_quarter,AAPL/2021/Q4,l2_ni_eq_eps_x_shares,1.2400,1.2354,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+38,earnings_quarter,AAPL/2021/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+40,earnings_quarter,AAPL/2021/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+28.84%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+37,earnings_quarter,AAPL/2021/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+41,earnings_quarter,AAPL/2021/Q4,l3_eps_actual_cross_endpoint,1.24,1.24,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+42,earnings_quarter,AAPL/2021/Q4,l4_calendar_quarter_mapping,Q3 2021,Q3 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+43,earnings_quarter,AAPL/2021/Q4,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+44,earnings_quarter,AAPL/2021/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+47,earnings_quarter,AAPL/2022/Q1,l2_ni_eq_eps_x_shares,2.1000,2.0963,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+46,earnings_quarter,AAPL/2022/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+48,earnings_quarter,AAPL/2022/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+11.22%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+45,earnings_quarter,AAPL/2022/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+49,earnings_quarter,AAPL/2022/Q1,l3_eps_actual_cross_endpoint,2.1,2.1,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+50,earnings_quarter,AAPL/2022/Q1,l4_calendar_quarter_mapping,Q4 2021,Q4 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+51,earnings_quarter,AAPL/2022/Q1,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+52,earnings_quarter,AAPL/2022/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+55,earnings_quarter,AAPL/2022/Q2,l2_ni_eq_eps_x_shares,1.5200,1.5247,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+54,earnings_quarter,AAPL/2022/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+56,earnings_quarter,AAPL/2022/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+8.59%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+53,earnings_quarter,AAPL/2022/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+57,earnings_quarter,AAPL/2022/Q2,l3_eps_actual_cross_endpoint,1.52,1.52,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+58,earnings_quarter,AAPL/2022/Q2,l4_calendar_quarter_mapping,Q1 2022,Q1 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+59,earnings_quarter,AAPL/2022/Q2,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+60,earnings_quarter,AAPL/2022/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+63,earnings_quarter,AAPL/2022/Q3,l2_ni_eq_eps_x_shares,1.2000,1.1955,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+62,earnings_quarter,AAPL/2022/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+64,earnings_quarter,AAPL/2022/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+1.87%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+61,earnings_quarter,AAPL/2022/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+65,earnings_quarter,AAPL/2022/Q3,l3_eps_actual_cross_endpoint,1.2,1.2,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+66,earnings_quarter,AAPL/2022/Q3,l4_calendar_quarter_mapping,Q2 2022,Q2 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+67,earnings_quarter,AAPL/2022/Q3,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+68,earnings_quarter,AAPL/2022/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+71,earnings_quarter,AAPL/2022/Q4,l2_ni_eq_eps_x_shares,1.2900,1.2855,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+70,earnings_quarter,AAPL/2022/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+72,earnings_quarter,AAPL/2022/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+8.14%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+69,earnings_quarter,AAPL/2022/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+73,earnings_quarter,AAPL/2022/Q4,l3_eps_actual_cross_endpoint,1.29,1.29,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+74,earnings_quarter,AAPL/2022/Q4,l4_calendar_quarter_mapping,Q3 2022,Q3 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+75,earnings_quarter,AAPL/2022/Q4,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+76,earnings_quarter,AAPL/2022/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+79,earnings_quarter,AAPL/2023/Q1,l2_ni_eq_eps_x_shares,1.8800,1.8801,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+78,earnings_quarter,AAPL/2023/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+80,earnings_quarter,AAPL/2023/Q1,l2_revenue_yoy_range,"[-50%, +200%]",-5.48%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+77,earnings_quarter,AAPL/2023/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+81,earnings_quarter,AAPL/2023/Q1,l3_eps_actual_cross_endpoint,1.88,1.88,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+82,earnings_quarter,AAPL/2023/Q1,l4_calendar_quarter_mapping,Q4 2022,Q4 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+83,earnings_quarter,AAPL/2023/Q1,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+84,earnings_quarter,AAPL/2023/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+87,earnings_quarter,AAPL/2023/Q2,l2_ni_eq_eps_x_shares,1.5200,1.5246,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+86,earnings_quarter,AAPL/2023/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+88,earnings_quarter,AAPL/2023/Q2,l2_revenue_yoy_range,"[-50%, +200%]",-2.51%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+85,earnings_quarter,AAPL/2023/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+89,earnings_quarter,AAPL/2023/Q2,l3_eps_actual_cross_endpoint,1.52,1.52,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+90,earnings_quarter,AAPL/2023/Q2,l4_calendar_quarter_mapping,Q1 2023,Q1 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+91,earnings_quarter,AAPL/2023/Q2,l4_fiscal_period_month,month 3±1,month 4,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+92,earnings_quarter,AAPL/2023/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+95,earnings_quarter,AAPL/2023/Q3,l2_ni_eq_eps_x_shares,1.2600,1.2603,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+94,earnings_quarter,AAPL/2023/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+96,earnings_quarter,AAPL/2023/Q3,l2_revenue_yoy_range,"[-50%, +200%]",-1.40%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+93,earnings_quarter,AAPL/2023/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+97,earnings_quarter,AAPL/2023/Q3,l3_eps_actual_cross_endpoint,1.26,1.26,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+98,earnings_quarter,AAPL/2023/Q3,l4_calendar_quarter_mapping,Q2 2023,Q2 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+99,earnings_quarter,AAPL/2023/Q3,l4_fiscal_period_month,month 6±1,month 7,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+100,earnings_quarter,AAPL/2023/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+103,earnings_quarter,AAPL/2023/Q4,l2_ni_eq_eps_x_shares,1.4600,1.4647,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+102,earnings_quarter,AAPL/2023/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+104,earnings_quarter,AAPL/2023/Q4,l2_revenue_yoy_range,"[-50%, +200%]",-0.72%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+101,earnings_quarter,AAPL/2023/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+105,earnings_quarter,AAPL/2023/Q4,l3_eps_actual_cross_endpoint,1.46,1.46,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+106,earnings_quarter,AAPL/2023/Q4,l4_calendar_quarter_mapping,Q3 2023,Q3 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+107,earnings_quarter,AAPL/2023/Q4,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+108,earnings_quarter,AAPL/2023/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+111,earnings_quarter,AAPL/2024/Q1,l2_ni_eq_eps_x_shares,2.1800,2.1774,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+110,earnings_quarter,AAPL/2024/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+112,earnings_quarter,AAPL/2024/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+2.07%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+109,earnings_quarter,AAPL/2024/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+113,earnings_quarter,AAPL/2024/Q1,l3_eps_actual_cross_endpoint,2.18,2.18,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+114,earnings_quarter,AAPL/2024/Q1,l4_calendar_quarter_mapping,Q4 2023,Q4 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+115,earnings_quarter,AAPL/2024/Q1,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+116,earnings_quarter,AAPL/2024/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+119,earnings_quarter,AAPL/2024/Q2,l2_ni_eq_eps_x_shares,1.5300,1.5284,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+118,earnings_quarter,AAPL/2024/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+120,earnings_quarter,AAPL/2024/Q2,l2_revenue_yoy_range,"[-50%, +200%]",-4.31%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+117,earnings_quarter,AAPL/2024/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+121,earnings_quarter,AAPL/2024/Q2,l3_eps_actual_cross_endpoint,1.53,1.53,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+122,earnings_quarter,AAPL/2024/Q2,l4_calendar_quarter_mapping,Q1 2024,Q1 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+123,earnings_quarter,AAPL/2024/Q2,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+124,earnings_quarter,AAPL/2024/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+127,earnings_quarter,AAPL/2024/Q3,l2_ni_eq_eps_x_shares,1.4000,1.3974,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+126,earnings_quarter,AAPL/2024/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+128,earnings_quarter,AAPL/2024/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+4.87%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+125,earnings_quarter,AAPL/2024/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+129,earnings_quarter,AAPL/2024/Q3,l3_eps_actual_cross_endpoint,1.4,1.4,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+130,earnings_quarter,AAPL/2024/Q3,l4_calendar_quarter_mapping,Q2 2024,Q2 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+131,earnings_quarter,AAPL/2024/Q3,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+132,earnings_quarter,AAPL/2024/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+135,earnings_quarter,AAPL/2024/Q4,l2_ni_eq_eps_x_shares,0.9700,0.9667,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+134,earnings_quarter,AAPL/2024/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+136,earnings_quarter,AAPL/2024/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+6.07%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+133,earnings_quarter,AAPL/2024/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+137,earnings_quarter,AAPL/2024/Q4,l3_eps_actual_cross_endpoint,0.97,1.64,f,warn,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+138,earnings_quarter,AAPL/2024/Q4,l4_calendar_quarter_mapping,Q3 2024,Q3 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+139,earnings_quarter,AAPL/2024/Q4,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+140,earnings_quarter,AAPL/2024/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+143,earnings_quarter,AAPL/2025/Q1,l2_ni_eq_eps_x_shares,2.4000,2.3979,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+142,earnings_quarter,AAPL/2025/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+144,earnings_quarter,AAPL/2025/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+3.95%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+141,earnings_quarter,AAPL/2025/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+145,earnings_quarter,AAPL/2025/Q1,l3_eps_actual_cross_endpoint,2.4,2.4,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+146,earnings_quarter,AAPL/2025/Q1,l4_calendar_quarter_mapping,Q4 2024,Q4 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+147,earnings_quarter,AAPL/2025/Q1,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+148,earnings_quarter,AAPL/2025/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+151,earnings_quarter,AAPL/2025/Q2,l2_ni_eq_eps_x_shares,1.6500,1.6458,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+150,earnings_quarter,AAPL/2025/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+152,earnings_quarter,AAPL/2025/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+5.08%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+149,earnings_quarter,AAPL/2025/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+153,earnings_quarter,AAPL/2025/Q2,l3_eps_actual_cross_endpoint,1.65,1.65,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+154,earnings_quarter,AAPL/2025/Q2,l4_calendar_quarter_mapping,Q1 2025,Q1 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+155,earnings_quarter,AAPL/2025/Q2,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+156,earnings_quarter,AAPL/2025/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+159,earnings_quarter,AAPL/2025/Q3,l2_ni_eq_eps_x_shares,1.5700,1.5677,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+158,earnings_quarter,AAPL/2025/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+160,earnings_quarter,AAPL/2025/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+9.63%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+157,earnings_quarter,AAPL/2025/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+161,earnings_quarter,AAPL/2025/Q3,l3_eps_actual_cross_endpoint,1.57,1.57,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+162,earnings_quarter,AAPL/2025/Q3,l4_calendar_quarter_mapping,Q2 2025,Q2 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+163,earnings_quarter,AAPL/2025/Q3,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+164,earnings_quarter,AAPL/2025/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+167,earnings_quarter,AAPL/2025/Q4,l2_ni_eq_eps_x_shares,1.8500,1.8305,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+166,earnings_quarter,AAPL/2025/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+168,earnings_quarter,AAPL/2025/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+7.94%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+165,earnings_quarter,AAPL/2025/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+169,earnings_quarter,AAPL/2025/Q4,l3_eps_actual_cross_endpoint,1.85,1.85,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+170,earnings_quarter,AAPL/2025/Q4,l4_calendar_quarter_mapping,Q3 2025,Q3 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+171,earnings_quarter,AAPL/2025/Q4,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+172,earnings_quarter,AAPL/2025/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+175,earnings_quarter,AAPL/2026/Q1,l2_ni_eq_eps_x_shares,2.8400,2.8424,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+174,earnings_quarter,AAPL/2026/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+176,earnings_quarter,AAPL/2026/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+15.65%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+173,earnings_quarter,AAPL/2026/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+177,earnings_quarter,AAPL/2026/Q1,l3_eps_actual_cross_endpoint,2.84,2.85,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+178,earnings_quarter,AAPL/2026/Q1,l4_calendar_quarter_mapping,Q4 2025,Q4 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+179,earnings_quarter,AAPL/2026/Q1,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+180,earnings_quarter,AAPL/2026/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+183,earnings_quarter,AAPL/2026/Q2,l2_ni_eq_eps_x_shares,2.0100,2.0028,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+182,earnings_quarter,AAPL/2026/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+184,earnings_quarter,AAPL/2026/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+16.60%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+181,earnings_quarter,AAPL/2026/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+185,earnings_quarter,AAPL/2026/Q2,l3_eps_actual_cross_endpoint,2.01,2.01,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+186,earnings_quarter,AAPL/2026/Q2,l4_calendar_quarter_mapping,Q1 2026,Q1 2026,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+187,earnings_quarter,AAPL/2026/Q2,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+188,earnings_quarter,AAPL/2026/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+567,earnings_quarter,AMZN/2020/Q2,l2_ni_eq_eps_x_shares,0.5200,0.5150,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+566,earnings_quarter,AMZN/2020/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+565,earnings_quarter,AMZN/2020/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+568,earnings_quarter,AMZN/2020/Q2,l3_eps_actual_cross_endpoint,0.52,0.52,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+569,earnings_quarter,AMZN/2020/Q2,l4_calendar_quarter_mapping,Q2 2020,Q2 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+570,earnings_quarter,AMZN/2020/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+571,earnings_quarter,AMZN/2020/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+574,earnings_quarter,AMZN/2020/Q3,l2_ni_eq_eps_x_shares,0.6200,0.6183,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+573,earnings_quarter,AMZN/2020/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+572,earnings_quarter,AMZN/2020/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+575,earnings_quarter,AMZN/2020/Q3,l3_eps_actual_cross_endpoint,0.62,0.62,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+576,earnings_quarter,AMZN/2020/Q3,l4_calendar_quarter_mapping,Q3 2020,Q3 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+577,earnings_quarter,AMZN/2020/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+578,earnings_quarter,AMZN/2020/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+581,earnings_quarter,AMZN/2020/Q4,l2_ni_eq_eps_x_shares,0.7000,0.7039,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+580,earnings_quarter,AMZN/2020/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+579,earnings_quarter,AMZN/2020/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+582,earnings_quarter,AMZN/2020/Q4,l3_eps_actual_cross_endpoint,0.7,0.7,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+583,earnings_quarter,AMZN/2020/Q4,l4_calendar_quarter_mapping,Q4 2020,Q4 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+584,earnings_quarter,AMZN/2020/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+585,earnings_quarter,AMZN/2020/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+588,earnings_quarter,AMZN/2021/Q1,l2_ni_eq_eps_x_shares,0.7900,0.7902,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+587,earnings_quarter,AMZN/2021/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+586,earnings_quarter,AMZN/2021/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+589,earnings_quarter,AMZN/2021/Q1,l3_eps_actual_cross_endpoint,0.79,0.79,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+590,earnings_quarter,AMZN/2021/Q1,l4_calendar_quarter_mapping,Q1 2021,Q1 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+591,earnings_quarter,AMZN/2021/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+592,earnings_quarter,AMZN/2021/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+595,earnings_quarter,AMZN/2021/Q2,l2_ni_eq_eps_x_shares,0.7600,0.7566,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+594,earnings_quarter,AMZN/2021/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+596,earnings_quarter,AMZN/2021/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+27.18%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+593,earnings_quarter,AMZN/2021/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+597,earnings_quarter,AMZN/2021/Q2,l3_eps_actual_cross_endpoint,0.76,0.76,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+598,earnings_quarter,AMZN/2021/Q2,l4_calendar_quarter_mapping,Q2 2021,Q2 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+599,earnings_quarter,AMZN/2021/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+600,earnings_quarter,AMZN/2021/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+603,earnings_quarter,AMZN/2021/Q3,l2_ni_eq_eps_x_shares,0.3100,0.3064,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+602,earnings_quarter,AMZN/2021/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+604,earnings_quarter,AMZN/2021/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+15.26%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+601,earnings_quarter,AMZN/2021/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+605,earnings_quarter,AMZN/2021/Q3,l3_eps_actual_cross_endpoint,0.31,0.31,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+606,earnings_quarter,AMZN/2021/Q3,l4_calendar_quarter_mapping,Q3 2021,Q3 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+607,earnings_quarter,AMZN/2021/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+608,earnings_quarter,AMZN/2021/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+611,earnings_quarter,AMZN/2021/Q4,l2_ni_eq_eps_x_shares,1.3900,1.3879,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+610,earnings_quarter,AMZN/2021/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+612,earnings_quarter,AMZN/2021/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+9.44%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+609,earnings_quarter,AMZN/2021/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+613,earnings_quarter,AMZN/2021/Q4,l3_eps_actual_cross_endpoint,1.39,1.39,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+614,earnings_quarter,AMZN/2021/Q4,l4_calendar_quarter_mapping,Q4 2021,Q4 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+615,earnings_quarter,AMZN/2021/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+616,earnings_quarter,AMZN/2021/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+619,earnings_quarter,AMZN/2022/Q1,l2_ni_eq_eps_x_shares,-0.3800,-0.3776,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+618,earnings_quarter,AMZN/2022/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+620,earnings_quarter,AMZN/2022/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+7.30%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+617,earnings_quarter,AMZN/2022/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+621,earnings_quarter,AMZN/2022/Q1,l3_eps_actual_cross_endpoint,-0.38,0.21,f,warn,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+622,earnings_quarter,AMZN/2022/Q1,l4_calendar_quarter_mapping,Q1 2022,Q1 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+623,earnings_quarter,AMZN/2022/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+624,earnings_quarter,AMZN/2022/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+627,earnings_quarter,AMZN/2022/Q2,l2_ni_eq_eps_x_shares,-0.2000,-0.1993,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+626,earnings_quarter,AMZN/2022/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+628,earnings_quarter,AMZN/2022/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+7.21%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+625,earnings_quarter,AMZN/2022/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+629,earnings_quarter,AMZN/2022/Q2,l3_eps_actual_cross_endpoint,-0.2,0.1,f,warn,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+630,earnings_quarter,AMZN/2022/Q2,l4_calendar_quarter_mapping,Q2 2022,Q2 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+631,earnings_quarter,AMZN/2022/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+632,earnings_quarter,AMZN/2022/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+635,earnings_quarter,AMZN/2022/Q3,l2_ni_eq_eps_x_shares,0.2800,0.2780,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+634,earnings_quarter,AMZN/2022/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+636,earnings_quarter,AMZN/2022/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+14.70%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+633,earnings_quarter,AMZN/2022/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+637,earnings_quarter,AMZN/2022/Q3,l3_eps_actual_cross_endpoint,0.28,0.2,f,warn,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+638,earnings_quarter,AMZN/2022/Q3,l4_calendar_quarter_mapping,Q3 2022,Q3 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+639,earnings_quarter,AMZN/2022/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+640,earnings_quarter,AMZN/2022/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+643,earnings_quarter,AMZN/2022/Q4,l2_ni_eq_eps_x_shares,0.0300,0.0270,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+642,earnings_quarter,AMZN/2022/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+644,earnings_quarter,AMZN/2022/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+8.58%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+641,earnings_quarter,AMZN/2022/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+645,earnings_quarter,AMZN/2022/Q4,l3_eps_actual_cross_endpoint,0.03,0.21,f,warn,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+646,earnings_quarter,AMZN/2022/Q4,l4_calendar_quarter_mapping,Q4 2022,Q4 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+647,earnings_quarter,AMZN/2022/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+648,earnings_quarter,AMZN/2022/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+651,earnings_quarter,AMZN/2023/Q1,l2_ni_eq_eps_x_shares,0.3100,0.3066,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+650,earnings_quarter,AMZN/2023/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+652,earnings_quarter,AMZN/2023/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+9.37%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+649,earnings_quarter,AMZN/2023/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+653,earnings_quarter,AMZN/2023/Q1,l3_eps_actual_cross_endpoint,0.31,0.31,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+654,earnings_quarter,AMZN/2023/Q1,l4_calendar_quarter_mapping,Q1 2023,Q1 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+655,earnings_quarter,AMZN/2023/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+656,earnings_quarter,AMZN/2023/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+659,earnings_quarter,AMZN/2023/Q2,l2_ni_eq_eps_x_shares,0.6500,0.6460,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+658,earnings_quarter,AMZN/2023/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+660,earnings_quarter,AMZN/2023/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+10.85%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+657,earnings_quarter,AMZN/2023/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+661,earnings_quarter,AMZN/2023/Q2,l3_eps_actual_cross_endpoint,0.65,0.65,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+662,earnings_quarter,AMZN/2023/Q2,l4_calendar_quarter_mapping,Q2 2023,Q2 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+663,earnings_quarter,AMZN/2023/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+664,earnings_quarter,AMZN/2023/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+667,earnings_quarter,AMZN/2023/Q3,l2_ni_eq_eps_x_shares,0.9400,0.9357,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+666,earnings_quarter,AMZN/2023/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+668,earnings_quarter,AMZN/2023/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+12.57%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+665,earnings_quarter,AMZN/2023/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+669,earnings_quarter,AMZN/2023/Q3,l3_eps_actual_cross_endpoint,0.94,0.94,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+670,earnings_quarter,AMZN/2023/Q3,l4_calendar_quarter_mapping,Q3 2023,Q3 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+671,earnings_quarter,AMZN/2023/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+672,earnings_quarter,AMZN/2023/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+675,earnings_quarter,AMZN/2023/Q4,l2_ni_eq_eps_x_shares,1.0000,1.0013,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+674,earnings_quarter,AMZN/2023/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+676,earnings_quarter,AMZN/2023/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+13.91%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+673,earnings_quarter,AMZN/2023/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+677,earnings_quarter,AMZN/2023/Q4,l3_eps_actual_cross_endpoint,1,1,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+678,earnings_quarter,AMZN/2023/Q4,l4_calendar_quarter_mapping,Q4 2023,Q4 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+679,earnings_quarter,AMZN/2023/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+680,earnings_quarter,AMZN/2023/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+683,earnings_quarter,AMZN/2024/Q1,l2_ni_eq_eps_x_shares,0.9800,0.9776,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+682,earnings_quarter,AMZN/2024/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+684,earnings_quarter,AMZN/2024/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+12.53%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+681,earnings_quarter,AMZN/2024/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+685,earnings_quarter,AMZN/2024/Q1,l3_eps_actual_cross_endpoint,0.98,0.98,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+686,earnings_quarter,AMZN/2024/Q1,l4_calendar_quarter_mapping,Q1 2024,Q1 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+687,earnings_quarter,AMZN/2024/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+688,earnings_quarter,AMZN/2024/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+691,earnings_quarter,AMZN/2024/Q2,l2_ni_eq_eps_x_shares,1.2600,1.2593,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+690,earnings_quarter,AMZN/2024/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+692,earnings_quarter,AMZN/2024/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+10.12%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+689,earnings_quarter,AMZN/2024/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+693,earnings_quarter,AMZN/2024/Q2,l3_eps_actual_cross_endpoint,1.26,1.26,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+694,earnings_quarter,AMZN/2024/Q2,l4_calendar_quarter_mapping,Q2 2024,Q2 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+695,earnings_quarter,AMZN/2024/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+696,earnings_quarter,AMZN/2024/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+699,earnings_quarter,AMZN/2024/Q3,l2_ni_eq_eps_x_shares,1.4300,1.4279,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+698,earnings_quarter,AMZN/2024/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+700,earnings_quarter,AMZN/2024/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+11.04%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+697,earnings_quarter,AMZN/2024/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+701,earnings_quarter,AMZN/2024/Q3,l3_eps_actual_cross_endpoint,1.43,1.43,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+702,earnings_quarter,AMZN/2024/Q3,l4_calendar_quarter_mapping,Q3 2024,Q3 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+703,earnings_quarter,AMZN/2024/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+704,earnings_quarter,AMZN/2024/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+707,earnings_quarter,AMZN/2024/Q4,l2_ni_eq_eps_x_shares,1.8600,1.8572,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+706,earnings_quarter,AMZN/2024/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+708,earnings_quarter,AMZN/2024/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+10.49%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+705,earnings_quarter,AMZN/2024/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+709,earnings_quarter,AMZN/2024/Q4,l3_eps_actual_cross_endpoint,1.86,1.86,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+710,earnings_quarter,AMZN/2024/Q4,l4_calendar_quarter_mapping,Q4 2024,Q4 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+711,earnings_quarter,AMZN/2024/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+712,earnings_quarter,AMZN/2024/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+715,earnings_quarter,AMZN/2025/Q1,l2_ni_eq_eps_x_shares,1.5900,1.5869,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+714,earnings_quarter,AMZN/2025/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+716,earnings_quarter,AMZN/2025/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+8.62%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+713,earnings_quarter,AMZN/2025/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+717,earnings_quarter,AMZN/2025/Q1,l3_eps_actual_cross_endpoint,1.59,1.59,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+718,earnings_quarter,AMZN/2025/Q1,l4_calendar_quarter_mapping,Q1 2025,Q1 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+719,earnings_quarter,AMZN/2025/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+720,earnings_quarter,AMZN/2025/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+723,earnings_quarter,AMZN/2025/Q2,l2_ni_eq_eps_x_shares,1.6800,1.6809,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+722,earnings_quarter,AMZN/2025/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+724,earnings_quarter,AMZN/2025/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+13.33%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+721,earnings_quarter,AMZN/2025/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+725,earnings_quarter,AMZN/2025/Q2,l3_eps_actual_cross_endpoint,1.68,1.68,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+726,earnings_quarter,AMZN/2025/Q2,l4_calendar_quarter_mapping,Q2 2025,Q2 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+727,earnings_quarter,AMZN/2025/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+728,earnings_quarter,AMZN/2025/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+731,earnings_quarter,AMZN/2025/Q3,l2_ni_eq_eps_x_shares,1.9500,1.9536,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+730,earnings_quarter,AMZN/2025/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+732,earnings_quarter,AMZN/2025/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+13.40%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+729,earnings_quarter,AMZN/2025/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+733,earnings_quarter,AMZN/2025/Q3,l3_eps_actual_cross_endpoint,1.95,1.95,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+734,earnings_quarter,AMZN/2025/Q3,l4_calendar_quarter_mapping,Q3 2025,Q3 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+735,earnings_quarter,AMZN/2025/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+736,earnings_quarter,AMZN/2025/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+739,earnings_quarter,AMZN/2025/Q4,l2_ni_eq_eps_x_shares,1.9500,1.9508,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+738,earnings_quarter,AMZN/2025/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+740,earnings_quarter,AMZN/2025/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+13.63%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+737,earnings_quarter,AMZN/2025/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+741,earnings_quarter,AMZN/2025/Q4,l3_eps_actual_cross_endpoint,1.95,1.95,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+742,earnings_quarter,AMZN/2025/Q4,l4_calendar_quarter_mapping,Q4 2025,Q4 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+743,earnings_quarter,AMZN/2025/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+744,earnings_quarter,AMZN/2025/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+747,earnings_quarter,AMZN/2026/Q1,l2_ni_eq_eps_x_shares,2.7800,2.7823,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+746,earnings_quarter,AMZN/2026/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+748,earnings_quarter,AMZN/2026/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+16.61%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+745,earnings_quarter,AMZN/2026/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+749,earnings_quarter,AMZN/2026/Q1,l3_eps_actual_cross_endpoint,2.78,2.78,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+750,earnings_quarter,AMZN/2026/Q1,l4_calendar_quarter_mapping,Q1 2026,Q1 2026,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+751,earnings_quarter,AMZN/2026/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+752,earnings_quarter,AMZN/2026/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+755,earnings_quarter,GOOGL/2020/Q2,l2_ni_eq_eps_x_shares,0.5100,0.5065,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+754,earnings_quarter,GOOGL/2020/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+753,earnings_quarter,GOOGL/2020/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+756,earnings_quarter,GOOGL/2020/Q2,l3_eps_actual_cross_endpoint,0.51,0.51,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+757,earnings_quarter,GOOGL/2020/Q2,l4_calendar_quarter_mapping,Q2 2020,Q2 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+758,earnings_quarter,GOOGL/2020/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+759,earnings_quarter,GOOGL/2020/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+762,earnings_quarter,GOOGL/2020/Q3,l2_ni_eq_eps_x_shares,0.8200,0.8199,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+761,earnings_quarter,GOOGL/2020/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+760,earnings_quarter,GOOGL/2020/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+763,earnings_quarter,GOOGL/2020/Q3,l3_eps_actual_cross_endpoint,0.82,0.82,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+764,earnings_quarter,GOOGL/2020/Q3,l4_calendar_quarter_mapping,Q3 2020,Q3 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+765,earnings_quarter,GOOGL/2020/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+766,earnings_quarter,GOOGL/2020/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+769,earnings_quarter,GOOGL/2020/Q4,l2_ni_eq_eps_x_shares,1.1200,1.1148,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+768,earnings_quarter,GOOGL/2020/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+767,earnings_quarter,GOOGL/2020/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+770,earnings_quarter,GOOGL/2020/Q4,l3_eps_actual_cross_endpoint,1.12,1.12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+771,earnings_quarter,GOOGL/2020/Q4,l4_calendar_quarter_mapping,Q4 2020,Q4 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+772,earnings_quarter,GOOGL/2020/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+773,earnings_quarter,GOOGL/2020/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+776,earnings_quarter,GOOGL/2021/Q1,l2_ni_eq_eps_x_shares,1.3100,1.3144,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+775,earnings_quarter,GOOGL/2021/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+774,earnings_quarter,GOOGL/2021/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+777,earnings_quarter,GOOGL/2021/Q1,l3_eps_actual_cross_endpoint,1.31,1.31,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+778,earnings_quarter,GOOGL/2021/Q1,l4_calendar_quarter_mapping,Q1 2021,Q1 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+779,earnings_quarter,GOOGL/2021/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+780,earnings_quarter,GOOGL/2021/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+783,earnings_quarter,GOOGL/2021/Q2,l2_ni_eq_eps_x_shares,1.3600,1.3629,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+782,earnings_quarter,GOOGL/2021/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+784,earnings_quarter,GOOGL/2021/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+61.58%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+781,earnings_quarter,GOOGL/2021/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+785,earnings_quarter,GOOGL/2021/Q2,l3_eps_actual_cross_endpoint,1.36,1.36,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+786,earnings_quarter,GOOGL/2021/Q2,l4_calendar_quarter_mapping,Q2 2021,Q2 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+787,earnings_quarter,GOOGL/2021/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+788,earnings_quarter,GOOGL/2021/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+791,earnings_quarter,GOOGL/2021/Q3,l2_ni_eq_eps_x_shares,1.4000,1.3995,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+790,earnings_quarter,GOOGL/2021/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+792,earnings_quarter,GOOGL/2021/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+41.03%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+789,earnings_quarter,GOOGL/2021/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+793,earnings_quarter,GOOGL/2021/Q3,l3_eps_actual_cross_endpoint,1.4,1.4,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+794,earnings_quarter,GOOGL/2021/Q3,l4_calendar_quarter_mapping,Q3 2021,Q3 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+795,earnings_quarter,GOOGL/2021/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+796,earnings_quarter,GOOGL/2021/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+799,earnings_quarter,GOOGL/2021/Q4,l2_ni_eq_eps_x_shares,1.5300,1.5347,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+798,earnings_quarter,GOOGL/2021/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+800,earnings_quarter,GOOGL/2021/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+32.39%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+797,earnings_quarter,GOOGL/2021/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+801,earnings_quarter,GOOGL/2021/Q4,l3_eps_actual_cross_endpoint,1.53,1.53,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+802,earnings_quarter,GOOGL/2021/Q4,l4_calendar_quarter_mapping,Q4 2021,Q4 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+803,earnings_quarter,GOOGL/2021/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+804,earnings_quarter,GOOGL/2021/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+807,earnings_quarter,GOOGL/2022/Q1,l2_ni_eq_eps_x_shares,1.2300,1.2311,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+806,earnings_quarter,GOOGL/2022/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+808,earnings_quarter,GOOGL/2022/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+22.95%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+805,earnings_quarter,GOOGL/2022/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+809,earnings_quarter,GOOGL/2022/Q1,l3_eps_actual_cross_endpoint,1.23,1.23,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+810,earnings_quarter,GOOGL/2022/Q1,l4_calendar_quarter_mapping,Q1 2022,Q1 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+811,earnings_quarter,GOOGL/2022/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+812,earnings_quarter,GOOGL/2022/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+815,earnings_quarter,GOOGL/2022/Q2,l2_ni_eq_eps_x_shares,1.2100,1.2087,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+814,earnings_quarter,GOOGL/2022/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+816,earnings_quarter,GOOGL/2022/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+12.61%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+813,earnings_quarter,GOOGL/2022/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+817,earnings_quarter,GOOGL/2022/Q2,l3_eps_actual_cross_endpoint,1.21,1.21,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+818,earnings_quarter,GOOGL/2022/Q2,l4_calendar_quarter_mapping,Q2 2022,Q2 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+819,earnings_quarter,GOOGL/2022/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+820,earnings_quarter,GOOGL/2022/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+823,earnings_quarter,GOOGL/2022/Q3,l2_ni_eq_eps_x_shares,1.0600,1.0621,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+822,earnings_quarter,GOOGL/2022/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+824,earnings_quarter,GOOGL/2022/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+6.10%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+821,earnings_quarter,GOOGL/2022/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+825,earnings_quarter,GOOGL/2022/Q3,l3_eps_actual_cross_endpoint,1.06,1.06,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+826,earnings_quarter,GOOGL/2022/Q3,l4_calendar_quarter_mapping,Q3 2022,Q3 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+827,earnings_quarter,GOOGL/2022/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+828,earnings_quarter,GOOGL/2022/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+831,earnings_quarter,GOOGL/2022/Q4,l2_ni_eq_eps_x_shares,1.0500,1.0523,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+830,earnings_quarter,GOOGL/2022/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+832,earnings_quarter,GOOGL/2022/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+0.96%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+829,earnings_quarter,GOOGL/2022/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+833,earnings_quarter,GOOGL/2022/Q4,l3_eps_actual_cross_endpoint,1.05,1.05,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+834,earnings_quarter,GOOGL/2022/Q4,l4_calendar_quarter_mapping,Q4 2022,Q4 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+835,earnings_quarter,GOOGL/2022/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+836,earnings_quarter,GOOGL/2022/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+839,earnings_quarter,GOOGL/2023/Q1,l2_ni_eq_eps_x_shares,1.1700,1.1738,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+838,earnings_quarter,GOOGL/2023/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+840,earnings_quarter,GOOGL/2023/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+2.61%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+837,earnings_quarter,GOOGL/2023/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+841,earnings_quarter,GOOGL/2023/Q1,l3_eps_actual_cross_endpoint,1.17,1.17,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+842,earnings_quarter,GOOGL/2023/Q1,l4_calendar_quarter_mapping,Q1 2023,Q1 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+843,earnings_quarter,GOOGL/2023/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+844,earnings_quarter,GOOGL/2023/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+847,earnings_quarter,GOOGL/2023/Q2,l2_ni_eq_eps_x_shares,1.4400,1.4390,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+846,earnings_quarter,GOOGL/2023/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+848,earnings_quarter,GOOGL/2023/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+7.06%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+845,earnings_quarter,GOOGL/2023/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+849,earnings_quarter,GOOGL/2023/Q2,l3_eps_actual_cross_endpoint,1.44,1.44,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+850,earnings_quarter,GOOGL/2023/Q2,l4_calendar_quarter_mapping,Q2 2023,Q2 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+851,earnings_quarter,GOOGL/2023/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+852,earnings_quarter,GOOGL/2023/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+855,earnings_quarter,GOOGL/2023/Q3,l2_ni_eq_eps_x_shares,1.5500,1.5508,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+854,earnings_quarter,GOOGL/2023/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+856,earnings_quarter,GOOGL/2023/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+11.00%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+853,earnings_quarter,GOOGL/2023/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+857,earnings_quarter,GOOGL/2023/Q3,l3_eps_actual_cross_endpoint,1.55,1.55,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+858,earnings_quarter,GOOGL/2023/Q3,l4_calendar_quarter_mapping,Q3 2023,Q3 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+859,earnings_quarter,GOOGL/2023/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+860,earnings_quarter,GOOGL/2023/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+863,earnings_quarter,GOOGL/2023/Q4,l2_ni_eq_eps_x_shares,1.6400,1.6416,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+862,earnings_quarter,GOOGL/2023/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+864,earnings_quarter,GOOGL/2023/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+13.49%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+861,earnings_quarter,GOOGL/2023/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+865,earnings_quarter,GOOGL/2023/Q4,l3_eps_actual_cross_endpoint,1.64,1.64,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+866,earnings_quarter,GOOGL/2023/Q4,l4_calendar_quarter_mapping,Q4 2023,Q4 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+867,earnings_quarter,GOOGL/2023/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+868,earnings_quarter,GOOGL/2023/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+871,earnings_quarter,GOOGL/2024/Q1,l2_ni_eq_eps_x_shares,1.8900,1.8889,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+870,earnings_quarter,GOOGL/2024/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+872,earnings_quarter,GOOGL/2024/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+15.41%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+869,earnings_quarter,GOOGL/2024/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+873,earnings_quarter,GOOGL/2024/Q1,l3_eps_actual_cross_endpoint,1.89,1.89,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+874,earnings_quarter,GOOGL/2024/Q1,l4_calendar_quarter_mapping,Q1 2024,Q1 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+875,earnings_quarter,GOOGL/2024/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+876,earnings_quarter,GOOGL/2024/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+879,earnings_quarter,GOOGL/2024/Q2,l2_ni_eq_eps_x_shares,1.8900,1.8903,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+878,earnings_quarter,GOOGL/2024/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+880,earnings_quarter,GOOGL/2024/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+13.59%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+877,earnings_quarter,GOOGL/2024/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+881,earnings_quarter,GOOGL/2024/Q2,l3_eps_actual_cross_endpoint,1.89,1.89,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+882,earnings_quarter,GOOGL/2024/Q2,l4_calendar_quarter_mapping,Q2 2024,Q2 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+883,earnings_quarter,GOOGL/2024/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+884,earnings_quarter,GOOGL/2024/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+887,earnings_quarter,GOOGL/2024/Q3,l2_ni_eq_eps_x_shares,2.1200,2.1178,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+886,earnings_quarter,GOOGL/2024/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+888,earnings_quarter,GOOGL/2024/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+15.09%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+885,earnings_quarter,GOOGL/2024/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+889,earnings_quarter,GOOGL/2024/Q3,l3_eps_actual_cross_endpoint,2.12,2.12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+890,earnings_quarter,GOOGL/2024/Q3,l4_calendar_quarter_mapping,Q3 2024,Q3 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+891,earnings_quarter,GOOGL/2024/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+892,earnings_quarter,GOOGL/2024/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+895,earnings_quarter,GOOGL/2024/Q4,l2_ni_eq_eps_x_shares,2.1500,2.1490,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+894,earnings_quarter,GOOGL/2024/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+896,earnings_quarter,GOOGL/2024/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+11.77%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+893,earnings_quarter,GOOGL/2024/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+897,earnings_quarter,GOOGL/2024/Q4,l3_eps_actual_cross_endpoint,2.15,2.15,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+898,earnings_quarter,GOOGL/2024/Q4,l4_calendar_quarter_mapping,Q4 2024,Q4 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+899,earnings_quarter,GOOGL/2024/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+900,earnings_quarter,GOOGL/2024/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+903,earnings_quarter,GOOGL/2025/Q1,l2_ni_eq_eps_x_shares,2.8100,2.8102,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+902,earnings_quarter,GOOGL/2025/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+904,earnings_quarter,GOOGL/2025/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+12.04%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+901,earnings_quarter,GOOGL/2025/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+905,earnings_quarter,GOOGL/2025/Q1,l3_eps_actual_cross_endpoint,2.81,2.81,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+906,earnings_quarter,GOOGL/2025/Q1,l4_calendar_quarter_mapping,Q1 2025,Q1 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+907,earnings_quarter,GOOGL/2025/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+908,earnings_quarter,GOOGL/2025/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+911,earnings_quarter,GOOGL/2025/Q2,l2_ni_eq_eps_x_shares,2.3100,2.3115,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+910,earnings_quarter,GOOGL/2025/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+912,earnings_quarter,GOOGL/2025/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+13.79%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+909,earnings_quarter,GOOGL/2025/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+913,earnings_quarter,GOOGL/2025/Q2,l3_eps_actual_cross_endpoint,2.31,2.31,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+914,earnings_quarter,GOOGL/2025/Q2,l4_calendar_quarter_mapping,Q2 2025,Q2 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+915,earnings_quarter,GOOGL/2025/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+916,earnings_quarter,GOOGL/2025/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+919,earnings_quarter,GOOGL/2025/Q3,l2_ni_eq_eps_x_shares,2.8700,2.8664,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+918,earnings_quarter,GOOGL/2025/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+920,earnings_quarter,GOOGL/2025/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+15.95%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+917,earnings_quarter,GOOGL/2025/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+921,earnings_quarter,GOOGL/2025/Q3,l3_eps_actual_cross_endpoint,2.87,2.87,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+922,earnings_quarter,GOOGL/2025/Q3,l4_calendar_quarter_mapping,Q3 2025,Q3 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+923,earnings_quarter,GOOGL/2025/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+924,earnings_quarter,GOOGL/2025/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+927,earnings_quarter,GOOGL/2025/Q4,l2_ni_eq_eps_x_shares,2.8200,2.8177,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+926,earnings_quarter,GOOGL/2025/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+928,earnings_quarter,GOOGL/2025/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+18.06%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+925,earnings_quarter,GOOGL/2025/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+929,earnings_quarter,GOOGL/2025/Q4,l3_eps_actual_cross_endpoint,2.82,2.82,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+930,earnings_quarter,GOOGL/2025/Q4,l4_calendar_quarter_mapping,Q4 2025,Q4 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+931,earnings_quarter,GOOGL/2025/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+932,earnings_quarter,GOOGL/2025/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+935,earnings_quarter,GOOGL/2026/Q1,l2_ni_eq_eps_x_shares,5.1100,5.1134,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+934,earnings_quarter,GOOGL/2026/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+936,earnings_quarter,GOOGL/2026/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+21.79%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+933,earnings_quarter,GOOGL/2026/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+937,earnings_quarter,GOOGL/2026/Q1,l3_eps_actual_cross_endpoint,5.11,5.11,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+938,earnings_quarter,GOOGL/2026/Q1,l4_calendar_quarter_mapping,Q1 2026,Q1 2026,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+939,earnings_quarter,GOOGL/2026/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+940,earnings_quarter,GOOGL/2026/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+943,earnings_quarter,META/2020/Q2,l2_ni_eq_eps_x_shares,1.8000,1.7985,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+942,earnings_quarter,META/2020/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+941,earnings_quarter,META/2020/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+944,earnings_quarter,META/2020/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+945,earnings_quarter,META/2020/Q2,l4_calendar_quarter_mapping,Q2 2020,Q2 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+946,earnings_quarter,META/2020/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+947,earnings_quarter,META/2020/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+950,earnings_quarter,META/2020/Q3,l2_ni_eq_eps_x_shares,2.7100,2.7100,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+949,earnings_quarter,META/2020/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+948,earnings_quarter,META/2020/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+951,earnings_quarter,META/2020/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+952,earnings_quarter,META/2020/Q3,l4_calendar_quarter_mapping,Q3 2020,Q3 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+953,earnings_quarter,META/2020/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+954,earnings_quarter,META/2020/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+957,earnings_quarter,META/2020/Q4,l2_ni_eq_eps_x_shares,3.8800,3.8781,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+956,earnings_quarter,META/2020/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+955,earnings_quarter,META/2020/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+958,earnings_quarter,META/2020/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+959,earnings_quarter,META/2020/Q4,l4_calendar_quarter_mapping,Q4 2020,Q4 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+960,earnings_quarter,META/2020/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+961,earnings_quarter,META/2020/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+964,earnings_quarter,META/2021/Q1,l2_ni_eq_eps_x_shares,3.3000,3.2953,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+963,earnings_quarter,META/2021/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+962,earnings_quarter,META/2021/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+965,earnings_quarter,META/2021/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+966,earnings_quarter,META/2021/Q1,l4_calendar_quarter_mapping,Q1 2021,Q1 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+967,earnings_quarter,META/2021/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+968,earnings_quarter,META/2021/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+971,earnings_quarter,META/2021/Q2,l2_ni_eq_eps_x_shares,3.6100,3.6100,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+970,earnings_quarter,META/2021/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+972,earnings_quarter,META/2021/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+55.60%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+969,earnings_quarter,META/2021/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+973,earnings_quarter,META/2021/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+974,earnings_quarter,META/2021/Q2,l4_calendar_quarter_mapping,Q2 2021,Q2 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+975,earnings_quarter,META/2021/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+976,earnings_quarter,META/2021/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+979,earnings_quarter,META/2021/Q3,l2_ni_eq_eps_x_shares,3.2200,3.2158,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+978,earnings_quarter,META/2021/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+980,earnings_quarter,META/2021/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+35.12%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+977,earnings_quarter,META/2021/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+981,earnings_quarter,META/2021/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+982,earnings_quarter,META/2021/Q3,l4_calendar_quarter_mapping,Q3 2021,Q3 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+983,earnings_quarter,META/2021/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+984,earnings_quarter,META/2021/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+987,earnings_quarter,META/2021/Q4,l2_ni_eq_eps_x_shares,3.6800,3.6745,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+986,earnings_quarter,META/2021/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+988,earnings_quarter,META/2021/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+19.95%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+985,earnings_quarter,META/2021/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+989,earnings_quarter,META/2021/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+990,earnings_quarter,META/2021/Q4,l4_calendar_quarter_mapping,Q4 2021,Q4 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+991,earnings_quarter,META/2021/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+992,earnings_quarter,META/2021/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+995,earnings_quarter,META/2022/Q1,l2_ni_eq_eps_x_shares,2.7200,2.7225,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+994,earnings_quarter,META/2022/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+996,earnings_quarter,META/2022/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+6.64%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+993,earnings_quarter,META/2022/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+997,earnings_quarter,META/2022/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+998,earnings_quarter,META/2022/Q1,l4_calendar_quarter_mapping,Q1 2022,Q1 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+999,earnings_quarter,META/2022/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1000,earnings_quarter,META/2022/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1003,earnings_quarter,META/2022/Q2,l2_ni_eq_eps_x_shares,2.4600,2.4648,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1002,earnings_quarter,META/2022/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1004,earnings_quarter,META/2022/Q2,l2_revenue_yoy_range,"[-50%, +200%]",-0.88%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1001,earnings_quarter,META/2022/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1005,earnings_quarter,META/2022/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1006,earnings_quarter,META/2022/Q2,l4_calendar_quarter_mapping,Q2 2022,Q2 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1007,earnings_quarter,META/2022/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1008,earnings_quarter,META/2022/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1011,earnings_quarter,META/2022/Q3,l2_ni_eq_eps_x_shares,1.6400,1.6357,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1010,earnings_quarter,META/2022/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1012,earnings_quarter,META/2022/Q3,l2_revenue_yoy_range,"[-50%, +200%]",-4.47%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1009,earnings_quarter,META/2022/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1013,earnings_quarter,META/2022/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1014,earnings_quarter,META/2022/Q3,l4_calendar_quarter_mapping,Q3 2022,Q3 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1015,earnings_quarter,META/2022/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1016,earnings_quarter,META/2022/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1019,earnings_quarter,META/2022/Q4,l2_ni_eq_eps_x_shares,1.7600,1.7625,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1018,earnings_quarter,META/2022/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1020,earnings_quarter,META/2022/Q4,l2_revenue_yoy_range,"[-50%, +200%]",-4.47%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1017,earnings_quarter,META/2022/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1021,earnings_quarter,META/2022/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1022,earnings_quarter,META/2022/Q4,l4_calendar_quarter_mapping,Q4 2022,Q4 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1023,earnings_quarter,META/2022/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1024,earnings_quarter,META/2022/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1027,earnings_quarter,META/2023/Q1,l2_ni_eq_eps_x_shares,2.2000,2.1992,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1026,earnings_quarter,META/2023/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1028,earnings_quarter,META/2023/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+2.64%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1025,earnings_quarter,META/2023/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1029,earnings_quarter,META/2023/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1030,earnings_quarter,META/2023/Q1,l4_calendar_quarter_mapping,Q1 2023,Q1 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1031,earnings_quarter,META/2023/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1032,earnings_quarter,META/2023/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1035,earnings_quarter,META/2023/Q2,l2_ni_eq_eps_x_shares,2.9800,2.9816,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1034,earnings_quarter,META/2023/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1036,earnings_quarter,META/2023/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+11.02%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1033,earnings_quarter,META/2023/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1037,earnings_quarter,META/2023/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1038,earnings_quarter,META/2023/Q2,l4_calendar_quarter_mapping,Q2 2023,Q2 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1039,earnings_quarter,META/2023/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1040,earnings_quarter,META/2023/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1043,earnings_quarter,META/2023/Q3,l2_ni_eq_eps_x_shares,4.3900,4.3858,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1042,earnings_quarter,META/2023/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1044,earnings_quarter,META/2023/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+23.21%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1041,earnings_quarter,META/2023/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1045,earnings_quarter,META/2023/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1046,earnings_quarter,META/2023/Q3,l4_calendar_quarter_mapping,Q3 2023,Q3 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1047,earnings_quarter,META/2023/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1048,earnings_quarter,META/2023/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1051,earnings_quarter,META/2023/Q4,l2_ni_eq_eps_x_shares,5.3300,5.3297,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1050,earnings_quarter,META/2023/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1052,earnings_quarter,META/2023/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+24.70%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1049,earnings_quarter,META/2023/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1053,earnings_quarter,META/2023/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1054,earnings_quarter,META/2023/Q4,l4_calendar_quarter_mapping,Q4 2023,Q4 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1055,earnings_quarter,META/2023/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1056,earnings_quarter,META/2023/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1059,earnings_quarter,META/2024/Q1,l2_ni_eq_eps_x_shares,4.7100,4.7120,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1058,earnings_quarter,META/2024/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1060,earnings_quarter,META/2024/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+27.26%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1057,earnings_quarter,META/2024/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1061,earnings_quarter,META/2024/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1062,earnings_quarter,META/2024/Q1,l4_calendar_quarter_mapping,Q1 2024,Q1 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1063,earnings_quarter,META/2024/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1064,earnings_quarter,META/2024/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1067,earnings_quarter,META/2024/Q2,l2_ni_eq_eps_x_shares,5.1600,5.1590,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1066,earnings_quarter,META/2024/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1068,earnings_quarter,META/2024/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+22.10%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1065,earnings_quarter,META/2024/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1069,earnings_quarter,META/2024/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1070,earnings_quarter,META/2024/Q2,l4_calendar_quarter_mapping,Q2 2024,Q2 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1071,earnings_quarter,META/2024/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1072,earnings_quarter,META/2024/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1075,earnings_quarter,META/2024/Q3,l2_ni_eq_eps_x_shares,6.0300,6.0338,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1074,earnings_quarter,META/2024/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1076,earnings_quarter,META/2024/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+18.87%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1073,earnings_quarter,META/2024/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1077,earnings_quarter,META/2024/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1078,earnings_quarter,META/2024/Q3,l4_calendar_quarter_mapping,Q3 2024,Q3 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1079,earnings_quarter,META/2024/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1080,earnings_quarter,META/2024/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1083,earnings_quarter,META/2024/Q4,l2_ni_eq_eps_x_shares,8.0200,7.9717,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1082,earnings_quarter,META/2024/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1084,earnings_quarter,META/2024/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+20.63%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1081,earnings_quarter,META/2024/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1085,earnings_quarter,META/2024/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1086,earnings_quarter,META/2024/Q4,l4_calendar_quarter_mapping,Q4 2024,Q4 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1087,earnings_quarter,META/2024/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1088,earnings_quarter,META/2024/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1091,earnings_quarter,META/2025/Q1,l2_ni_eq_eps_x_shares,6.4300,6.4263,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1090,earnings_quarter,META/2025/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1092,earnings_quarter,META/2025/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+16.07%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1089,earnings_quarter,META/2025/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1093,earnings_quarter,META/2025/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1094,earnings_quarter,META/2025/Q1,l4_calendar_quarter_mapping,Q1 2025,Q1 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1095,earnings_quarter,META/2025/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1096,earnings_quarter,META/2025/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1099,earnings_quarter,META/2025/Q2,l2_ni_eq_eps_x_shares,7.1400,7.1350,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1098,earnings_quarter,META/2025/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1100,earnings_quarter,META/2025/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+21.61%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1097,earnings_quarter,META/2025/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1101,earnings_quarter,META/2025/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1102,earnings_quarter,META/2025/Q2,l4_calendar_quarter_mapping,Q2 2025,Q2 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1103,earnings_quarter,META/2025/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1104,earnings_quarter,META/2025/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1107,earnings_quarter,META/2025/Q3,l2_ni_eq_eps_x_shares,1.0500,1.0533,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1106,earnings_quarter,META/2025/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1108,earnings_quarter,META/2025/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+26.25%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1105,earnings_quarter,META/2025/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1109,earnings_quarter,META/2025/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1110,earnings_quarter,META/2025/Q3,l4_calendar_quarter_mapping,Q3 2025,Q3 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1111,earnings_quarter,META/2025/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1112,earnings_quarter,META/2025/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1115,earnings_quarter,META/2025/Q4,l2_ni_eq_eps_x_shares,8.8700,8.8454,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1114,earnings_quarter,META/2025/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1116,earnings_quarter,META/2025/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+23.79%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1113,earnings_quarter,META/2025/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1117,earnings_quarter,META/2025/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1118,earnings_quarter,META/2025/Q4,l4_calendar_quarter_mapping,Q4 2025,Q4 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1119,earnings_quarter,META/2025/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1120,earnings_quarter,META/2025/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1123,earnings_quarter,META/2026/Q1,l2_ni_eq_eps_x_shares,10.4400,10.4419,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1122,earnings_quarter,META/2026/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1124,earnings_quarter,META/2026/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+33.08%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1121,earnings_quarter,META/2026/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1125,earnings_quarter,META/2026/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1126,earnings_quarter,META/2026/Q1,l4_calendar_quarter_mapping,Q1 2026,Q1 2026,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1127,earnings_quarter,META/2026/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1128,earnings_quarter,META/2026/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+191,earnings_quarter,MSFT/2020/Q4,l2_ni_eq_eps_x_shares,1.4600,1.4643,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+190,earnings_quarter,MSFT/2020/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+189,earnings_quarter,MSFT/2020/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+192,earnings_quarter,MSFT/2020/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+193,earnings_quarter,MSFT/2020/Q4,l4_calendar_quarter_mapping,Q2 2020,Q2 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+194,earnings_quarter,MSFT/2020/Q4,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+195,earnings_quarter,MSFT/2020/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+198,earnings_quarter,MSFT/2021/Q1,l2_ni_eq_eps_x_shares,1.8200,1.8192,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+197,earnings_quarter,MSFT/2021/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+196,earnings_quarter,MSFT/2021/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+199,earnings_quarter,MSFT/2021/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+200,earnings_quarter,MSFT/2021/Q1,l4_calendar_quarter_mapping,Q3 2020,Q3 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+201,earnings_quarter,MSFT/2021/Q1,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+202,earnings_quarter,MSFT/2021/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+205,earnings_quarter,MSFT/2021/Q2,l2_ni_eq_eps_x_shares,2.0300,2.0303,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+204,earnings_quarter,MSFT/2021/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+203,earnings_quarter,MSFT/2021/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+206,earnings_quarter,MSFT/2021/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+207,earnings_quarter,MSFT/2021/Q2,l4_calendar_quarter_mapping,Q4 2020,Q4 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+208,earnings_quarter,MSFT/2021/Q2,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+209,earnings_quarter,MSFT/2021/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+212,earnings_quarter,MSFT/2021/Q3,l2_ni_eq_eps_x_shares,2.0300,2.0346,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+211,earnings_quarter,MSFT/2021/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+210,earnings_quarter,MSFT/2021/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+213,earnings_quarter,MSFT/2021/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+214,earnings_quarter,MSFT/2021/Q3,l4_calendar_quarter_mapping,Q1 2021,Q1 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+215,earnings_quarter,MSFT/2021/Q3,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+216,earnings_quarter,MSFT/2021/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+219,earnings_quarter,MSFT/2021/Q4,l2_ni_eq_eps_x_shares,2.1700,2.1710,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+218,earnings_quarter,MSFT/2021/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+220,earnings_quarter,MSFT/2021/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+21.35%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+217,earnings_quarter,MSFT/2021/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+221,earnings_quarter,MSFT/2021/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+222,earnings_quarter,MSFT/2021/Q4,l4_calendar_quarter_mapping,Q2 2021,Q2 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+223,earnings_quarter,MSFT/2021/Q4,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+224,earnings_quarter,MSFT/2021/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+227,earnings_quarter,MSFT/2022/Q1,l2_ni_eq_eps_x_shares,2.7100,2.7098,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+226,earnings_quarter,MSFT/2022/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+228,earnings_quarter,MSFT/2022/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+21.97%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+225,earnings_quarter,MSFT/2022/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+229,earnings_quarter,MSFT/2022/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+230,earnings_quarter,MSFT/2022/Q1,l4_calendar_quarter_mapping,Q3 2021,Q3 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+231,earnings_quarter,MSFT/2022/Q1,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+232,earnings_quarter,MSFT/2022/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+235,earnings_quarter,MSFT/2022/Q2,l2_ni_eq_eps_x_shares,2.4800,2.4838,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+234,earnings_quarter,MSFT/2022/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+236,earnings_quarter,MSFT/2022/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+20.09%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+233,earnings_quarter,MSFT/2022/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+237,earnings_quarter,MSFT/2022/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+238,earnings_quarter,MSFT/2022/Q2,l4_calendar_quarter_mapping,Q4 2021,Q4 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+239,earnings_quarter,MSFT/2022/Q2,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+240,earnings_quarter,MSFT/2022/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+243,earnings_quarter,MSFT/2022/Q3,l2_ni_eq_eps_x_shares,2.2200,2.2203,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+242,earnings_quarter,MSFT/2022/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+244,earnings_quarter,MSFT/2022/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+18.35%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+241,earnings_quarter,MSFT/2022/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+245,earnings_quarter,MSFT/2022/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+246,earnings_quarter,MSFT/2022/Q3,l4_calendar_quarter_mapping,Q1 2022,Q1 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+247,earnings_quarter,MSFT/2022/Q3,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+248,earnings_quarter,MSFT/2022/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+251,earnings_quarter,MSFT/2022/Q4,l2_ni_eq_eps_x_shares,2.2300,2.2302,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+250,earnings_quarter,MSFT/2022/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+252,earnings_quarter,MSFT/2022/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+12.38%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+249,earnings_quarter,MSFT/2022/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+253,earnings_quarter,MSFT/2022/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+254,earnings_quarter,MSFT/2022/Q4,l4_calendar_quarter_mapping,Q2 2022,Q2 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+255,earnings_quarter,MSFT/2022/Q4,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+256,earnings_quarter,MSFT/2022/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+259,earnings_quarter,MSFT/2023/Q1,l2_ni_eq_eps_x_shares,2.3500,2.3455,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+258,earnings_quarter,MSFT/2023/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+260,earnings_quarter,MSFT/2023/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+10.60%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+257,earnings_quarter,MSFT/2023/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+261,earnings_quarter,MSFT/2023/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+262,earnings_quarter,MSFT/2023/Q1,l4_calendar_quarter_mapping,Q3 2022,Q3 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+263,earnings_quarter,MSFT/2023/Q1,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+264,earnings_quarter,MSFT/2023/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+267,earnings_quarter,MSFT/2023/Q2,l2_ni_eq_eps_x_shares,2.2000,2.1979,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+266,earnings_quarter,MSFT/2023/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+268,earnings_quarter,MSFT/2023/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+1.97%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+265,earnings_quarter,MSFT/2023/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+269,earnings_quarter,MSFT/2023/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+270,earnings_quarter,MSFT/2023/Q2,l4_calendar_quarter_mapping,Q4 2022,Q4 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+271,earnings_quarter,MSFT/2023/Q2,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+272,earnings_quarter,MSFT/2023/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+275,earnings_quarter,MSFT/2023/Q3,l2_ni_eq_eps_x_shares,2.4500,2.4516,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+274,earnings_quarter,MSFT/2023/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+276,earnings_quarter,MSFT/2023/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+7.08%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+273,earnings_quarter,MSFT/2023/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+277,earnings_quarter,MSFT/2023/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+278,earnings_quarter,MSFT/2023/Q3,l4_calendar_quarter_mapping,Q1 2023,Q1 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+279,earnings_quarter,MSFT/2023/Q3,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+280,earnings_quarter,MSFT/2023/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+283,earnings_quarter,MSFT/2023/Q4,l2_ni_eq_eps_x_shares,2.6900,2.6893,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+282,earnings_quarter,MSFT/2023/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+284,earnings_quarter,MSFT/2023/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+8.34%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+281,earnings_quarter,MSFT/2023/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+285,earnings_quarter,MSFT/2023/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+286,earnings_quarter,MSFT/2023/Q4,l4_calendar_quarter_mapping,Q2 2023,Q2 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+287,earnings_quarter,MSFT/2023/Q4,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+288,earnings_quarter,MSFT/2023/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+291,earnings_quarter,MSFT/2024/Q1,l2_ni_eq_eps_x_shares,2.9900,2.9873,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+290,earnings_quarter,MSFT/2024/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+292,earnings_quarter,MSFT/2024/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+12.76%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+289,earnings_quarter,MSFT/2024/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+293,earnings_quarter,MSFT/2024/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+294,earnings_quarter,MSFT/2024/Q1,l4_calendar_quarter_mapping,Q3 2023,Q3 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+295,earnings_quarter,MSFT/2024/Q1,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+296,earnings_quarter,MSFT/2024/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+299,earnings_quarter,MSFT/2024/Q2,l2_ni_eq_eps_x_shares,2.9300,2.9285,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+298,earnings_quarter,MSFT/2024/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+300,earnings_quarter,MSFT/2024/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+17.58%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+297,earnings_quarter,MSFT/2024/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+301,earnings_quarter,MSFT/2024/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+302,earnings_quarter,MSFT/2024/Q2,l4_calendar_quarter_mapping,Q4 2023,Q4 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+303,earnings_quarter,MSFT/2024/Q2,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+304,earnings_quarter,MSFT/2024/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+307,earnings_quarter,MSFT/2024/Q3,l2_ni_eq_eps_x_shares,2.9400,2.9362,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+306,earnings_quarter,MSFT/2024/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+308,earnings_quarter,MSFT/2024/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+17.03%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+305,earnings_quarter,MSFT/2024/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+309,earnings_quarter,MSFT/2024/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+310,earnings_quarter,MSFT/2024/Q3,l4_calendar_quarter_mapping,Q1 2024,Q1 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+311,earnings_quarter,MSFT/2024/Q3,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+312,earnings_quarter,MSFT/2024/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+315,earnings_quarter,MSFT/2024/Q4,l2_ni_eq_eps_x_shares,2.9500,2.9491,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+314,earnings_quarter,MSFT/2024/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+316,earnings_quarter,MSFT/2024/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+15.20%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+313,earnings_quarter,MSFT/2024/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+317,earnings_quarter,MSFT/2024/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+318,earnings_quarter,MSFT/2024/Q4,l4_calendar_quarter_mapping,Q2 2024,Q2 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+319,earnings_quarter,MSFT/2024/Q4,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+320,earnings_quarter,MSFT/2024/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+323,earnings_quarter,MSFT/2025/Q1,l2_ni_eq_eps_x_shares,3.3000,3.3021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+322,earnings_quarter,MSFT/2025/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+324,earnings_quarter,MSFT/2025/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+16.04%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+321,earnings_quarter,MSFT/2025/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+325,earnings_quarter,MSFT/2025/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+326,earnings_quarter,MSFT/2025/Q1,l4_calendar_quarter_mapping,Q3 2024,Q3 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+327,earnings_quarter,MSFT/2025/Q1,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+328,earnings_quarter,MSFT/2025/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+331,earnings_quarter,MSFT/2025/Q2,l2_ni_eq_eps_x_shares,3.2300,3.2282,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+330,earnings_quarter,MSFT/2025/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+332,earnings_quarter,MSFT/2025/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+12.27%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+329,earnings_quarter,MSFT/2025/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+333,earnings_quarter,MSFT/2025/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+334,earnings_quarter,MSFT/2025/Q2,l4_calendar_quarter_mapping,Q4 2024,Q4 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+335,earnings_quarter,MSFT/2025/Q2,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+336,earnings_quarter,MSFT/2025/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+339,earnings_quarter,MSFT/2025/Q3,l2_ni_eq_eps_x_shares,3.4600,3.4612,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+338,earnings_quarter,MSFT/2025/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+340,earnings_quarter,MSFT/2025/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+13.27%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+337,earnings_quarter,MSFT/2025/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+341,earnings_quarter,MSFT/2025/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+342,earnings_quarter,MSFT/2025/Q3,l4_calendar_quarter_mapping,Q1 2025,Q1 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+343,earnings_quarter,MSFT/2025/Q3,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+344,earnings_quarter,MSFT/2025/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+347,earnings_quarter,MSFT/2025/Q4,l2_ni_eq_eps_x_shares,3.6500,3.6500,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+346,earnings_quarter,MSFT/2025/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+348,earnings_quarter,MSFT/2025/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+18.10%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+345,earnings_quarter,MSFT/2025/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+349,earnings_quarter,MSFT/2025/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+350,earnings_quarter,MSFT/2025/Q4,l4_calendar_quarter_mapping,Q2 2025,Q2 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+351,earnings_quarter,MSFT/2025/Q4,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+352,earnings_quarter,MSFT/2025/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+355,earnings_quarter,MSFT/2026/Q1,l2_ni_eq_eps_x_shares,3.7200,3.7164,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+354,earnings_quarter,MSFT/2026/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+356,earnings_quarter,MSFT/2026/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+18.43%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+353,earnings_quarter,MSFT/2026/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+357,earnings_quarter,MSFT/2026/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+358,earnings_quarter,MSFT/2026/Q1,l4_calendar_quarter_mapping,Q3 2025,Q3 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+359,earnings_quarter,MSFT/2026/Q1,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+360,earnings_quarter,MSFT/2026/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+363,earnings_quarter,MSFT/2026/Q2,l2_ni_eq_eps_x_shares,5.1600,5.1552,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+362,earnings_quarter,MSFT/2026/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+364,earnings_quarter,MSFT/2026/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+16.72%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+361,earnings_quarter,MSFT/2026/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+365,earnings_quarter,MSFT/2026/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+366,earnings_quarter,MSFT/2026/Q2,l4_calendar_quarter_mapping,Q4 2025,Q4 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+367,earnings_quarter,MSFT/2026/Q2,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+368,earnings_quarter,MSFT/2026/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+371,earnings_quarter,MSFT/2026/Q3,l2_ni_eq_eps_x_shares,4.2700,4.2684,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+370,earnings_quarter,MSFT/2026/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+372,earnings_quarter,MSFT/2026/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+18.30%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+369,earnings_quarter,MSFT/2026/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+373,earnings_quarter,MSFT/2026/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+374,earnings_quarter,MSFT/2026/Q3,l4_calendar_quarter_mapping,Q1 2026,Q1 2026,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+375,earnings_quarter,MSFT/2026/Q3,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+376,earnings_quarter,MSFT/2026/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+379,earnings_quarter,NVDA/2021/Q2,l2_ni_eq_eps_x_shares,0.0250,0.0248,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+378,earnings_quarter,NVDA/2021/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+377,earnings_quarter,NVDA/2021/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+380,earnings_quarter,NVDA/2021/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+381,earnings_quarter,NVDA/2021/Q2,l4_calendar_quarter_mapping,Q2 2020,Q2 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+382,earnings_quarter,NVDA/2021/Q2,l4_fiscal_period_month,month 7±1,month 7,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+383,earnings_quarter,NVDA/2021/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+386,earnings_quarter,NVDA/2021/Q3,l2_ni_eq_eps_x_shares,0.0530,0.0530,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+385,earnings_quarter,NVDA/2021/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+384,earnings_quarter,NVDA/2021/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+387,earnings_quarter,NVDA/2021/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+388,earnings_quarter,NVDA/2021/Q3,l4_calendar_quarter_mapping,Q3 2020,Q3 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+389,earnings_quarter,NVDA/2021/Q3,l4_fiscal_period_month,month 10±1,month 10,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+390,earnings_quarter,NVDA/2021/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+393,earnings_quarter,NVDA/2021/Q4,l2_ni_eq_eps_x_shares,0.0580,0.0577,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+392,earnings_quarter,NVDA/2021/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+391,earnings_quarter,NVDA/2021/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+394,earnings_quarter,NVDA/2021/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+395,earnings_quarter,NVDA/2021/Q4,l4_calendar_quarter_mapping,Q4 2020,Q4 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+396,earnings_quarter,NVDA/2021/Q4,l4_fiscal_period_month,month 1±1,month 1,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+397,earnings_quarter,NVDA/2021/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+400,earnings_quarter,NVDA/2022/Q1,l2_ni_eq_eps_x_shares,0.0760,0.0756,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+399,earnings_quarter,NVDA/2022/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+398,earnings_quarter,NVDA/2022/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+401,earnings_quarter,NVDA/2022/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+402,earnings_quarter,NVDA/2022/Q1,l4_calendar_quarter_mapping,Q2 2021,Q2 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+403,earnings_quarter,NVDA/2022/Q1,l4_fiscal_period_month,month 4±1,month 5,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+404,earnings_quarter,NVDA/2022/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+407,earnings_quarter,NVDA/2022/Q2,l2_ni_eq_eps_x_shares,0.0940,0.0938,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+406,earnings_quarter,NVDA/2022/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+408,earnings_quarter,NVDA/2022/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+68.31%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+405,earnings_quarter,NVDA/2022/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+409,earnings_quarter,NVDA/2022/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+410,earnings_quarter,NVDA/2022/Q2,l4_calendar_quarter_mapping,Q3 2021,Q3 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+411,earnings_quarter,NVDA/2022/Q2,l4_fiscal_period_month,month 7±1,month 8,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+412,earnings_quarter,NVDA/2022/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+415,earnings_quarter,NVDA/2022/Q3,l2_ni_eq_eps_x_shares,0.0970,0.0971,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+414,earnings_quarter,NVDA/2022/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+416,earnings_quarter,NVDA/2022/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+50.30%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+413,earnings_quarter,NVDA/2022/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+417,earnings_quarter,NVDA/2022/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+418,earnings_quarter,NVDA/2022/Q3,l4_calendar_quarter_mapping,Q3 2021,Q3 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+419,earnings_quarter,NVDA/2022/Q3,l4_fiscal_period_month,month 10±1,month 10,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+420,earnings_quarter,NVDA/2022/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+423,earnings_quarter,NVDA/2022/Q4,l2_ni_eq_eps_x_shares,0.1200,0.1180,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+422,earnings_quarter,NVDA/2022/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+424,earnings_quarter,NVDA/2022/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+52.77%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+421,earnings_quarter,NVDA/2022/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+425,earnings_quarter,NVDA/2022/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+426,earnings_quarter,NVDA/2022/Q4,l4_calendar_quarter_mapping,Q4 2021,Q4 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+427,earnings_quarter,NVDA/2022/Q4,l4_fiscal_period_month,month 1±1,month 1,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+428,earnings_quarter,NVDA/2022/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+431,earnings_quarter,NVDA/2023/Q1,l2_ni_eq_eps_x_shares,0.0640,0.0638,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+430,earnings_quarter,NVDA/2023/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+432,earnings_quarter,NVDA/2023/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+46.41%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+429,earnings_quarter,NVDA/2023/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+433,earnings_quarter,NVDA/2023/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+434,earnings_quarter,NVDA/2023/Q1,l4_calendar_quarter_mapping,Q2 2022,Q2 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+435,earnings_quarter,NVDA/2023/Q1,l4_fiscal_period_month,month 4±1,month 5,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+436,earnings_quarter,NVDA/2023/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+439,earnings_quarter,NVDA/2023/Q2,l2_ni_eq_eps_x_shares,0.0260,0.0261,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+438,earnings_quarter,NVDA/2023/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+440,earnings_quarter,NVDA/2023/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+3.03%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+437,earnings_quarter,NVDA/2023/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+441,earnings_quarter,NVDA/2023/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+442,earnings_quarter,NVDA/2023/Q2,l4_calendar_quarter_mapping,Q2 2022,Q2 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+443,earnings_quarter,NVDA/2023/Q2,l4_fiscal_period_month,month 7±1,month 7,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+444,earnings_quarter,NVDA/2023/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+447,earnings_quarter,NVDA/2023/Q3,l2_ni_eq_eps_x_shares,0.0270,0.0272,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+446,earnings_quarter,NVDA/2023/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+448,earnings_quarter,NVDA/2023/Q3,l2_revenue_yoy_range,"[-50%, +200%]",-16.50%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+445,earnings_quarter,NVDA/2023/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+449,earnings_quarter,NVDA/2023/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+450,earnings_quarter,NVDA/2023/Q3,l4_calendar_quarter_mapping,Q3 2022,Q3 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+451,earnings_quarter,NVDA/2023/Q3,l4_fiscal_period_month,month 10±1,month 10,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+452,earnings_quarter,NVDA/2023/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+455,earnings_quarter,NVDA/2023/Q4,l2_ni_eq_eps_x_shares,0.0571,0.0571,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+454,earnings_quarter,NVDA/2023/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+456,earnings_quarter,NVDA/2023/Q4,l2_revenue_yoy_range,"[-50%, +200%]",-20.83%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+453,earnings_quarter,NVDA/2023/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+457,earnings_quarter,NVDA/2023/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+458,earnings_quarter,NVDA/2023/Q4,l4_calendar_quarter_mapping,Q4 2022,Q4 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+459,earnings_quarter,NVDA/2023/Q4,l4_fiscal_period_month,month 1±1,month 1,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+460,earnings_quarter,NVDA/2023/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+463,earnings_quarter,NVDA/2024/Q1,l2_ni_eq_eps_x_shares,0.0820,0.0820,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+462,earnings_quarter,NVDA/2024/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+464,earnings_quarter,NVDA/2024/Q1,l2_revenue_yoy_range,"[-50%, +200%]",-13.22%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+461,earnings_quarter,NVDA/2024/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+465,earnings_quarter,NVDA/2024/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+466,earnings_quarter,NVDA/2024/Q1,l4_calendar_quarter_mapping,Q1 2023,Q1 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+467,earnings_quarter,NVDA/2024/Q1,l4_fiscal_period_month,month 4±1,month 4,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+468,earnings_quarter,NVDA/2024/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+471,earnings_quarter,NVDA/2024/Q2,l2_ni_eq_eps_x_shares,0.2500,0.2476,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+470,earnings_quarter,NVDA/2024/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+472,earnings_quarter,NVDA/2024/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+101.48%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+469,earnings_quarter,NVDA/2024/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+473,earnings_quarter,NVDA/2024/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+474,earnings_quarter,NVDA/2024/Q2,l4_calendar_quarter_mapping,Q2 2023,Q2 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+475,earnings_quarter,NVDA/2024/Q2,l4_fiscal_period_month,month 7±1,month 7,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+476,earnings_quarter,NVDA/2024/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+479,earnings_quarter,NVDA/2024/Q3,l2_ni_eq_eps_x_shares,0.3700,0.3706,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+478,earnings_quarter,NVDA/2024/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+480,earnings_quarter,NVDA/2024/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+205.51%,f,warn,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+477,earnings_quarter,NVDA/2024/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+481,earnings_quarter,NVDA/2024/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+482,earnings_quarter,NVDA/2024/Q3,l4_calendar_quarter_mapping,Q3 2023,Q3 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+483,earnings_quarter,NVDA/2024/Q3,l4_fiscal_period_month,month 10±1,month 10,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+484,earnings_quarter,NVDA/2024/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+487,earnings_quarter,NVDA/2024/Q4,l2_ni_eq_eps_x_shares,0.4900,0.4934,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+486,earnings_quarter,NVDA/2024/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+488,earnings_quarter,NVDA/2024/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+265.28%,f,warn,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+485,earnings_quarter,NVDA/2024/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+489,earnings_quarter,NVDA/2024/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+490,earnings_quarter,NVDA/2024/Q4,l4_calendar_quarter_mapping,Q4 2023,Q4 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+491,earnings_quarter,NVDA/2024/Q4,l4_fiscal_period_month,month 1±1,month 1,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+492,earnings_quarter,NVDA/2024/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+495,earnings_quarter,NVDA/2025/Q1,l2_ni_eq_eps_x_shares,0.6000,0.5979,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+494,earnings_quarter,NVDA/2025/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+496,earnings_quarter,NVDA/2025/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+262.12%,f,warn,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+493,earnings_quarter,NVDA/2025/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+497,earnings_quarter,NVDA/2025/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+498,earnings_quarter,NVDA/2025/Q1,l4_calendar_quarter_mapping,Q1 2024,Q1 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+499,earnings_quarter,NVDA/2025/Q1,l4_fiscal_period_month,month 4±1,month 4,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+500,earnings_quarter,NVDA/2025/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+503,earnings_quarter,NVDA/2025/Q2,l2_ni_eq_eps_x_shares,0.6700,0.6680,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+502,earnings_quarter,NVDA/2025/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+504,earnings_quarter,NVDA/2025/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+122.40%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+501,earnings_quarter,NVDA/2025/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+505,earnings_quarter,NVDA/2025/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+506,earnings_quarter,NVDA/2025/Q2,l4_calendar_quarter_mapping,Q2 2024,Q2 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+507,earnings_quarter,NVDA/2025/Q2,l4_fiscal_period_month,month 7±1,month 7,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+508,earnings_quarter,NVDA/2025/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+511,earnings_quarter,NVDA/2025/Q3,l2_ni_eq_eps_x_shares,0.7800,0.7794,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+510,earnings_quarter,NVDA/2025/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+512,earnings_quarter,NVDA/2025/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+93.61%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+509,earnings_quarter,NVDA/2025/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+513,earnings_quarter,NVDA/2025/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+514,earnings_quarter,NVDA/2025/Q3,l4_calendar_quarter_mapping,Q3 2024,Q3 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+515,earnings_quarter,NVDA/2025/Q3,l4_fiscal_period_month,month 10±1,month 10,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+516,earnings_quarter,NVDA/2025/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+519,earnings_quarter,NVDA/2025/Q4,l2_ni_eq_eps_x_shares,0.8900,0.8942,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+518,earnings_quarter,NVDA/2025/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+520,earnings_quarter,NVDA/2025/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+77.94%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+517,earnings_quarter,NVDA/2025/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+521,earnings_quarter,NVDA/2025/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+522,earnings_quarter,NVDA/2025/Q4,l4_calendar_quarter_mapping,Q4 2024,Q4 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+523,earnings_quarter,NVDA/2025/Q4,l4_fiscal_period_month,month 1±1,month 1,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+524,earnings_quarter,NVDA/2025/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+527,earnings_quarter,NVDA/2026/Q1,l2_ni_eq_eps_x_shares,0.7600,0.7629,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+526,earnings_quarter,NVDA/2026/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+528,earnings_quarter,NVDA/2026/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+69.18%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+525,earnings_quarter,NVDA/2026/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+529,earnings_quarter,NVDA/2026/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+530,earnings_quarter,NVDA/2026/Q1,l4_calendar_quarter_mapping,Q1 2025,Q1 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+531,earnings_quarter,NVDA/2026/Q1,l4_fiscal_period_month,month 4±1,month 4,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+532,earnings_quarter,NVDA/2026/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+535,earnings_quarter,NVDA/2026/Q2,l2_ni_eq_eps_x_shares,1.0800,1.0770,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+534,earnings_quarter,NVDA/2026/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+536,earnings_quarter,NVDA/2026/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+55.60%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+533,earnings_quarter,NVDA/2026/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+537,earnings_quarter,NVDA/2026/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+538,earnings_quarter,NVDA/2026/Q2,l4_calendar_quarter_mapping,Q2 2025,Q2 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+539,earnings_quarter,NVDA/2026/Q2,l4_fiscal_period_month,month 7±1,month 7,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+540,earnings_quarter,NVDA/2026/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+543,earnings_quarter,NVDA/2026/Q3,l2_ni_eq_eps_x_shares,1.3000,1.3034,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+542,earnings_quarter,NVDA/2026/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+544,earnings_quarter,NVDA/2026/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+62.49%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+541,earnings_quarter,NVDA/2026/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+545,earnings_quarter,NVDA/2026/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+546,earnings_quarter,NVDA/2026/Q3,l4_calendar_quarter_mapping,Q3 2025,Q3 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+547,earnings_quarter,NVDA/2026/Q3,l4_fiscal_period_month,month 10±1,month 10,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+548,earnings_quarter,NVDA/2026/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+551,earnings_quarter,NVDA/2026/Q4,l2_ni_eq_eps_x_shares,1.7600,1.7583,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+550,earnings_quarter,NVDA/2026/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+552,earnings_quarter,NVDA/2026/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+73.21%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+549,earnings_quarter,NVDA/2026/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+553,earnings_quarter,NVDA/2026/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+554,earnings_quarter,NVDA/2026/Q4,l4_calendar_quarter_mapping,Q4 2025,Q4 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+555,earnings_quarter,NVDA/2026/Q4,l4_fiscal_period_month,month 1±1,month 1,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+556,earnings_quarter,NVDA/2026/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+559,earnings_quarter,NVDA/2027/Q1,l2_ni_eq_eps_x_shares,2.3900,2.3911,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+558,earnings_quarter,NVDA/2027/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+560,earnings_quarter,NVDA/2027/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+85.23%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+557,earnings_quarter,NVDA/2027/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+561,earnings_quarter,NVDA/2027/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+562,earnings_quarter,NVDA/2027/Q1,l4_calendar_quarter_mapping,Q1 2026,Q1 2026,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+563,earnings_quarter,NVDA/2027/Q1,l4_fiscal_period_month,month 4±1,month 4,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+564,earnings_quarter,NVDA/2027/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1131,earnings_quarter,TSLA/2020/Q2,l2_ni_eq_eps_x_shares,0.0335,0.0335,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1130,earnings_quarter,TSLA/2020/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1129,earnings_quarter,TSLA/2020/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1132,earnings_quarter,TSLA/2020/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1133,earnings_quarter,TSLA/2020/Q2,l4_calendar_quarter_mapping,Q2 2020,Q2 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1134,earnings_quarter,TSLA/2020/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1135,earnings_quarter,TSLA/2020/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1138,earnings_quarter,TSLA/2020/Q3,l2_ni_eq_eps_x_shares,0.0905,0.0905,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1137,earnings_quarter,TSLA/2020/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1136,earnings_quarter,TSLA/2020/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1139,earnings_quarter,TSLA/2020/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1140,earnings_quarter,TSLA/2020/Q3,l4_calendar_quarter_mapping,Q3 2020,Q3 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1141,earnings_quarter,TSLA/2020/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1142,earnings_quarter,TSLA/2020/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1145,earnings_quarter,TSLA/2020/Q4,l2_ni_eq_eps_x_shares,0.0709,0.0709,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1144,earnings_quarter,TSLA/2020/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1143,earnings_quarter,TSLA/2020/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1146,earnings_quarter,TSLA/2020/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1147,earnings_quarter,TSLA/2020/Q4,l4_calendar_quarter_mapping,Q4 2020,Q4 2020,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1148,earnings_quarter,TSLA/2020/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1149,earnings_quarter,TSLA/2020/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1152,earnings_quarter,TSLA/2021/Q1,l2_ni_eq_eps_x_shares,0.1300,0.1289,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1151,earnings_quarter,TSLA/2021/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1150,earnings_quarter,TSLA/2021/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1153,earnings_quarter,TSLA/2021/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1154,earnings_quarter,TSLA/2021/Q1,l4_calendar_quarter_mapping,Q1 2021,Q1 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1155,earnings_quarter,TSLA/2021/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1156,earnings_quarter,TSLA/2021/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1159,earnings_quarter,TSLA/2021/Q2,l2_ni_eq_eps_x_shares,0.3400,0.3402,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1158,earnings_quarter,TSLA/2021/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1160,earnings_quarter,TSLA/2021/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+98.11%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1157,earnings_quarter,TSLA/2021/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1161,earnings_quarter,TSLA/2021/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1162,earnings_quarter,TSLA/2021/Q2,l4_calendar_quarter_mapping,Q2 2021,Q2 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1163,earnings_quarter,TSLA/2021/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1164,earnings_quarter,TSLA/2021/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1167,earnings_quarter,TSLA/2021/Q3,l2_ni_eq_eps_x_shares,0.4800,0.4803,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1166,earnings_quarter,TSLA/2021/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1168,earnings_quarter,TSLA/2021/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+56.85%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1165,earnings_quarter,TSLA/2021/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1169,earnings_quarter,TSLA/2021/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1170,earnings_quarter,TSLA/2021/Q3,l4_calendar_quarter_mapping,Q3 2021,Q3 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1171,earnings_quarter,TSLA/2021/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1172,earnings_quarter,TSLA/2021/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1175,earnings_quarter,TSLA/2021/Q4,l2_ni_eq_eps_x_shares,0.5400,0.5391,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1174,earnings_quarter,TSLA/2021/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1176,earnings_quarter,TSLA/2021/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+64.92%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1173,earnings_quarter,TSLA/2021/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1177,earnings_quarter,TSLA/2021/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1178,earnings_quarter,TSLA/2021/Q4,l4_calendar_quarter_mapping,Q4 2021,Q4 2021,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1179,earnings_quarter,TSLA/2021/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1180,earnings_quarter,TSLA/2021/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1183,earnings_quarter,TSLA/2022/Q1,l2_ni_eq_eps_x_shares,0.9500,0.9556,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1182,earnings_quarter,TSLA/2022/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1184,earnings_quarter,TSLA/2022/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+80.54%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1181,earnings_quarter,TSLA/2022/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1185,earnings_quarter,TSLA/2022/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1186,earnings_quarter,TSLA/2022/Q1,l4_calendar_quarter_mapping,Q1 2022,Q1 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1187,earnings_quarter,TSLA/2022/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1188,earnings_quarter,TSLA/2022/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1191,earnings_quarter,TSLA/2022/Q2,l2_ni_eq_eps_x_shares,0.6500,0.6521,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1190,earnings_quarter,TSLA/2022/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1192,earnings_quarter,TSLA/2022/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+41.61%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1189,earnings_quarter,TSLA/2022/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1193,earnings_quarter,TSLA/2022/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1194,earnings_quarter,TSLA/2022/Q2,l4_calendar_quarter_mapping,Q2 2022,Q2 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1195,earnings_quarter,TSLA/2022/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1196,earnings_quarter,TSLA/2022/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1199,earnings_quarter,TSLA/2022/Q3,l2_ni_eq_eps_x_shares,0.9500,0.9493,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1198,earnings_quarter,TSLA/2022/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1200,earnings_quarter,TSLA/2022/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+55.95%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1197,earnings_quarter,TSLA/2022/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1201,earnings_quarter,TSLA/2022/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1202,earnings_quarter,TSLA/2022/Q3,l4_calendar_quarter_mapping,Q3 2022,Q3 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1203,earnings_quarter,TSLA/2022/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1204,earnings_quarter,TSLA/2022/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1207,earnings_quarter,TSLA/2022/Q4,l2_ni_eq_eps_x_shares,1.0700,1.0688,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1206,earnings_quarter,TSLA/2022/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1208,earnings_quarter,TSLA/2022/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+37.24%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1205,earnings_quarter,TSLA/2022/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1209,earnings_quarter,TSLA/2022/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1210,earnings_quarter,TSLA/2022/Q4,l4_calendar_quarter_mapping,Q4 2022,Q4 2022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1211,earnings_quarter,TSLA/2022/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1212,earnings_quarter,TSLA/2022/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1215,earnings_quarter,TSLA/2023/Q1,l2_ni_eq_eps_x_shares,0.7300,0.7246,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1214,earnings_quarter,TSLA/2023/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1216,earnings_quarter,TSLA/2023/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+24.38%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1213,earnings_quarter,TSLA/2023/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1217,earnings_quarter,TSLA/2023/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1218,earnings_quarter,TSLA/2023/Q1,l4_calendar_quarter_mapping,Q1 2023,Q1 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1219,earnings_quarter,TSLA/2023/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1220,earnings_quarter,TSLA/2023/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1223,earnings_quarter,TSLA/2023/Q2,l2_ni_eq_eps_x_shares,0.7800,0.7772,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1222,earnings_quarter,TSLA/2023/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1224,earnings_quarter,TSLA/2023/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+47.20%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1221,earnings_quarter,TSLA/2023/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1225,earnings_quarter,TSLA/2023/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1226,earnings_quarter,TSLA/2023/Q2,l4_calendar_quarter_mapping,Q2 2023,Q2 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1227,earnings_quarter,TSLA/2023/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1228,earnings_quarter,TSLA/2023/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1231,earnings_quarter,TSLA/2023/Q3,l2_ni_eq_eps_x_shares,0.5300,0.5305,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1230,earnings_quarter,TSLA/2023/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1232,earnings_quarter,TSLA/2023/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+8.84%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1229,earnings_quarter,TSLA/2023/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1233,earnings_quarter,TSLA/2023/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1234,earnings_quarter,TSLA/2023/Q3,l4_calendar_quarter_mapping,Q3 2023,Q3 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1235,earnings_quarter,TSLA/2023/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1236,earnings_quarter,TSLA/2023/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1239,earnings_quarter,TSLA/2023/Q4,l2_ni_eq_eps_x_shares,2.2700,2.2709,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1238,earnings_quarter,TSLA/2023/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1240,earnings_quarter,TSLA/2023/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+3.49%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1237,earnings_quarter,TSLA/2023/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1241,earnings_quarter,TSLA/2023/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1242,earnings_quarter,TSLA/2023/Q4,l4_calendar_quarter_mapping,Q4 2023,Q4 2023,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1243,earnings_quarter,TSLA/2023/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1244,earnings_quarter,TSLA/2023/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1247,earnings_quarter,TSLA/2024/Q1,l2_ni_eq_eps_x_shares,0.4100,0.3990,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1246,earnings_quarter,TSLA/2024/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1248,earnings_quarter,TSLA/2024/Q1,l2_revenue_yoy_range,"[-50%, +200%]",-8.69%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1245,earnings_quarter,TSLA/2024/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1249,earnings_quarter,TSLA/2024/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1250,earnings_quarter,TSLA/2024/Q1,l4_calendar_quarter_mapping,Q1 2024,Q1 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1251,earnings_quarter,TSLA/2024/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1252,earnings_quarter,TSLA/2024/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1255,earnings_quarter,TSLA/2024/Q2,l2_ni_eq_eps_x_shares,0.4000,0.4022,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1254,earnings_quarter,TSLA/2024/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1256,earnings_quarter,TSLA/2024/Q2,l2_revenue_yoy_range,"[-50%, +200%]",+2.30%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1253,earnings_quarter,TSLA/2024/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1257,earnings_quarter,TSLA/2024/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1258,earnings_quarter,TSLA/2024/Q2,l4_calendar_quarter_mapping,Q2 2024,Q2 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1259,earnings_quarter,TSLA/2024/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1260,earnings_quarter,TSLA/2024/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1263,earnings_quarter,TSLA/2024/Q3,l2_ni_eq_eps_x_shares,0.6200,0.6197,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1262,earnings_quarter,TSLA/2024/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1264,earnings_quarter,TSLA/2024/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+7.85%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1261,earnings_quarter,TSLA/2024/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1265,earnings_quarter,TSLA/2024/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1266,earnings_quarter,TSLA/2024/Q3,l4_calendar_quarter_mapping,Q3 2024,Q3 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1267,earnings_quarter,TSLA/2024/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1268,earnings_quarter,TSLA/2024/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1271,earnings_quarter,TSLA/2024/Q4,l2_ni_eq_eps_x_shares,0.6580,0.6579,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1270,earnings_quarter,TSLA/2024/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1272,earnings_quarter,TSLA/2024/Q4,l2_revenue_yoy_range,"[-50%, +200%]",+2.15%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1269,earnings_quarter,TSLA/2024/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1273,earnings_quarter,TSLA/2024/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1274,earnings_quarter,TSLA/2024/Q4,l4_calendar_quarter_mapping,Q4 2024,Q4 2024,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1275,earnings_quarter,TSLA/2024/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1276,earnings_quarter,TSLA/2024/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1279,earnings_quarter,TSLA/2025/Q1,l2_ni_eq_eps_x_shares,0.1162,0.1162,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1278,earnings_quarter,TSLA/2025/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1280,earnings_quarter,TSLA/2025/Q1,l2_revenue_yoy_range,"[-50%, +200%]",-9.23%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1277,earnings_quarter,TSLA/2025/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1281,earnings_quarter,TSLA/2025/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1282,earnings_quarter,TSLA/2025/Q1,l4_calendar_quarter_mapping,Q1 2025,Q1 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1283,earnings_quarter,TSLA/2025/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1284,earnings_quarter,TSLA/2025/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1287,earnings_quarter,TSLA/2025/Q2,l2_ni_eq_eps_x_shares,0.3330,0.3330,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1286,earnings_quarter,TSLA/2025/Q2,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1288,earnings_quarter,TSLA/2025/Q2,l2_revenue_yoy_range,"[-50%, +200%]",-11.78%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1285,earnings_quarter,TSLA/2025/Q2,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1289,earnings_quarter,TSLA/2025/Q2,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1290,earnings_quarter,TSLA/2025/Q2,l4_calendar_quarter_mapping,Q2 2025,Q2 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1291,earnings_quarter,TSLA/2025/Q2,l4_fiscal_period_month,month 6±1,month 6,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1292,earnings_quarter,TSLA/2025/Q2,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1295,earnings_quarter,TSLA/2025/Q3,l2_ni_eq_eps_x_shares,0.3900,0.3894,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1294,earnings_quarter,TSLA/2025/Q3,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1296,earnings_quarter,TSLA/2025/Q3,l2_revenue_yoy_range,"[-50%, +200%]",+11.57%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1293,earnings_quarter,TSLA/2025/Q3,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1297,earnings_quarter,TSLA/2025/Q3,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1298,earnings_quarter,TSLA/2025/Q3,l4_calendar_quarter_mapping,Q3 2025,Q3 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1299,earnings_quarter,TSLA/2025/Q3,l4_fiscal_period_month,month 9±1,month 9,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1300,earnings_quarter,TSLA/2025/Q3,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1303,earnings_quarter,TSLA/2025/Q4,l2_ni_eq_eps_x_shares,0.2400,0.2374,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1302,earnings_quarter,TSLA/2025/Q4,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1304,earnings_quarter,TSLA/2025/Q4,l2_revenue_yoy_range,"[-50%, +200%]",-3.14%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1301,earnings_quarter,TSLA/2025/Q4,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1305,earnings_quarter,TSLA/2025/Q4,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1306,earnings_quarter,TSLA/2025/Q4,l4_calendar_quarter_mapping,Q4 2025,Q4 2025,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1307,earnings_quarter,TSLA/2025/Q4,l4_fiscal_period_month,month 12±1,month 12,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1308,earnings_quarter,TSLA/2025/Q4,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1311,earnings_quarter,TSLA/2026/Q1,l2_ni_eq_eps_x_shares,0.1300,0.1388,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1310,earnings_quarter,TSLA/2026/Q1,l2_revenue_nonneg,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1312,earnings_quarter,TSLA/2026/Q1,l2_revenue_yoy_range,"[-50%, +200%]",+15.78%,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1309,earnings_quarter,TSLA/2026/Q1,l2_split_factor_positive,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1313,earnings_quarter,TSLA/2026/Q1,l3_eps_actual_cross_endpoint,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1314,earnings_quarter,TSLA/2026/Q1,l4_calendar_quarter_mapping,Q1 2026,Q1 2026,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1315,earnings_quarter,TSLA/2026/Q1,l4_fiscal_period_month,month 3±1,month 3,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
+1316,earnings_quarter,TSLA/2026/Q1,l4_report_after_period_end,,,t,info,2026-06-09 11:40:00.107912+08,auto_l2_l4_invariant
