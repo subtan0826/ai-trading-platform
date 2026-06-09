@@ -43,18 +43,47 @@ cp .env.example .env
 python test_connect.py
 
 # 2) 建库
-psql -h localhost -p 5433 -U postgres -d ai-trading-platform -f schema/001_init.sql
-psql -h localhost -p 5433 -U postgres -d ai-trading-platform -f schema/002_seed_mag7.sql
+psql ... -f schema/001_init.sql
+psql ... -f schema/002_seed_mag7.sql
+psql ... -f schema/005_add_data_quality_flags.sql   # 坏数据标记列
 
 # 3) 干跑(只验证,不写)
 python fetch_fmp_to_pg.py --mag7 --dry-run
+python fetch_fmp_to_pg.py --stocks --dry-run --force-on-warn   # 全量(来自 Stocks.base)
 
 # 4) 正式入库(验证通过才会写)
 python fetch_fmp_to_pg.py --mag7
+python fetch_fmp_to_pg.py --stocks --force-on-warn
 
 # 5) 看看入了什么
 python inspect_db.py
 ```
+
+## 股票池来源(`--stocks`)
+
+与 `fmp-to-ddb` 同源:`--stocks` 从 **Stocks.base**(`10_Stocks/Stocks/*.md` 的
+`code`+`market`)读股票池,默认 `market==US`(财报/一致预期只对股票有意义,
+加密/期货/港股跳过)。CLI:`--mag7` / `--stocks` / `--symbol AAPL` /
+`--symbols AAPL,MSFT` / `--markets US` / `--years N` / `--dry-run` / `--force-on-warn`。
+
+- 不在 `company` 表的标的用**默认元数据**(财年末月=Dec);过去季度的财年/财季直接
+  取自利润表,不受影响,只有远期推导/Non-GAAP 口径走默认(标记为 warn)。
+- `.env` 从脚本目录**向上逐级查找**,放仓库根目录即可。
+
+## 坏数据标记(`data_quality_flags`)
+
+广义股票池有一条长尾的 FMP 真实数据异常(SPAC/矿企/次新股的摊薄股数 vs EPS
+口径不一致、个别负营收)。策略是**不阻断整批**:这些行照常入库,但在
+`earnings_quarter.data_quality_flags`(`schema/005`)里标明触发了哪些校验。
+
+- EPS 对账改用 `bottomLineNetIncome`(归属普通股净利,已扣优先股/少数股东),
+  而非总 `netIncome` —— 修复 ALB 这类复杂资本结构的误报。
+- `l2_ni_eq` / `l2_revenue_nonneg` 降为 **warn**(不再 error 中止);近零 EPS 的
+  相对误差噪声为 info,不标记。负营收违反 PG L1 CHECK,入库前置 NULL 并标记。
+- 查坏数据:`SELECT symbol, quarter_label, data_quality_flags FROM earnings_quarter WHERE data_quality_flags <> '{}';`
+
+> 实测全量 `--stocks --years 2 --dry-run --force-on-warn`:270/270 抓取,**0 error**,
+> 3472 行,**48 行标记**(42 EPS 口径差 + 6 负营收),未写库。
 
 ## calendar_quarter 是怎么算的
 
