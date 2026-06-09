@@ -80,7 +80,32 @@ python inspect_db.py
   而非总 `netIncome` —— 修复 ALB 这类复杂资本结构的误报。
 - `l2_ni_eq` / `l2_revenue_nonneg` 降为 **warn**(不再 error 中止);近零 EPS 的
   相对误差噪声为 info,不标记。负营收违反 PG L1 CHECK,入库前置 NULL 并标记。
-- 查坏数据:`SELECT symbol, quarter_label, data_quality_flags FROM earnings_quarter WHERE data_quality_flags <> '{}';`
+### 查坏数据
+
+```sql
+-- 1) 列出所有被标记的行 + 触发了哪些校验
+SELECT symbol, quarter_label, calendar_quarter, data_quality_flags
+FROM   earnings_quarter
+WHERE  data_quality_flags <> '{}'
+ORDER  BY symbol, period_end;
+
+-- 2) 按标记类型统计(unnest 数组)
+SELECT flag, COUNT(*) AS rows
+FROM   earnings_quarter, unnest(data_quality_flags) AS flag
+GROUP  BY flag ORDER BY rows DESC;
+
+-- 3) 只看某一类(如 EPS 对不上的)
+SELECT symbol, quarter_label, gaap_ni, gaap_eps_diluted_as_reported, dil_shares_as_reported
+FROM   earnings_quarter
+WHERE  'l2_ni_eq_eps_x_shares' = ANY(data_quality_flags);
+
+-- 4) 干净数据视图(下游分析只取没标记的)
+SELECT * FROM earnings_quarter WHERE data_quality_flags = '{}';
+
+-- 5) 全量审计轨迹(每条校验的历史,含 info/warn/error)
+SELECT record_key, check_name, severity, observed_value
+FROM   validation_log WHERE NOT passed ORDER BY validated_at DESC;
+```
 
 > 实测全量 `--stocks --years 2 --dry-run --force-on-warn`:270/270 抓取,**0 error**,
 > 3472 行,**48 行标记**(42 EPS 口径差 + 6 负营收),未写库。
