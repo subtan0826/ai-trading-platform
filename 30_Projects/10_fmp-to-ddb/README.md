@@ -78,7 +78,7 @@ python inspect_db.py
 # 1) 干跑预览(不写库,先看拉下来多少行)
 python fetch_fmp_to_ddb.py --stocks --years 10
 
-# 2) 正式写入 DDB —— 全量来自 Stocks.base(默认 markets=US,HK,Crypto)
+# 2) 正式写入 DDB —— 全量来自 Stocks.base(默认 markets=US,HK,Crypto,Futures)
 python fetch_fmp_to_ddb.py --stocks --years 10 --save-ddb
 
 # 单独某市场 / 某标的
@@ -89,7 +89,7 @@ python fetch_fmp_to_ddb.py --symbol AAPL --years 10 --save-ddb
 python verify_after_insert.py
 ```
 
-CLI:`--stocks`(从 Stocks.base 读全量股票池)/ `--markets US,HK,Crypto` / `--symbol AAPL` / `--symbols AAPL,MSFT` / `--years N` / `--from-date` / `--to-date` / `--save-ddb` / `--ensure-schema`(表缺失才建)。
+CLI:`--stocks`(从 Stocks.base 读全量股票池)/ `--markets US,HK,Crypto,Futures` / `--symbol AAPL` / `--symbols AAPL,MSFT` / `--years N` / `--from-date` / `--to-date` / `--save-ddb` / `--ensure-schema`(表缺失才建)。
 
 **股票池来源 = Stocks.base**(`10_Stocks/Stocks/*.md` 的 `code`+`market`),四类市场全部走同一股息复权端点:
 - `US` → 直接抓;`HK` → 抓 `<code>.HK`、存 4 位 `code`。
@@ -114,3 +114,35 @@ python fetch_fmp_to_ddb.py --symbol AAPL --years 1 --dump-json aapl_staging.json
   - 仅追加新数据用增量即可:`python fetch_fmp_to_ddb.py --symbol AAPL --from-date <上次最后日+1> --save-ddb`。
   - **注意复权口径**:预热用的是库里已存的(旧复权基准)close,而新批是最新复权 close。若两次抓取之间发生分红/拆股,接缝处均线会有极小偏差;日常每日增量可忽略,要彻底重新对齐就整段重抓一次。
 - **容器跑不了**:这套必须在 DDB 所在机器(你本地)跑;开发容器连不到你的 DDB。
+
+## 踩坑记录(Gotchas)
+
+实战中踩过的坑,按"FMP 符号 / DolphinDB / 数据质量 / 流程"分类。
+
+### FMP 符号与端点
+- **加密货币 FMP 是有的**,但符号是 `<币>USD`(`BTCUSD`/`ETHUSD`);**裸 `BTC` 会命中一个同名股票**(完全不同的价格),`BTCUSDT` 返回 0。
+- **港股**用 `<4 位 code>.HK`(`0700.HK`);`00700.HK`(5 位)和裸 `0700` 都返回 0。
+- **期货也在 FMP**,但**不是统一后缀**:`ESmain→ESUSD`、`NQmain→NQUSD`、`YMmain→YMUSD`、`MGCmain→GCUSD`、`SILmain→SIUSD`(`SIL→SI`、`MGC→GC`),必须用**显式映射表**。
+- **四类市场共用同一个**股息复权端点(`historical-price-eod/dividend-adjusted`),都返回 `adjOpen/High/Low/Close`,所以 `build_staging_rows` 不用按市场分支。
+- **入库 `symbol` 一律用库里 code**(`0700`/`BTC`/`ESmain`),不是 FMP 抓取符号 —— 这样 DDB 与 Stocks.base 对齐。
+- **港股前导零**:Base note 的 `code` 必须是带引号字符串(`"0700"`),否则 YAML 会把 `0700` 当**八进制**、`0388` 丢前导零。早期还混入过 5 位 `00388` 的旧写法,导致重复分区。
+- **`GOOG` vs `GOOGL`**:跟踪的是 `GOOG`(谷歌 C);`GOOGL`(谷歌 A)是不同标的,别混。
+- **FMP 单票数据有滞后**:个别票(如 GOOGL/PSTG)末日会比大盘晚 1-2 个交易日;过一天或下次增量自然补上,不是 bug。
+
+### DolphinDB
+- **`mavg`/`pct_change` 必须带历史预热**:只对上传批次算,增量更新会在批次起点 null 掉均线。解法见上面「增量安全的均线」——先从 DFS 读批次前最多 250 根 close。
+- **建空表容量不能为 0**:`table(0:0, ...)` 报错,要写 `table(1:0, ...)`(容量 1、行数 0)。
+- **没有 `count(distinct col)`**:用 `size(exec distinct col from t)` 或子查询。
+- **删空分区/清理分区域**:VALUE 分区删数据块后,**值名仍留在分区域(schema)里**。`dropPartition(db, paths)` 删不掉值名;要传第 4、5 个参数 **`forceDelete=true, deleteSchema=true`** 才能连值名一起清:
+  `dropPartition(database(DB), ["GOOGL"], "us_daily_kline", true, true)`。
+  完整签名:`dropPartition(dbHandle, partitionPaths, [tableName], [forceDelete], [deleteSchema])`。
+
+### 数据质量(源头噪声,非管线 bug)
+- **期货 close 可能越界 [low,high]**:FMP 期货 OHLC 用结算价,close 可略超当日高/低几个点(实测 YMmain 有十几行)。校验时给这类留容差。
+- **小盘妖股单日 >50%**:真实波动(LIDR/QSI/ASTS/SOUN 等),别误判为脏数据。
+- **加密/期货无股数**:加密市值用 `circulatingSupply`(近似常量)× close;**期货 market_cap=0**。
+
+### 流程
+- **后台跑批看不到中途日志**:Python stdout 重定向到文件时是**块缓冲**,进程结束才 flush;别因为日志空就以为没动。
+- **Bash 跑 DolphinDB 语句注意反引号**:DDB 的 `` `AAPL `` 反引号会被 bash 当命令替换,写复杂查询用 `.py` 脚本文件而不是 `python -c "..."`。
+- **对齐全量用显式统一窗口**:`--from-date <早于现有最早日> --to-date <今天>`,让幂等删除覆盖旧行、所有标的同窗口替换;同市场内即对齐,跨市场差异是真实交易日历差(加密 7×24)。
