@@ -24,11 +24,12 @@ re-running is safe and only adds missing companies.
 """
 import argparse
 import sys
+import time
 
 from fetch_fmp_to_pg import (
     load_dotenv, load_stock_universe, _find_stocks_dir, _parse_frontmatter,
     fetch_income_quarterly, _get_once, _ensure_psycopg,
-    GREEN, YELLOW, DIM, BOLD, RESET,
+    GREEN, YELLOW, RED, DIM, BOLD, RESET,
 )
 import os
 
@@ -92,11 +93,12 @@ def main():
     names = vault_names()
     print(f"{BOLD}seeding {len(codes)} US companies from Stocks.base{RESET}")
 
-    rows = []
-    for sym in codes:
+    def derive_one(sym):
+        # one symbol -> record dict; raises on network failure so the caller
+        # can skip + retry (FMP over the CN network throws transient SSL EOFs)
         fye = derive_fye_month(sym, api_key)
         prof = fetch_profile(sym, api_key)
-        rec = {
+        return {
             "symbol": sym,
             "name": prof.get("companyName") or names.get(sym) or sym,
             "sector": prof.get("sector") or None,
@@ -104,12 +106,39 @@ def main():
             "fiscal_year_end_month": fye,
             "cik": (prof.get("cik") or None),
         }
+
+    rows, failed = [], []
+    for sym in codes:
+        try:
+            rec = derive_one(sym)
+        except Exception as e:
+            print(f"  {sym:6} {RED}FAILED: {str(e)[:70]}{RESET}")
+            failed.append(sym)
+            continue
         rows.append(rec)
-        tag = "" if fye == 12 else f"{YELLOW}FYE={fye}{RESET}"
-        print(f"  {sym:6} {rec['name'][:34]:34} fye={fye:2}  {rec['sector'] or '':22} {tag}")
+        tag = "" if rec["fiscal_year_end_month"] == 12 else f"{YELLOW}FYE={rec['fiscal_year_end_month']}{RESET}"
+        print(f"  {sym:6} {rec['name'][:34]:34} fye={rec['fiscal_year_end_month']:2}  {rec['sector'] or '':22} {tag}")
+        time.sleep(0.1)   # be gentle on flaky FMP/SSL
+
+    # One retry pass for transient failures
+    if failed:
+        print(f"\n{YELLOW}retrying {len(failed)} failed symbols...{RESET}")
+        still = []
+        for sym in failed:
+            time.sleep(0.5)
+            try:
+                rows.append(derive_one(sym))
+                print(f"  {sym:6} {GREEN}recovered{RESET}")
+            except Exception as e:
+                print(f"  {sym:6} {RED}STILL FAILED: {str(e)[:60]}{RESET}")
+                still.append(sym)
+        failed = still
 
     non_dec = sum(1 for r in rows if r["fiscal_year_end_month"] != 12)
     print(f"\n{BOLD}derived {len(rows)} rows; {non_dec} have non-Dec fiscal year{RESET}")
+    if failed:
+        print(f"{YELLOW}{len(failed)} still failed (re-run later, ON CONFLICT "
+              f"DO NOTHING fills gaps): {failed}{RESET}")
 
     if args.dry_run:
         print(f"{DIM}--dry-run: nothing written.{RESET}")

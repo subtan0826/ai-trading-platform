@@ -1,3 +1,8 @@
 {
-  "baseFontSize": 14
+  "baseFontSize": 15,
+  "interfaceFontFamily": "Bell MT",
+  "textFontFamily": "Bell MT",
+  "enabledCssSnippets": [
+    "line-spacing"
+  ]
 }
