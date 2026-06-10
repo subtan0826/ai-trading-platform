@@ -136,6 +136,7 @@ python fetch_fmp_to_ddb.py --symbol AAPL --years 1 --dump-json aapl_staging.json
 - **删空分区/清理分区域**:VALUE 分区删数据块后,**值名仍留在分区域(schema)里**。`dropPartition(db, paths)` 删不掉值名;要传第 4、5 个参数 **`forceDelete=true, deleteSchema=true`** 才能连值名一起清:
   `dropPartition(database(DB), ["GOOGL"], "us_daily_kline", true, true)`。
   完整签名:`dropPartition(dbHandle, partitionPaths, [tableName], [forceDelete], [deleteSchema])`。
+- **⚠️ Windows 大小写不敏感 + symbol VALUE 分区会互相误伤**:磁盘上 `ESMAIN` 和 `ESmain` 是**同一个目录**。删一个空的大写 `ESMAIN` 分区(deleteSchema),会把有数据的小写 `ESmain` 分区的**列文件一起删掉**(踩过:5 个期货的 ma* 列文件被清,OHLCV 侥幸残留)。后果是 `select ma60 ...` 报 `Cannot open file ...ma60.col`。**修复**:重抓该 symbol(`--stocks --markets Futures --save-ddb`),幂等 delete+append 会重建列文件。**预防**:别在 Windows 上 dropPartition 仅大小写不同的 symbol;要清理大写残留前先确认它和小写不共用目录。
 
 ### 数据质量(源头噪声,非管线 bug)
 - **期货 close 可能越界 [low,high]**:FMP 期货 OHLC 用结算价,close 可略超当日高/低几个点(实测 YMmain 有十几行)。校验时给这类留容差。
