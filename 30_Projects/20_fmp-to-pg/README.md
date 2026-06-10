@@ -25,12 +25,14 @@
 | 层 | 谁做 | 内容 |
 |---|---|---|
 | **L1 schema 约束** | PG | CHECK / UNIQUE / FK,impossible 值进不来 |
-| **L2 数学不变式** | ingest | `NI ≈ EPS × shares`(±2%)/ Revenue YoY 在 [-50%, +200%] / 拆股因子 > 0 |
+| **L2 数学不变式** | ingest | `bottomLineNetIncome ÷ 股数 ≈ epsDiluted`(±5%,归属普通股净利)/ Revenue YoY 在 [-50%, +400%](基数 < $20M 跳过)/ 拆股因子 > 0 |
 | **L3 跨端点一致** | ingest | GAAP-only 公司的 `epsActual` == `epsDiluted`(非 GAAP 公司自动跳过) |
 | **L4 日期/季度** | ingest | calendar_quarter 用独立算法重算对账 / 财季月份与公司财年偏移一致 |
 | **L5 SEC EDGAR**(权威源) | 你本地跑 | 抽样 vs 10-Q XBRL,**金标准** |
 
-**L2/L4 任何 `error` 级失败 → ingest 立即中止,不写库**。`warn` 级(如 YoY 超出常规带宽)需 `--force-on-warn` 才放行。
+**广义股票池策略(`--stocks`)**:L2 的 EPS/营收检查**降为 warn(不再中止整批)**,坏行照常入库并标记到 `data_quality_flags`(见下文「坏数据标记」)。其余 `error` 级(如 calendar_quarter 对账失败)仍会中止。`warn` 需 `--force-on-warn` 放行。
+
+> company 表已从 Stocks.base 补齐 270 家(财年末月由 FMP Q4 利润表月份推导,`seed_company_from_base.py`);全量 dry-run 警告已从 907 降到 73(48 已标记坏数据 + 29 真实 YoY 异动 + 1 非 GAAP)。
 
 ## 跑
 
