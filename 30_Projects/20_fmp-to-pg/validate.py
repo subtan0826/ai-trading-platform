@@ -19,8 +19,10 @@ from dataclasses import dataclass, field
 from typing import Optional, List, Tuple
 
 EPS_TOLERANCE = 0.05       # was 0.02 — accommodates FMP's 2-decimal storage of small post-split EPS
-REVENUE_YOY_MAX = 2.0      # > 200% YoY flag (unless documented action)
+REVENUE_YOY_MAX = 4.0      # > 400% YoY flag (broad universe has real hypergrowth)
 REVENUE_YOY_MIN = -0.50    # < -50% YoY flag
+MIN_YOY_BASE = 0.02        # $20M (revenue is in $B): below this a YoY ratio is
+                           # noise — recent IPO/SPAC ramping from a near-zero base
 
 # Standard month -> calendar quarter
 MONTH_TO_QUARTER = {1:1, 2:1, 3:1, 4:2, 5:2, 6:2,
@@ -102,11 +104,21 @@ def l2_ni_equals_eps_times_shares(ni_billions, eps, shares_millions,
 
 def l2_revenue_yoy_in_range(rev_this, rev_year_ago,
                             max_yoy=REVENUE_YOY_MAX,
-                            min_yoy=REVENUE_YOY_MIN) -> CheckResult:
-    """Revenue YoY beyond [-50%, +200%] without documented action is suspicious."""
+                            min_yoy=REVENUE_YOY_MIN,
+                            min_base=MIN_YOY_BASE) -> CheckResult:
+    """Revenue YoY beyond [-50%, +400%] without documented action is suspicious.
+    Skipped when the prior-year base is tiny (ratio is meaningless near zero) or
+    current revenue is negative (that's caught by l2_revenue_nonneg)."""
     name = "l2_revenue_yoy_range"
     if rev_this is None or rev_year_ago in (None, 0):
         return CheckResult(name, True, 'info', "skipped: missing inputs")
+    if abs(rev_year_ago) < min_base:
+        return CheckResult(name, True, 'info',
+                           f"skipped: prior-year base ${rev_year_ago*1e3:.0f}M "
+                           f"< ${min_base*1e3:.0f}M (ratio noise)")
+    if rev_this < 0:
+        return CheckResult(name, True, 'info',
+                           "skipped: negative current revenue (see l2_revenue_nonneg)")
     yoy = (rev_this - rev_year_ago) / abs(rev_year_ago)
     passed = min_yoy <= yoy <= max_yoy
     return CheckResult(
