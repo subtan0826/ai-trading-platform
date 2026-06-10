@@ -301,6 +301,26 @@ def write_to_ddb(rows, replace_schema=False):
     s.close()
 
 
+def ddb_last_dates(db_symbols):
+    """{db_symbol: 'YYYY-MM-DD'} latest date per symbol already in DDB.
+    Used by --incremental so each symbol resumes from its own last date
+    (the table's per-symbol cutoffs differ)."""
+    import dolphindb as ddb
+
+    s = ddb.Session()
+    if not s.connect(os.environ.get("DDB_HOST", "localhost"),
+                     int(os.environ.get("DDB_DATA_PORT", "8902")),
+                     os.environ.get("DDB_USER", "admin"),
+                     os.environ.get("DDB_PASSWORD", ""), reconnect=False):
+        raise RuntimeError("cannot connect to DDB for incremental last-dates")
+    s.upload({"symU": list(db_symbols)})
+    df = s.run('select symbol, max(date) as last from '
+               'loadTable("dfs://market_daily","us_daily_kline") '
+               'where symbol in symU group by symbol')
+    s.close()
+    return {r.symbol: str(r.last)[:10] for r in df.itertuples()}
+
+
 # ---- main ----------------------------------------------------------------
 def main():
     p = argparse.ArgumentParser(prog="fetch_fmp_to_ddb.py")
@@ -316,6 +336,14 @@ def main():
     p.add_argument("--years", type=int, default=10)
     p.add_argument("--from-date")
     p.add_argument("--to-date")
+    p.add_argument("--incremental", action="store_true",
+                   help="per-symbol: fetch from each symbol's last DDB date "
+                        "(minus --overlap) to today; new symbols use the full "
+                        "window. MA/pct_change continuity is handled by the "
+                        "warm-up in load_and_compute.dos")
+    p.add_argument("--overlap", type=int, default=5,
+                   help="days re-fetched before each symbol's last date, to "
+                        "absorb FMP restatement of recent days (default 5)")
     p.add_argument("--save-ddb", action="store_true",
                    help="write to DolphinDB (omit for a dry-run preview)")
     p.add_argument("--ensure-schema", action="store_true",
@@ -355,15 +383,29 @@ def main():
         from_date = (dt.date.today() -
                      dt.timedelta(days=365 * args.years + 10)).isoformat()
 
+    # --incremental: per-symbol resume from each symbol's last DDB date
+    last_dates = {}
+    if args.incremental:
+        last_dates = ddb_last_dates([db for _, db, _ in pairs])
+        print(f"incremental: {len(last_dates)} symbols have prior data "
+              f"(resume from last date − {args.overlap}d); "
+              f"{len(pairs) - len(last_dates)} new → full window")
+
     all_rows = []
     for fetch_sym, db_sym, market in pairs:
         label = db_sym if fetch_sym == db_sym else f"{db_sym} ({fetch_sym})"
+        sym_from = from_date
+        if args.incremental and db_sym in last_dates:
+            ld = dt.date.fromisoformat(last_dates[db_sym])
+            sym_from = (ld - dt.timedelta(days=args.overlap)).isoformat()
+            if sym_from > to_date:
+                sym_from = to_date
         try:
-            prices = fetch_prices(fetch_sym, from_date, to_date, api_key)
+            prices = fetch_prices(fetch_sym, sym_from, to_date, api_key)
             if market == "Crypto":
                 # no shares for crypto; use circulating supply as constant "shares"
                 supply = crypto_supply(fetch_sym, api_key)
-                shares = [{"date": from_date, "numberOfShares": supply}] if supply else []
+                shares = [{"date": sym_from, "numberOfShares": supply}] if supply else []
             elif market == "Futures":
                 shares = []  # no shares concept -> market_cap stays 0
             else:

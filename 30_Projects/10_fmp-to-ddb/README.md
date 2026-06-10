@@ -111,8 +111,10 @@ python fetch_fmp_to_ddb.py --symbol AAPL --years 1 --dump-json aapl_staging.json
 - **不会重建你的表**:`load_and_compute.dos` 只 append 到现有表;`ensure_schema.dos` 仅当表不存在时建(你的表已存在 → no-op)。
 - **幂等**:重复跑同一批,会先按 symbol 删除该批日期范围再 append,不会重复。
 - **增量安全的均线**:每个标的写入前,会先从 DFS 表读取该批起始日**之前**的最多 250 根 close 作为预热窗口,拼接后再算 `pct_change` / `mavg`,然后只写回本批日期范围。所以增量更新(只追加最近几天)时,均线会读取历史正确计算,批次边界不会出现断层。
-  - 仅追加新数据用增量即可:`python fetch_fmp_to_ddb.py --symbol AAPL --from-date <上次最后日+1> --save-ddb`。
-  - **注意复权口径**:预热用的是库里已存的(旧复权基准)close,而新批是最新复权 close。若两次抓取之间发生分红/拆股,接缝处均线会有极小偏差;日常每日增量可忽略,要彻底重新对齐就整段重抓一次。
+  - **日常增量更新(推荐)**:`python fetch_fmp_to_ddb.py --stocks --incremental --save-ddb`。
+    逐 symbol 查 DDB 各自的 `max(date)`,从「最后日 − `--overlap`(默认 5)天」抓到今天;**自动处理各标的截止日不同**;overlap 重抓近几日以吸收 FMP 对近期数据的回填修订(幂等 delete+append 替换,不产生重复)。新 symbol(库里没有的)自动走完整 `--years` 窗口。
+    实测:283 标的增量仅写 ~1400 行;接缝处 `pct_change` 正确、全库 0 个 MA 断层、0 重复行。
+  - **注意复权口径**:预热用的是库里已存的(旧复权基准)close,而新批是最新复权 close。若两次抓取之间发生分红/拆股,接缝处均线会有极小偏差;overlap 重抓会把近几日刷成最新复权值(这也是为什么 overlap 日的历史 close 可能轻微变动——属正常)。要彻底重新对齐就整段重抓一次。
 - **容器跑不了**:这套必须在 DDB 所在机器(你本地)跑;开发容器连不到你的 DDB。
 
 ## 踩坑记录(Gotchas)
