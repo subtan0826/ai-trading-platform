@@ -1,140 +1,110 @@
 ---
 name: deep-dive
-description: Comprehensive deep research on a stock/ticker. Use when the user wants in-depth analysis of a company — its core product, competitive moat, industry supply/demand & competitive landscape, and bull/bear thesis. Pulls from curated INDEPENDENT specialist research (SemiAnalysis, MBI Deep Dives, Speedwell, Stratechery, sector market-research firms, skeptic/short sources) PLUS primary data (FMP financials/segments/estimates/transcripts/filings, local DolphinDB price, PostgreSQL earnings). Produces a moat-thesis card with a MANDATORY bear case + falsifiable predictions, a dynamic driver/milestone/catalyst stream, and a forward catalyst calendar. Invoke with a ticker, e.g. "/deep-dive INTC".
+description: Comprehensive deep research on a stock/ticker. Use when the user wants an in-depth, structured investment memo on a company — business model, industry/competitive structure, moat, deep financials, management, growth vectors, bear/risk matrix, valuation with scenarios, and a falsifiable thesis. Pulls from curated INDEPENDENT specialist research (SemiAnalysis, MBI, Speedwell, Stratechery, market-research firms, skeptic/short sources) PLUS primary data (FMP financials/segments/balance-sheet/cashflow/estimates/transcripts/filings, local DolphinDB price, PostgreSQL earnings). Output = the full 13-section report (see report-template.md), NOT a summary — with 3 mandatory slots (bear/risk, valuation+scenarios, falsifiable thesis) and a 3-tier verdict. Invoke with a ticker, e.g. "/deep-dive INTC".
 ---
 
 # Stock Deep-Dive Research
 
 **Core principle: information value ∝ 1 / propagation-distance.** A view that
-reaches a group chat or a Bank-of-America note has already moved the price. This
-skill deliberately works the **upstream** layers — independent specialists and
-primary data — which lead the bulge-bracket/consensus by weeks to months. The
-goal is not a summary; it is a **falsifiable moat thesis** you could have formed
-before consensus crystallized.
+reaches a group chat or a bulge-bracket note has already moved the price. Work the
+**upstream** layers — primary data and independent specialists — which lead
+consensus by weeks to months. The goal is not a summary; it is a **deep,
+structured, falsifiable investment memo** you could have formed before consensus
+crystallized.
 
-Full source catalog: see [sources.md](sources.md). Pick the clusters that match
-the company's sector; always include the **primary** (H) and **skeptic** (I) layers.
+**Output = the full structured report in [report-template.md](report-template.md)
+(13 sections), NOT a rough summary.** Voice & "moves" → [example-LITE.md](example-LITE.md).
+Source catalog → [sources.md](sources.md). Pick the clusters matching the sector;
+always include the **primary** (H) and **skeptic** (I) layers.
 
 ---
 
 ## Procedure (given a TICKER)
 
-### 1 · Scope
-- FMP `company/profile-symbol` + `company/peers` → sector, industry, core business, peers.
-- Pick matching source clusters from `sources.md` (e.g. semis → A; optical → B;
-  general → C; biotech → E). Note paywalls — fall back to press releases, podcast
-  notes, X threads, and search snippets.
+Gather first (don't write until you have the numbers), then synthesize, then fill
+EVERY section of report-template.md. The gather blocks map to report sections (§).
 
-### 2 · Gather PRIMARY data (the numbers — lead sell-side)
-- FMP `statements/revenue-product-segmentation` (where does revenue actually sit + which segment is inflecting)
-- FMP `statements/income-statement` + `income-statement-growth` (revenue/margin trajectory)
-- FMP `analyst/financial-estimates` + `analyst/price-target-summary` + `analyst/grades` (forward expectations + consensus drift)
-- FMP `earningsTranscript/search-transcripts` (latest 2–3 — management frames the thesis in its OWN words first)
-- FMP `secFilings` → 10-K business section + risk factors; 8-K for material events
-- Local DBs **if reachable** (user runs locally; cloud agents cannot reach localhost):
-  - DolphinDB `dfs://market_daily/us_daily_kline` → trend legs (zigzag, threshold rel. to own vol) + biggest **idiosyncratic** up/down days (stock pct − index pct) = catalyst days
-  - PostgreSQL `earnings_quarter` / `consensus_history` → earnings surprises + consensus history
-- For demand-side context, pull the customers'/hyperscalers' capex commentary too.
+### 0 · Identify & scope
+- FMP `company/profile-symbol` + `company/peers` → sector, industry, core business, peers, IPO date, market cap.
+- Pick source clusters from `sources.md`. Note paywalls — fall back to press releases, podcast notes, X threads, conference talks, search snippets.
 
-### 3 · Gather INDEPENDENT specialist research (the views — lead sell-side)
-- WebSearch the curated sources in `sources.md` for `<ticker>` + its key industry themes.
-- WebFetch the 3–6 highest-signal deep pieces (specialist substacks, market-research summaries, conference talks).
-- **MANDATORY: also search the skeptic/short layer (I)** and the bear case — this feeds the bear slot below and guards against a one-sided bull narrative.
+### 1 · Primary financials (FMP) — fills §1 §5 §9
+- `statements/income-statement` (annual ×5) + `income-statement-growth` + quarterly (×6) → revenue & margin trajectory
+- `statements/balance-sheet-statement` → cash, debt, net cash, share count (dilution/buyback)
+- `statements/cashflow-statement` → operating CF, capex intensity, buybacks/dividends, M&A
+- `statements/revenue-product-segmentation` + `revenue-geographic-segments` → mix shift, customer/geo concentration
+- `statements/key-metrics(-ttm)` + `metrics-ratios(-ttm)` → ROIC/ROE, margins, multiples
+- `statements/enterprise-values` → EV multiples; `financial-scores` → Piotroski/Altman quick read
+- `analyst/financial-estimates` (annual ×3-4) + `price-target-summary` + `grades` + `historical-grades` → forward expectations + consensus drift (anchors §9 scenarios & reverse-DCF)
 
-### 4 · Synthesize — the 6-action method (this is what produces depth)
-1. **Decompose** the product down to the value-chain layer where SCARCITY actually sits (not "it makes chips" — *which* component, *which* layer is hard).
-2. At THAT layer: **who can / can't make it, and why** (yield/process/IP? ecosystem lock-in? capital? license?).
-3. Does the secular wave **deepen or erode** THIS specific moat as the industry roadmap advances?
-4. **Adversarially hunt the strongest bear case / erosion risk** (who could break it, how, how soon).
-5. **Peg every qualitative claim to a number** (segment revenue, share %, margin trend, customer commitment, capex).
-6. **Map to an analog pattern** (a known structural playbook).
+### 2 · Business, management, customers — fills §1 §6
+- `company/company-executives` + `company/shares-float` (insider %, float) → §6
+- `earningsTranscript/search-transcripts` (latest 2-3) → management's OWN framing, guidance, segment/customer color
+- `secFilings` → 10-K business section + **risk factors**; 8-K material events; S-1 for recent IPOs
 
-### 5 · Output — fill the template below
-Cite sources inline as markdown links. State access limits honestly (paywalled / not found).
+### 3 · DEEP-MINE the source catalog (first-class step, NOT a single search) — fills §2 §3 §4 §8
+FMP gives the numbers; **the catalog gives the insight**. Open [sources.md](sources.md),
+select every relevant cluster (sector A–G + general C/D + primary H + skeptic I),
+then mine them **source by source**:
 
-### 6 · Maintain the catalog (self-improving — do this every run)
-If this run surfaced a **genuinely high-signal** source not already in
-[sources.md](sources.md), append it under the right category with a one-line note,
-a quality caveat if needed (retail / AI-syndicated / paywalled → verify), and a
-`*(found via <TICKER>)*` tag. Keep junk out (generic media, content farms). The
-catalog should get sharper with every deep-dive.
+1. **Targeted per-source queries**, not one generic search. For each selected
+   source run `site:`-scoped searches, e.g.:
+   - `site:semianalysis.com <ticker|company|tech-theme>` · `site:morethanmoore.substack.com <company>`
+   - `site:mbi-deepdives.com <company>` · `site:speedwellmemos.com <company>` · `site:stratechery.com <company>`
+   - market-research firms (F): `<LightCounting|TrendForce|Dell'Oro|Mercury> <market> share forecast`
+   - supply chain (G): `site:digitimes.com <company/supplier>` — order/utilization checks lead earnings
+   Also search the company's **key tech/industry theme**, not just the ticker —
+   specialists often cover the theme without naming the stock.
+2. **WebFetch the full text** of the highest-signal hits — *minimum 5-8 full
+   articles* for a default deep-dive (snippets are not research). Paywalled →
+   fetch the free portion / podcast notes / author's X thread, and mark it.
+3. **Triangulate**: where independents disagree with each other or with sell-side,
+   say so explicitly — disagreement locates the variant perception (§10).
+4. **Log the yield**: §12 must list which catalog sources were consulted and what
+   each contributed (or "checked, nothing relevant"). An empty trawl is a finding.
 
----
+### 4 · Skeptic / bear (MANDATORY) — fills §8
+- Mine layer (I) the same way: `site:thebearcave.substack.com <company>`, short-shop reports (Muddy Waters/Kerrisdale/Spruce Point/Hunterbrook), SA bear articles + an explicit "bear case / what breaks this" query
+- IPO < ~12mo → read the S-1/F-1 **Risk Factors** (richest bear source); pull short interest if relevant
 
-## Output — match the GOLDEN EXAMPLE
+### 5 · Price & catalysts (local, if reachable) — fills §5 §11
+- DolphinDB `dfs://market_daily/us_daily_kline` → trend legs (zigzag, threshold rel. to own vol) + biggest **idiosyncratic** up/down days (stock pct − index pct) = catalyst days
+- PostgreSQL `earnings_quarter` → the **beat/miss table** (§5, mandatory when PG reachable): last 8-10 quarters of `revenue_actual` vs `revenue_consensus` (unit = millions) and `ng_eps_as_reported` (fallback `gaap_eps_diluted_as_reported`) vs `ng_eps_consensus_as_reported` → surprise %. **Cross-join each report_date with DDB next-day idiosyncratic move** — that maps the market's error-tolerance for this name (feeds §9's priced-for-perfection read). `consensus_history` → how estimates drifted into the print.
+- (cloud agents can't reach localhost DBs — user runs locally; fallback = FMP earnings surprises / transcripts)
 
-The target quality bar is [example-LITE.md](example-LITE.md). **Read it first** —
-reproduce its *moves and shape*, not its content. The flow:
+### 6 · Synthesize — the 6-action method (this produces depth)
+1. **Decompose** the product to the value-chain layer where SCARCITY sits.
+2. At that layer: **who can / can't make it, and why** (yield/IP/lock-in/capital/license).
+3. Does the secular wave **deepen or erode** THIS moat?
+4. **Adversarially hunt the strongest bear / erosion path** (quantified, with a timeline).
+5. **Peg every claim to a number.**
+6. **Map to an analog pattern.**
 
-```
-# <TICKER> 真正的核心产品与护城河:不是 <表层>,是 <真正的稀缺层>
-**关键认知**: 谁做不了 / 做不了什么 / 为什么(named competitors + named component + mechanism)
-- 份额/地位数字 · moat 本质(yield/IP/lockin/capital/license)+ 切换成本
-- 行业浪 × 方向:这条浪让 moat 变深还是变浅?
-
-## 锚定客户验证(+ 类比范式)
-  <anchor-customer commitment> — 和 <analog playbook> 同款
-
-## 财报"兑现"了什么(分部/毛利数据钉论点)
-  <a TABLE: segment revenue / margin / growth showing the thesis cashing in>
-
-## 🔒 最有价值的诚实点:moat 的可证伪软肋   ← THIS IS THE CLIMAX, never skip
-  <strongest named bear/erosion risk — name it, then QUANTIFY the erosion path: how much share / margin at risk, on what timeline>
-  > 可证伪预言:…(give it a NUMBER or a TIMELINE, not just a qualitative event)
-  > 证伪触发:…
-  > moat 趋势核验:那条核心 moat 指标(份额/良率/续费率/混合占比)本季在改善还是恶化?（查斜率,不只快照)
-
-## 🔒 共识 + 估值位置(必答:这是「论点机会」还是「只是只好公司」?)
-  - 共识阶段:论点处在 contrarian/forming → consensus → 已结晶? (依据:卖方目标价漂移、被写烂程度、深度研究是否已遍地)
-  - 估值位置:核心倍数 vs 自身历史分位 + 隐含 price-in 了什么增速/完美度
-  - 🎯 不对称裁决(三选一,必须明确归档):
-    ① 窗口【开】= 论点机会:论点先于共识 + 估值便宜 + 生意已可证 → 不对称上行(LITE 型)
-    ② 窗口【关】= 好公司≠好买点:护城河已证,但已 price-in 完美 → 窄区间,涨幅有限(ARM/COST 型)
-    ③ 【未证·高方差】= 彩票:护城河未证 + 结局二元(全押少数开关)+ 价格已假设中奖 →
-       结局极宽(可能数倍 / 可能 -70%+),不是被错杀的不对称机会;若参与只能当小仓位投机,
-       严禁把热门 IPO 的兴奋误当成"窗口开"的便宜(CBRS 型)
-    ⚠️ moat-赢 ≠ 股票-赢:估值已满时,即便所有预言兑现,股票仍可能因倍数压缩而平庸
-
-## 接口 / 框架落点
-  这条预言如何把未来新闻/财报变成对 moat 的"确认票/否决票";
-  + 这论点最早什么时候、从哪层能立住(early-detection value)
-
-## Part 2 · 动态流 + 🔭前瞻日历  (drivers / milestones / past catalysts+price-reaction / forward calendar)
-
-下一步: <一个犀利的、推进性的问题>
-来源: <inline links> + 标注付费墙/没拿到的
-```
-
-## Style & quality bar (what makes the output GREAT, not just correct)
-- **Respond in the user's language** (default Chinese for this user). Punchy, structured, headers + a table, sources inline.
-- **Lead with a "不是 X,而是 Y" reframe** — the decompose-to-scarcity move is the whole insight; put it first.
-- **Be specific or say nothing**: name the component, the competitor, the process, the number. "It has a moat" is banned; "唯一量产 200G EML、份额 50-60%" is the bar.
-- **Every qualitative claim carries a figure.** Always include the financial cash-in table.
-- **The 🔒 honest soft-spot is the climax, not a disclaimer.** Frame it as "最有价值的诚实点"; it MUST carry a falsifiable prediction + invalidation trigger (this is also the anti-confabulation guard). Quantify the erosion path (how much / how soon), and check the moat metric's *slope*, not just a snapshot.
-- **Always file a verdict — one of THREE tiers, never fudge it.** ① window-open (mispriced opportunity, LITE) · ② window-closed (great-but-priced, ARM/COST) · ③ unproven·high-variance (a lottery — unproven moat + binary outcome + price already assuming the win, CBRS). The 🔒 consensus+valuation slot is mandatory. Operationalizes alpha = the gap between fundamental-visible (①) and consensus-crystallized (②); tier ③ is when the moat itself isn't yet provable so there's no gap to price — only a bet.
-- **Insight over balance.** This is a sharp falsifiable thesis, not a two-handed summary. If the company has no real moat, say THAT plainly (its predictions will be failing) — don't manufacture one.
-- **End with a next-step question.**
+### 7 · FILL report-template.md fully, then maintain the catalog
+- Write all 13 sections per the **Depth contract** below. Cite sources inline.
+- If this run surfaced a genuinely high-signal source not in `sources.md`, append it (right category, quality caveat, `*(found via <TICKER>)*`). Keep junk out.
 
 ---
+
+## Depth contract (non-negotiable — this is what "not a summary" means)
+- **Every section: named specifics + numbers.** Fill every table the template shows. "It has a moat" is banned; "唯一量产 200G EML、份额 50-60%" is the bar.
+- **The THREE 🔒 are mandatory and complete**: §8 bear/risk matrix (with quantified erosion path + moat-metric slope), §9 valuation with a bull/base/bear **scenario table**, §10 falsifiable thesis (predictions carry a number or timeline) + **variant perception**.
+- **Reverse-engineer what's priced in** (§9) — don't just report the multiple; say what growth/margin it implies.
+- **State your edge or admit you have none** (§10): where do you differ from consensus and why? If nowhere, say "organizing consensus, not edge."
+- **Source mix is mandatory, not optional**: FMP alone is NOT a deep-dive. Default = ≥5-8 full articles fetched from catalog sources across ≥3 categories (incl. skeptic I), logged per-source in §12. The qualitative spine (§2 §3 §4 §8) must rest on independent/primary sources, with FMP supplying the numbers.
+- **Mark every unknown / paywalled / unverified honestly. Never fabricate a number.** Partial data → say so and reason from what you have.
+- Scale effort to the ask: a quick check can be lighter, but "deep-dive" defaults to the full 13 sections.
+
+## Style & quality bar
+- **Respond in the user's language** (default Chinese). Punchy, structured, headers + tables, sources inline. End with a next-step question.
+- **Lead with a "不是 X,而是 Y" reframe** — the decompose-to-scarcity move is the spine; put it in §0/§1.
+- **The 🔒 honest soft-spot is the climax, not a disclaimer.** Quantify the erosion path; check the moat metric's *slope*, not just a snapshot.
+- **Always file a verdict — one of THREE tiers**: ① window-open (mispriced opportunity, LITE) · ② window-closed (great-but-priced, ARM/COST) · ③ unproven·high-variance (lottery — unproven moat + binary outcome + price already assuming the win, CBRS).
+- **Insight over balance.** A sharp falsifiable thesis, not a two-handed summary. No real moat → say so plainly; its predictions will be failing.
 
 ## Principles
-- **Go upstream.** Prefer primary (transcripts, filings, segment data) and
-  independent specialists over aggregated sell-side/media. Treat a wave of
-  bulge-bracket notes converging as a *consensus thermometer* (window closing),
-  not as a buy signal.
-- **The bear case is mandatory.** A deep-dive without its strongest disconfirming
-  evidence is a sales pitch, not research. The THREE 🔒 slots — bear/erosion,
-  falsifiable predictions, and consensus+valuation position — are non-negotiable.
-  They block confabulating a bull case for a weak company AND block recommending a
-  great-but-fully-priced one.
-- **Depth is capped by source access × consensus-saturation.** On under-covered /
-  non-consensus names the skill can produce real edge; on fully-covered consensus
-  names it mostly organizes consensus — there the most valuable output is the
-  honest 机会-vs-好公司 verdict, so lean into that. Say when you're reproducing
-  consensus rather than finding edge.
-- **Peg to numbers.** Every qualitative claim gets a figure or it's a vibe.
-- **Falsifiability is the interface to the live stream.** The predictions you
-  write become the lens that makes future news/earnings interpretable as
-  confirm/deny votes (see the moat-thesis-engine design in memory).
-- **Be honest about access + uncertainty.** Mark paywalled/unfound sources; the
-  earliest-layer (first-principles) reads are the least certain — say so.
+- **Go upstream.** Prefer primary (transcripts, filings, segment data) and independent specialists over aggregated sell-side/media. A wave of bulge-bracket notes converging = a *consensus thermometer* (window closing), not a buy signal.
+- **The bear case is mandatory.** A deep-dive without its strongest disconfirming evidence is a sales pitch. The three 🔒 slots block both confabulating a bull case for a weak company AND recommending a great-but-fully-priced one.
+- **Depth is capped by source access × consensus-saturation.** Under-covered / non-consensus names → real edge possible; fully-covered names → you mostly organize consensus, so lean into the honest 机会-vs-好公司 verdict. Say which you're doing.
+- **Falsifiability is the interface to the live stream.** §10's predictions become the lens that turns future news/earnings into confirm/deny votes (see the moat-thesis-engine design in memory; output drops into the 护城河论点 Obsidian template).
+- **Be honest about access + uncertainty.** Mark paywalled/unfound sources; earliest-layer (first-principles) reads are the least certain — say so.
