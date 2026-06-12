@@ -8,7 +8,7 @@ and layer I (skeptic).**
 > Note: SemiAnalysis and Fabricated Knowledge **merged** (2026) — now one team.
 
 ## A · Semiconductors / AI infrastructure / hardware
-- **SemiAnalysis** — semianalysis.com / newsletter.semianalysis.com (Dylan Patel). Gold standard: AI datacenter, compute economics, supply chain, foundry, packaging. Paywalled but high-signal free posts.
+- **SemiAnalysis** — semianalysis.com / newsletter.semianalysis.com (Dylan Patel). Gold standard: AI datacenter, compute economics, supply chain, foundry, packaging. ✅ **SUBSCRIBED (user, ~$500/yr)** — paid posts arrive in user's Gmail → read FULL TEXT via Gmail MCP when WebFetch hits the paywall. Feeds Part-2 milestone verification (yields/share/supply-demand numbers).
 - **Fabricated Knowledge** — fabricatedknowledge.com (Doug O'Laughlin). Semis financial + tech; cycle analysis.
 - **SemiWiki** — semiwiki.com. EDA/IP/foundry industry, design-side, lots of free articles + forum.
 - **More Than Moore** — morethanmoore.substack.com (Ian Cutress, ex-AnandTech). CPU/architecture/packaging detail.
@@ -28,7 +28,7 @@ and layer I (skeptic).**
 - **Ben Pouladian** — benpouladian.com. Photonics competitive analysis (e.g. Lumentum vs Coherent).
 
 ## C · General business / equity deep-dives (moat-focused)
-- **Stratechery** — stratechery.com (Ben Thompson). Tech strategy, platform moats, aggregation theory.
+- **Stratechery** — stratechery.com (Ben Thompson). Tech strategy, platform moats, aggregation theory. ✅ **SUBSCRIBED (user, Stratechery Plus $120/yr)** — includes private per-subscriber RSS feeds (articles + Sharp Tech / Sharp China / Dithering / **Asianometry** podcasts); full articles also land in user's Gmail → use Gmail MCP or the private RSS when WebFetch hits the paywall. Feeds Part-1 moat-type/structure thinking.
 - **MBI Deep Dives** — mbi-deepdives.com / mbideepdives.substack.com. One full company deep dive/month; explicit moat analysis.
 - **Speedwell Research** — speedwellmemos.com. Deep single-company research; "Consumer's Hierarchy of Preferences" framework.
 - **The Science of Hitting (TSOH)** — thescienceofhitting.com (Alex Morris).

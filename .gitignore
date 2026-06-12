@@ -22,3 +22,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Paid research content - personal local archive only, NEVER push (copyright)
+50_Archive/research-library/
